@@ -21,7 +21,7 @@ const products: Product[] = [
     title: 'Curso de Cutilagem para Manicures com Faby Cardoso',
     description: 'Aprenda técnicas profissionais de cutilagem com uma das maiores especialistas do Brasil.',
     image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=300&fit=crop',
-    affiliateLink: '#',
+    affiliateLink: 'https://bbrunovaes.github.io/cursocutilagem/',
     price: 'R$ 59,00',
     category: 'digitais'
   }
