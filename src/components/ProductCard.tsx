@@ -1,6 +1,7 @@
 
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 interface ProductCardProps {
   title: string;
@@ -11,8 +12,14 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ title, description, image, affiliateLink, price }: ProductCardProps) => {
+  const navigate = useNavigate();
+
   const handleOfferClick = () => {
-    window.open(affiliateLink, '_blank', 'noopener,noreferrer');
+    if (affiliateLink.startsWith('http')) {
+      window.open(affiliateLink, '_blank', 'noopener,noreferrer');
+    } else {
+      navigate(affiliateLink);
+    }
   };
 
   return (
