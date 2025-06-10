@@ -1,15 +1,33 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, Star, Users, Clock, Award, Phone, Mail, MapPin } from "lucide-react";
+import { Check, Star, Users, Clock, Award, Phone, Mail, MapPin, Home } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const CursoLanding = () => {
+  const navigate = useNavigate();
+
   const handleCTAClick = () => {
     window.open('https://bbrunovaes.github.io/cursocutilagem/', '_blank', 'noopener,noreferrer');
   };
 
+  const handleHomeClick = () => {
+    navigate('/');
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 to-white">
+      {/* Home Button */}
+      <div className="container mx-auto px-4 pt-4">
+        <Button 
+          onClick={handleHomeClick}
+          variant="outline"
+          className="mb-4 flex items-center gap-2 hover:bg-pink-50"
+        >
+          <Home className="w-4 h-4" />
+          Voltar ao Início
+        </Button>
+      </div>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-r from-pink-500 via-pink-400 to-pink-600 text-white">
         <div className="absolute inset-0 bg-black/10"></div>
