@@ -224,91 +224,6 @@ const CursoLanding = () => {
         </div>
       </section>
 
-      {/* About Instructor */}
-      <section className="py-16 bg-gradient-to-br from-pink-50 to-white">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="flex-1">
-              <img 
-                src="https://images.unsplash.com/photo-1594736797933-d0401ba937c1?w=400&h=400&fit=crop&crop=face" 
-                alt="Faby Cardoso" 
-                className="rounded-full w-80 h-80 object-cover mx-auto shadow-2xl"
-              />
-            </div>
-            <div className="flex-1">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                Conheça Faby Cardoso
-              </h2>
-              <p className="text-lg text-gray-600 mb-6">
-                Com mais de 15 anos de experiência no mercado de beleza, Faby Cardoso é uma das maiores especialistas em cutilagem do Brasil. Já treinou milhares de profissionais e é reconhecida por sua técnica impecável e didática excepcional.
-              </p>
-              <div className="space-y-3">
-                {[
-                  "15+ anos de experiência profissional",
-                  "5.000+ alunas treinadas",
-                  "Especialista em cutilagem segura",
-                  "Instrutora certificada"
-                ].map((achievement, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <Check className="w-5 h-5 text-pink-500" />
-                    <span className="text-gray-700">{achievement}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              O que nossas alunas dizem
-            </h2>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Maria Silva",
-                role: "Manicure Profissional",
-                content: "O curso mudou completamente minha carreira. Agora sou uma das manicures mais requisitadas da região!",
-                rating: 5
-              },
-              {
-                name: "Ana Paula",
-                role: "Dona de Salão",
-                content: "Técnicas incríveis! Minha clientela aumentou 300% após aplicar o que aprendi no curso.",
-                rating: 5
-              },
-              {
-                name: "Juliana Costa",
-                role: "Manicure Iniciante",
-                content: "Mesmo sendo iniciante, consegui aprender tudo facilmente. A Faby ensina de forma muito clara.",
-                rating: 5
-              }
-            ].map((testimonial, index) => (
-              <Card key={index} className="border-pink-100">
-                <CardContent className="p-6">
-                  <div className="flex mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <p className="text-gray-600 mb-4 italic">"{testimonial.content}"</p>
-                  <div>
-                    <div className="font-semibold text-gray-800">{testimonial.name}</div>
-                    <div className="text-sm text-gray-500">{testimonial.role}</div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Pricing Section */}
       <section className="py-16 bg-gradient-to-br from-pink-500 to-pink-600 text-white">
         <div className="container mx-auto px-4 text-center">
@@ -367,26 +282,54 @@ const CursoLanding = () => {
           <div className="max-w-3xl mx-auto space-y-6">
             {[
               {
-                question: "Por quanto tempo tenho acesso ao curso?",
-                answer: "O acesso é vitalício! Você pode assistir quantas vezes quiser, no seu ritmo."
+                question: "📌 O curso é presencial ou online?",
+                answer: "O curso é 100% online! Você pode aprender no seu ritmo, de qualquer lugar, apenas com um celular ou computador com acesso à internet. 🎥✨"
               },
               {
-                question: "Preciso ter experiência prévia?",
-                answer: "Não! O curso é adequado tanto para iniciantes quanto para quem já atua na área."
+                question: "📌 Quanto tempo leva para concluir o curso e pegar o certificado?",
+                answer: "O curso é feito no seu ritmo! Você pode concluir em poucos dias ou semanas, dependendo da sua disponibilidade. Assim que finalizar todas as aulas, o certificado é liberado automaticamente dentro da plataforma de alunas que você fará parte. 🏅"
               },
               {
-                question: "Recebo certificado?",
-                answer: "Sim! Após concluir o curso, você recebe um certificado de conclusão."
+                question: "📌 No curso ensina esmaltação que seca rápido?",
+                answer: "Sim! Você aprenderá técnicas que garantem esmaltação perfeita e com secagem rápida. 💅✨"
               },
               {
-                question: "Como funciona o suporte?",
-                answer: "Você terá acesso a um grupo exclusivo no WhatsApp para tirar dúvidas."
+                question: "📌 Sou iniciante do zero. Vou conseguir aprender?",
+                answer: "Com certeza! O curso foi criado pensando também em quem nunca fez unha antes. As aulas são detalhadas, práticas e gravadas em alta qualidade para que você aprenda de forma fácil e eficiente. Além disso, você pode assistir quantas vezes quiser! 🎯"
+              },
+              {
+                question: "📌 Já sou Manicure, esse curso é para mim?",
+                answer: "Claro, é sim! Esse curso não é apenas para iniciantes, mas também para manicures que querem aprimorar suas técnicas e elevar o nível do seu trabalho. Você aprenderá técnicas avançadas de cutilagem, esmaltação duradoura e ainda terá acesso a materiais exclusivos que vão te ajudar atrair mais clientes e aumentar seus ganhos. Se você quer se destacar na profissão e se tornar uma referência, sim, esse curso é pra você! 💅✨"
+              },
+              {
+                question: "📌 Tenho medo de comprar e ser golpe. É confiável?",
+                answer: "Entendemos sua preocupação! O curso é vendido pela Hotmart, uma plataforma 100% segura e confiável. ✅ Assim que o pagamento for aprovado, você receberá acesso imediato ao curso no seu e-mail e suporte completo caso tenha dúvidas."
+              },
+              {
+                question: "📌 Como faço para acessar o curso depois da compra?",
+                answer: "Assim que seu pagamento for confirmado, você receberá um e-mail da Hotmart com o link de acesso ao curso, seu login e você cadastrará uma senha. Se não encontrar, verifique sua caixa de spam ou lixeira.\n\nCaso não tenha recebido, envie uma mensagem para nosso suporte clicando aqui.\nVamos te ajudar rapidinho! 😊"
+              },
+              {
+                question: "📌 O curso oferece suporte?",
+                answer: "Sim! Você terá acesso a um suporte exclusivo para tirar dúvidas durante seu aprendizado. Estamos aqui para te ajudar! 💖"
+              },
+              {
+                question: "📌 E se eu não tiver talento para ser manicure?",
+                answer: "Ninguém nasce sabendo! Manicure é prática e dedicação. Com treino e paciência, você desenvolverá habilidades incríveis. Eu mesma aprendi errando e acertando. Confie em você! 💪✨"
+              },
+              {
+                question: "📌 Moro longe, será que consigo aprender online?",
+                answer: "Sim! O curso é 100% online, então você pode aprender de qualquer lugar e no seu próprio ritmo. Basta ter um celular/computador e internet. 🌍"
+              },
+              {
+                question: "📌 Nunca fiz curso online. Será que consigo aprender?",
+                answer: "Claro! As aulas são práticas, detalhadas e gravadas em alta qualidade. Você pode assistir quantas vezes quiser e ainda conta com nosso suporte. Você não estará sozinha nessa! 🤗"
               }
             ].map((faq, index) => (
               <Card key={index} className="border-pink-100">
                 <CardContent className="p-6">
                   <h3 className="font-semibold text-lg text-gray-800 mb-2">{faq.question}</h3>
-                  <p className="text-gray-600">{faq.answer}</p>
+                  <p className="text-gray-600 whitespace-pre-line">{faq.answer}</p>
                 </CardContent>
               </Card>
             ))}
@@ -397,45 +340,16 @@ const CursoLanding = () => {
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center">
-                  <span className="text-xl font-bold">FC</span>
-                </div>
-                <span className="text-xl font-bold">Faby Cardoso</span>
+          <div className="text-center">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center">
+                <span className="text-xl font-bold">FC</span>
               </div>
-              <p className="text-gray-400">
-                Especializando manicures em todo o Brasil com técnicas profissionais de cutilagem.
-              </p>
+              <span className="text-xl font-bold">Faby Cardoso</span>
             </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Contato</h4>
-              <div className="space-y-2">
-                <div className="flex items-center gap-3">
-                  <Phone className="w-4 h-4" />
-                  <span className="text-gray-400">(11) 99999-9999</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Mail className="w-4 h-4" />
-                  <span className="text-gray-400">contato@fabycardoso.com</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <MapPin className="w-4 h-4" />
-                  <span className="text-gray-400">São Paulo, SP</span>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Links Úteis</h4>
-              <div className="space-y-2">
-                <div><a href="#" className="text-gray-400 hover:text-white">Política de Privacidade</a></div>
-                <div><a href="#" className="text-gray-400 hover:text-white">Termos de Uso</a></div>
-                <div><a href="#" className="text-gray-400 hover:text-white">Suporte</a></div>
-              </div>
-            </div>
+            <p className="text-gray-400 mb-8">
+              Especializando manicures em todo o Brasil com técnicas profissionais de cutilagem.
+            </p>
           </div>
           
           <div className="border-t border-gray-700 mt-8 pt-8 text-center">
