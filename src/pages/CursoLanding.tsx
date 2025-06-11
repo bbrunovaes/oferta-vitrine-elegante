@@ -136,8 +136,9 @@ const CursoLanding = () => {
                   Quero me Especializar Agora
                 </Button>
                 <div className="text-center sm:text-left">
-                  <div className="text-3xl font-bold">R$ 59,00</div>
-                  <div className="text-pink-200 line-through">R$ 199,00</div>
+                  <div className="text-5xl font-bold text-yellow-400 animate-pulse">R$ 59</div>
+                  <div className="text-lg text-yellow-300 animate-pulse">em até 6x de R$11,07 no cartão de crédito</div>
+                  <div className="text-lg text-yellow-300 animate-pulse">Ou à vista no Boleto e Pix</div>
                 </div>
               </div>
             </div>
@@ -234,8 +235,9 @@ const CursoLanding = () => {
           <Card className="max-w-md mx-auto bg-white text-gray-800 border-0 shadow-2xl">
             <CardContent className="p-8">
               <div className="text-center">
-                <div className="text-gray-500 line-through text-xl mb-2">De R$ 199,00</div>
-                <div className="text-4xl font-bold text-pink-600 mb-4">R$ 59,00</div>
+                <div className="text-6xl font-bold text-yellow-500 animate-bounce mb-2">R$ 59</div>
+                <div className="text-xl text-yellow-600 animate-pulse mb-2">em até 6x de R$11,07 no cartão de crédito</div>
+                <div className="text-xl text-yellow-600 animate-pulse mb-6">Ou à vista no Boleto e Pix</div>
                 <div className="text-green-600 font-semibold mb-6">Economize 70%</div>
                 
                 <div className="space-y-3 mb-8">
