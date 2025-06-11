@@ -1,10 +1,45 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, Star, Users, Clock, Award, Phone, Mail, MapPin, Home } from "lucide-react";
+import { Check, Star, Users, Clock, Award, Phone, Mail, MapPin, Home, Timer } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const CursoLanding = () => {
   const navigate = useNavigate();
+  const [timeLeft, setTimeLeft] = useState({
+    hours: 23,
+    minutes: 59,
+    seconds: 59
+  });
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(prev => {
+        let { hours, minutes, seconds } = prev;
+        
+        if (seconds > 0) {
+          seconds--;
+        } else if (minutes > 0) {
+          minutes--;
+          seconds = 59;
+        } else if (hours > 0) {
+          hours--;
+          minutes = 59;
+          seconds = 59;
+        } else {
+          // Reset timer when it reaches 0
+          hours = 23;
+          minutes = 59;
+          seconds = 59;
+        }
+        
+        return { hours, minutes, seconds };
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
 
   const handleCTAClick = () => {
     window.open('https://bbrunovaes.github.io/cursocutilagem/', '_blank', 'noopener,noreferrer');
@@ -42,6 +77,19 @@ const CursoLanding = () => {
                   </div>
                 </div>
               </div>
+
+              {/* Rating Section */}
+              <div className="mb-6 flex flex-col items-center lg:items-start">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="flex">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                    ))}
+                  </div>
+                  <span className="text-xl font-bold">4.9</span>
+                </div>
+                <p className="text-pink-100">+5.000 avaliações positivas</p>
+              </div>
               
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Curso de Cutilagem para Manicures
@@ -50,6 +98,35 @@ const CursoLanding = () => {
               <p className="text-xl mb-8 text-pink-100">
                 Domine as técnicas profissionais de cutilagem e se torne uma especialista reconhecida no mercado
               </p>
+
+              {/* Timer Section */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mb-8 border border-white/20">
+                <div className="flex items-center justify-center gap-2 mb-3">
+                  <Timer className="w-5 h-5 text-yellow-400" />
+                  <span className="text-yellow-400 font-semibold">Oferta Especial Termina em:</span>
+                </div>
+                <div className="flex justify-center gap-4">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold bg-white/20 rounded-lg px-3 py-2">
+                      {timeLeft.hours.toString().padStart(2, '0')}
+                    </div>
+                    <div className="text-sm text-pink-200 mt-1">Horas</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold bg-white/20 rounded-lg px-3 py-2">
+                      {timeLeft.minutes.toString().padStart(2, '0')}
+                    </div>
+                    <div className="text-sm text-pink-200 mt-1">Min</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold bg-white/20 rounded-lg px-3 py-2">
+                      {timeLeft.seconds.toString().padStart(2, '0')}
+                    </div>
+                    <div className="text-sm text-pink-200 mt-1">Seg</div>
+                  </div>
+                </div>
+              </div>
+
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button 
                   onClick={handleCTAClick}
@@ -91,33 +168,48 @@ const CursoLanding = () => {
             {[
               {
                 icon: <Award className="w-8 h-8 text-pink-500" />,
-                title: "Técnicas Avançadas",
-                description: "Aprenda métodos profissionais de cutilagem usados pelos melhores salões"
+                title: "Preparação das Mãos e dos Pés",
+                description: "Técnicas adequadas para preparar as mãos e pés antes do procedimento"
               },
               {
                 icon: <Users className="w-8 h-8 text-pink-500" />,
-                title: "Atendimento ao Cliente",
-                description: "Como lidar com diferentes tipos de pele e necessidades dos clientes"
+                title: "Lixamento e Polimento da Unha",
+                description: "Aprenda as técnicas corretas de lixamento e polimento profissional"
               },
               {
                 icon: <Star className="w-8 h-8 text-pink-500" />,
-                title: "Higiene e Segurança",
-                description: "Protocolos de segurança e higienização para evitar contaminações"
+                title: "Cutilagem perfeita, fundinha e corte bordado",
+                description: "Domine as técnicas avançadas de cutilagem com acabamento perfeito"
               },
               {
                 icon: <Clock className="w-8 h-8 text-pink-500" />,
-                title: "Gestão de Tempo",
-                description: "Otimize seu tempo de atendimento sem perder a qualidade"
+                title: "Unhas francesinhas simples e formato sorriso",
+                description: "Técnicas para criar francesinhas perfeitas com formato sorriso"
               },
               {
                 icon: <Award className="w-8 h-8 text-pink-500" />,
-                title: "Certificado",
-                description: "Receba certificado de conclusão reconhecido no mercado"
+                title: "Decorações de Unhas bônus como Degradê e Gravatinha",
+                description: "Aprenda técnicas de decoração para diversificar seus serviços"
               },
               {
                 icon: <Users className="w-8 h-8 text-pink-500" />,
-                title: "Suporte Vitalício",
-                description: "Acesso ao grupo exclusivo de alunas para tirar dúvidas"
+                title: "Como passar o esmalte nude sem manchar",
+                description: "Técnica perfeita para aplicação de esmalte nude sem imperfeições"
+              },
+              {
+                icon: <Star className="w-8 h-8 text-pink-500" />,
+                title: "Como tirar o borrado corretamente das unhas",
+                description: "Aprenda a corrigir erros de esmaltação de forma profissional"
+              },
+              {
+                icon: <Clock className="w-8 h-8 text-pink-500" />,
+                title: "Como colocar adesivos artesanais",
+                description: "Técnicas para aplicação perfeita de adesivos decorativos"
+              },
+              {
+                icon: <Award className="w-8 h-8 text-pink-500" />,
+                title: "Esfoliação dos Pés e muito mais...",
+                description: "Técnicas de esfoliação e outros procedimentos complementares"
               }
             ].map((item, index) => (
               <Card key={index} className="border-pink-100 hover:shadow-lg transition-shadow">
