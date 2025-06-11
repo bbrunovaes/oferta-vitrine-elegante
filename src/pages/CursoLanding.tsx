@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Check, Star, Users, Clock, Award, Phone, Mail, MapPin, Home, Timer } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -42,7 +43,11 @@ const CursoLanding = () => {
   }, []);
 
   const handleCTAClick = () => {
-    window.open('https://bbrunovaes.github.io/cursocutilagem/', '_blank', 'noopener,noreferrer');
+    window.open('https://pay.hotmart.com/E45853768C?checkoutMode=10&ref=V100100631Q&bid=1749602698106', '_blank', 'noopener,noreferrer');
+  };
+
+  const handleWhatsAppClick = () => {
+    window.open('https://go.hotmart.com/V100100631Q?ap=770a', '_blank', 'noopener,noreferrer');
   };
 
   const handleHomeClick = () => {
@@ -136,8 +141,10 @@ const CursoLanding = () => {
                   Quero me Especializar Agora
                 </Button>
                 <div className="text-center sm:text-left">
-                  <div className="text-5xl font-bold text-yellow-400 animate-pulse">R$ 59</div>
-                  <div className="text-lg text-yellow-300 animate-pulse">em até 6x de R$11,07 no cartão de crédito</div>
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
+                    <div className="text-5xl font-bold text-yellow-400 animate-pulse">R$ 59</div>
+                    <div className="text-lg text-yellow-300 animate-pulse">em até 6x de R$11,07 no cartão de crédito</div>
+                  </div>
                   <div className="text-lg text-yellow-300 animate-pulse">Ou à vista no Boleto e Pix</div>
                 </div>
               </div>
@@ -281,60 +288,64 @@ const CursoLanding = () => {
             </h2>
           </div>
           
-          <div className="max-w-3xl mx-auto space-y-6">
-            {[
-              {
-                question: "📌 O curso é presencial ou online?",
-                answer: "O curso é 100% online! Você pode aprender no seu ritmo, de qualquer lugar, apenas com um celular ou computador com acesso à internet. 🎥✨"
-              },
-              {
-                question: "📌 Quanto tempo leva para concluir o curso e pegar o certificado?",
-                answer: "O curso é feito no seu ritmo! Você pode concluir em poucos dias ou semanas, dependendo da sua disponibilidade. Assim que finalizar todas as aulas, o certificado é liberado automaticamente dentro da plataforma de alunas que você fará parte. 🏅"
-              },
-              {
-                question: "📌 No curso ensina esmaltação que seca rápido?",
-                answer: "Sim! Você aprenderá técnicas que garantem esmaltação perfeita e com secagem rápida. 💅✨"
-              },
-              {
-                question: "📌 Sou iniciante do zero. Vou conseguir aprender?",
-                answer: "Com certeza! O curso foi criado pensando também em quem nunca fez unha antes. As aulas são detalhadas, práticas e gravadas em alta qualidade para que você aprenda de forma fácil e eficiente. Além disso, você pode assistir quantas vezes quiser! 🎯"
-              },
-              {
-                question: "📌 Já sou Manicure, esse curso é para mim?",
-                answer: "Claro, é sim! Esse curso não é apenas para iniciantes, mas também para manicures que querem aprimorar suas técnicas e elevar o nível do seu trabalho. Você aprenderá técnicas avançadas de cutilagem, esmaltação duradoura e ainda terá acesso a materiais exclusivos que vão te ajudar atrair mais clientes e aumentar seus ganhos. Se você quer se destacar na profissão e se tornar uma referência, sim, esse curso é pra você! 💅✨"
-              },
-              {
-                question: "📌 Tenho medo de comprar e ser golpe. É confiável?",
-                answer: "Entendemos sua preocupação! O curso é vendido pela Hotmart, uma plataforma 100% segura e confiável. ✅ Assim que o pagamento for aprovado, você receberá acesso imediato ao curso no seu e-mail e suporte completo caso tenha dúvidas."
-              },
-              {
-                question: "📌 Como faço para acessar o curso depois da compra?",
-                answer: "Assim que seu pagamento for confirmado, você receberá um e-mail da Hotmart com o link de acesso ao curso, seu login e você cadastrará uma senha. Se não encontrar, verifique sua caixa de spam ou lixeira.\n\nCaso não tenha recebido, envie uma mensagem para nosso suporte clicando aqui.\nVamos te ajudar rapidinho! 😊"
-              },
-              {
-                question: "📌 O curso oferece suporte?",
-                answer: "Sim! Você terá acesso a um suporte exclusivo para tirar dúvidas durante seu aprendizado. Estamos aqui para te ajudar! 💖"
-              },
-              {
-                question: "📌 E se eu não tiver talento para ser manicure?",
-                answer: "Ninguém nasce sabendo! Manicure é prática e dedicação. Com treino e paciência, você desenvolverá habilidades incríveis. Eu mesma aprendi errando e acertando. Confie em você! 💪✨"
-              },
-              {
-                question: "📌 Moro longe, será que consigo aprender online?",
-                answer: "Sim! O curso é 100% online, então você pode aprender de qualquer lugar e no seu próprio ritmo. Basta ter um celular/computador e internet. 🌍"
-              },
-              {
-                question: "📌 Nunca fiz curso online. Será que consigo aprender?",
-                answer: "Claro! As aulas são práticas, detalhadas e gravadas em alta qualidade. Você pode assistir quantas vezes quiser e ainda conta com nosso suporte. Você não estará sozinha nessa! 🤗"
-              }
-            ].map((faq, index) => (
-              <Card key={index} className="border-pink-100">
-                <CardContent className="p-6">
-                  <h3 className="font-semibold text-lg text-gray-800 mb-2">{faq.question}</h3>
-                  <p className="text-gray-600 whitespace-pre-line">{faq.answer}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="max-w-3xl mx-auto">
+            <Accordion type="single" collapsible className="space-y-4">
+              {[
+                {
+                  question: "📌 O curso é presencial ou online?",
+                  answer: "O curso é 100% online! Você pode aprender no seu ritmo, de qualquer lugar, apenas com um celular ou computador com acesso à internet. 🎥✨"
+                },
+                {
+                  question: "📌 Quanto tempo leva para concluir o curso e pegar o certificado?",
+                  answer: "O curso é feito no seu ritmo! Você pode concluir em poucos dias ou semanas, dependendo da sua disponibilidade. Assim que finalizar todas as aulas, o certificado é liberado automaticamente dentro da plataforma de alunas que você fará parte. 🏅"
+                },
+                {
+                  question: "📌 No curso ensina esmaltação que seca rápido?",
+                  answer: "Sim! Você aprenderá técnicas que garantem esmaltação perfeita e com secagem rápida. 💅✨"
+                },
+                {
+                  question: "📌 Sou iniciante do zero. Vou conseguir aprender?",
+                  answer: "Com certeza! O curso foi criado pensando também em quem nunca fez unha antes. As aulas são detalhadas, práticas e gravadas em alta qualidade para que você aprenda de forma fácil e eficiente. Além disso, você pode assistir quantas vezes quiser! 🎯"
+                },
+                {
+                  question: "📌 Já sou Manicure, esse curso é para mim?",
+                  answer: "Claro, é sim! Esse curso não é apenas para iniciantes, mas também para manicures que querem aprimorar suas técnicas e elevar o nível do seu trabalho. Você aprenderá técnicas avançadas de cutilagem, esmaltação duradoura e ainda terá acesso a materiais exclusivos que vão te ajudar atrair mais clientes e aumentar seus ganhos. Se você quer se destacar na profissão e se tornar uma referência, sim, esse curso é pra você! 💅✨"
+                },
+                {
+                  question: "📌 Tenho medo de comprar e ser golpe. É confiável?",
+                  answer: "Entendemos sua preocupação! O curso é vendido pela Hotmart, uma plataforma 100% segura e confiável. ✅ Assim que o pagamento for aprovado, você receberá acesso imediato ao curso no seu e-mail e suporte completo caso tenha dúvidas."
+                },
+                {
+                  question: "📌 Como faço para acessar o curso depois da compra?",
+                  answer: "Assim que seu pagamento for confirmado, você receberá um e-mail da Hotmart com o link de acesso ao curso, seu login e você cadastrará uma senha. Se não encontrar, verifique sua caixa de spam ou lixeira.\n\nCaso não tenha recebido, envie uma mensagem para nosso suporte clicando aqui.\nVamos te ajudar rapidinho! 😊"
+                },
+                {
+                  question: "📌 O curso oferece suporte?",
+                  answer: "Sim! Você terá acesso a um suporte exclusivo para tirar dúvidas durante seu aprendizado. Estamos aqui para te ajudar! 💖"
+                },
+                {
+                  question: "📌 E se eu não tiver talento para ser manicure?",
+                  answer: "Ninguém nasce sabendo! Manicure é prática e dedicação. Com treino e paciência, você desenvolverá habilidades incríveis. Eu mesma aprendi errando e acertando. Confie em você! 💪✨"
+                },
+                {
+                  question: "📌 Moro longe, será que consigo aprender online?",
+                  answer: "Sim! O curso é 100% online, então você pode aprender de qualquer lugar e no seu próprio ritmo. Basta ter um celular/computador e internet. 🌍"
+                },
+                {
+                  question: "📌 Nunca fiz curso online. Será que consigo aprender?",
+                  answer: "Claro! As aulas são práticas, detalhadas e gravadas em alta qualidade. Você pode assistir quantas vezes quiser e ainda conta com nosso suporte. Você não estará sozinha nessa! 🤗"
+                }
+              ].map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`} className="border border-pink-100 rounded-lg px-6">
+                  <AccordionTrigger className="text-left font-semibold text-lg text-gray-800 hover:no-underline hover:text-pink-600">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-600 whitespace-pre-line pt-2">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </section>
@@ -352,6 +363,16 @@ const CursoLanding = () => {
             <p className="text-gray-400 mb-8">
               Especializando manicures em todo o Brasil com técnicas profissionais de cutilagem.
             </p>
+            
+            <div className="mb-8">
+              <Button 
+                onClick={handleWhatsAppClick}
+                className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 mx-auto"
+              >
+                <Phone className="w-5 h-5" />
+                Contato pelo WhatsApp
+              </Button>
+            </div>
           </div>
           
           <div className="border-t border-gray-700 mt-8 pt-8 text-center">
