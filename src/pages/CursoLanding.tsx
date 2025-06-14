@@ -151,8 +151,8 @@ const CursoLanding = () => {
             </div>
             <div className="flex-1">
               <img 
-                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=400&fit=crop" 
-                alt="Curso de Cutilagem" 
+                src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=600&h=400&fit=crop" 
+                alt="Curso de Cutilagem - Manicure Profissional" 
                 className="rounded-2xl shadow-2xl"
               />
             </div>
