@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -241,47 +242,47 @@ const CursoLanding = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="max-w-2xl mx-auto space-y-6">
             <div className="flex justify-center">
               <img 
                 src="https://i.imgur.com/wKwZGL5.png" 
                 alt="Depoimento de cliente 1"
-                className="rounded-lg shadow-lg max-w-full h-auto"
+                className="rounded-lg shadow-lg max-w-full h-auto w-full"
               />
             </div>
             <div className="flex justify-center">
               <img 
                 src="https://i.imgur.com/HBiGvRr.png" 
                 alt="Depoimento de cliente 2"
-                className="rounded-lg shadow-lg max-w-full h-auto"
+                className="rounded-lg shadow-lg max-w-full h-auto w-full"
               />
             </div>
             <div className="flex justify-center">
               <img 
                 src="https://i.imgur.com/D5Uq0Dc.png" 
                 alt="Depoimento de cliente 3"
-                className="rounded-lg shadow-lg max-w-full h-auto"
+                className="rounded-lg shadow-lg max-w-full h-auto w-full"
               />
             </div>
             <div className="flex justify-center">
               <img 
                 src="https://i.imgur.com/JgCgajg.png" 
                 alt="Depoimento de cliente 4"
-                className="rounded-lg shadow-lg max-w-full h-auto"
+                className="rounded-lg shadow-lg max-w-full h-auto w-full"
               />
             </div>
             <div className="flex justify-center">
               <img 
                 src="https://i.imgur.com/D4YnskX.png" 
                 alt="Depoimento de cliente 5"
-                className="rounded-lg shadow-lg max-w-full h-auto"
+                className="rounded-lg shadow-lg max-w-full h-auto w-full"
               />
             </div>
             <div className="flex justify-center">
               <img 
                 src="https://i.imgur.com/R1xbrib.png" 
                 alt="Depoimento de cliente 6"
-                className="rounded-lg shadow-lg max-w-full h-auto"
+                className="rounded-lg shadow-lg max-w-full h-auto w-full"
               />
             </div>
           </div>
