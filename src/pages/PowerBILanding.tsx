@@ -283,11 +283,11 @@ const PowerBILanding = () => {
                 </Button>
                 <div className="text-center">
                   <div className="text-sm font-bold text-red-400 animate-pulse mb-1">🔥 APENAS HOJE, OFERTA ESPECIAL 🔥</div>
-                  <div className="flex items-baseline justify-center gap-2">
-                    <div className="text-7xl font-black text-yellow-400 animate-pulse drop-shadow-lg">R$ 79,99</div>
+                  <div className="flex items-center justify-center gap-4 flex-wrap">
+                    <div className="text-5xl font-black text-yellow-400 animate-pulse drop-shadow-lg">R$ 79,99</div>
+                    <div className="text-lg font-bold text-yellow-300 animate-pulse">em 8x de R$ 11,63* no cartão</div>
+                    <div className="text-lg font-bold text-yellow-300 animate-pulse">Ou à vista no Boleto e Pix</div>
                   </div>
-                  <div className="text-xl font-bold text-yellow-300 animate-pulse mb-1">em 8x de R$ 11,63* no cartão</div>
-                  <div className="text-xl font-bold text-yellow-300 animate-pulse">Ou à vista no Boleto e Pix</div>
                 </div>
               </div>
             </div>
