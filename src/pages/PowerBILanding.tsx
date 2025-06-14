@@ -281,9 +281,21 @@ const PowerBILanding = () => {
         <div className="relative container mx-auto px-4 py-20">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 text-center lg:text-left">
-              {/* New Logo */}
+              {/* New Logo - Now Clickable */}
               <div className="mb-8">
-                <PowerBILogo />
+                <div 
+                  onClick={handleCTAClick}
+                  className="cursor-pointer hover:scale-105 transition-transform duration-200 inline-block"
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      handleCTAClick();
+                    }
+                  }}
+                >
+                  <PowerBILogo />
+                </div>
               </div>
 
               {/* Rating Section */}
@@ -601,7 +613,19 @@ const PowerBILanding = () => {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="flex items-center justify-center mb-4">
-              <PowerBILogo className="w-auto h-12" />
+              <div 
+                onClick={handleCTAClick}
+                className="cursor-pointer hover:scale-105 transition-transform duration-200"
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    handleCTAClick();
+                  }
+                }}
+              >
+                <PowerBILogo className="w-auto h-12" />
+              </div>
             </div>
             <p className="text-gray-400 mb-8">
               Transformando profissionais em especialistas em Business Intelligence desde 2020.
