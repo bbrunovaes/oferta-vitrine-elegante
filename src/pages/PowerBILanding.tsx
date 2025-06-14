@@ -1,5 +1,3 @@
-
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -363,11 +361,11 @@ const PowerBILanding = () => {
               
               {/* Price Text Below Video - Centered */}
               <div className="text-center mt-6">
-                <div className="text-sm font-bold text-red-400 animate-pulse">
-                  🔥 APENAS HOJE, OFERTA ESPECIAL<br />
+                <div className="text-lg font-bold text-red-400 animate-pulse">
+                  APENAS HOJE, OFERTA ESPECIAL<br />
                   R$ 79,99<br />
                   em 8x de R$ 11,63* no cartão<br />
-                  Ou à vista no Boleto e Pix 🔥
+                  Ou à vista no Boleto e Pix
                 </div>
               </div>
             </div>
@@ -627,4 +625,3 @@ const PowerBILanding = () => {
 };
 
 export default PowerBILanding;
-
