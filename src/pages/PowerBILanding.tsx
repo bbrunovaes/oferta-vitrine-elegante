@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -553,28 +554,32 @@ const PowerBILanding = () => {
             <Accordion type="single" collapsible className="space-y-4">
               {[
                 {
-                  question: "Preciso de conhecimento prévio em Power BI?",
-                  answer: "Não! O curso foi desenvolvido para iniciantes e também para quem já tem alguma experiência. Começamos do zero e evoluímos até técnicas avançadas."
+                  question: "Quem avaliou POWER BI Expert na Prática | 2025?",
+                  answer: "Todas as avaliações mostradas aqui foram feitas por pessoas reais que compraram e deram sua opinião sobre o curso. Quando alguém compra um curso através da Hotmart, a pessoa recebe um convite para avaliar o conteúdo dele. A nota nesta página é o resultado da média das avaliações feitas por estes compradores, que vai de 1 a 5 estrelas."
                 },
                 {
-                  question: "O Power BI é gratuito?",
-                  answer: "Sim! O Power BI Desktop é totalmente gratuito. Você pode baixar e usar todas as funcionalidades que ensinamos no curso sem custo adicional."
+                  question: "O que é e como funciona a Nota Média do curso?",
+                  answer: "A nota média de POWER BI Expert na Prática | 2025 é de 4.7 estrelas. Depois de cada compra na Hotmart, você tem a oportunidade de avaliar a qualidade do curso e o seu nível de satisfação. Com a opinião dos compradores, nosso sistema calcula a nota média e colhemos os comentários que vão ajudar outras pessoas no momento da decisão de compra."
                 },
                 {
-                  question: "Quanto tempo tenho para acessar o curso?",
-                  answer: "O acesso é vitalício! Você pode assistir as aulas quantas vezes quiser e no seu próprio ritmo, sem pressa."
+                  question: "Como funciona o \"Prazo de Garantia\"?",
+                  answer: "O Prazo de Garantia é o período que você tem para pedir o reembolso integral do valor pago pela sua compra, caso o produto não seja satisfatório. Assim que solicitado, seu reembolso é processado automaticamente pela Hotmart em até 5 dias. Para pagamentos com boleto bancário, você precisa preencher uma conta bancária para receber o dinheiro. Passados os 5 dias, o valor poderá ser identificado em sua conta em até 7 dias úteis. Já o estorno da fatura do cartão de crédito varia de acordo com o meio de pagamento e pode ocorrer na fatura atual ou na seguinte."
                 },
                 {
-                  question: "Recebo certificado ao final?",
-                  answer: "Sim! Ao concluir todas as aulas, você receberá um certificado de conclusão que pode ser adicionado ao seu LinkedIn e currículo."
+                  question: "O que é e como funciona o Certificado de Conclusão digital?",
+                  answer: "Alguns cursos online oferecem um certificado digital de conclusão. Alunos podem emitir esse certificado ao final do curso ou entrando em contato com o Autor ou Autora. Esses certificados podem ser compartilhados em redes sociais como o LinkedIn e inseridos em informações curriculares."
                 },
                 {
-                  question: "Existe suporte durante o curso?",
-                  answer: "Claro! Você terá acesso a suporte exclusivo para tirar suas dúvidas e um grupo VIP com outros alunos para networking."
+                  question: "Quais diferenciais os produtos podem ter?",
+                  answer: "Os produtos na Hotmart têm diferenciais que mudam de acordo com o tipo de produto e a disponibilidade. Por exemplo, produtos do tipo \"Cursos online\" podem ou não oferecer certificado digital de conclusão. Caso o certificado esteja disponível, alunos podem emiti-lo dentro do curso ou entrando em contato com o(a) Autor(a). Os certificados podem ser compartilhados em redes sociais como o LinkedIn e inseridos em informações curriculares. A garantia também é um diferencial dos nossos produtos e pode variar de 7, 15 ou 30 dias, de acordo com o oferecido pelo Autor(a). Para ver os diferenciais disponíveis neste produto, basta checar a seção Diferenciais."
                 },
                 {
-                  question: "Posso usar em qualquer dispositivo?",
-                  answer: "Sim! O curso pode ser acessado de qualquer dispositivo: computador, tablet ou celular, a qualquer hora e lugar."
+                  question: "Como acesso meu produto?",
+                  answer: "Você receberá o acesso a POWER BI Expert na Prática | 2025 por email. Pode ser um curso online, um ebook, uma série de videoaulas, um serviço, evento, etc. O conteúdo será acessado ou baixado através de um computador, celular, tablet ou outro dispositivo digital. Você também pode acessar o produto comprado fazendo login, acessando o menu lateral \"Minha conta\" e clicando em \"Minhas compras\". Em \"Minhas compras\" estarão todos os produtos que você já comprou!"
+                },
+                {
+                  question: "Tenho interesse neste curso, como posso comprar?",
+                  answer: "Para comprar este curso, clique no botão \"Comprar\". Lembre-se de que nem todos os cursos estarão sempre disponíveis para compra. É possível que o Autor ou Autora esteja preparando uma nova turma ainda sem inscrições abertas."
                 }
               ].map((faq, index) => (
                 <AccordionItem key={index} value={`faq-${index}`} className="border border-yellow-200 rounded-lg px-6">
