@@ -334,7 +334,7 @@ const PowerBILanding = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-6 items-center justify-center lg:justify-start">
+              <div className="flex justify-center lg:justify-start">
                 <Button 
                   onClick={handleCTAClick}
                   size="lg" 
@@ -342,9 +342,6 @@ const PowerBILanding = () => {
                 >
                   Quero me Tornar Expert Agora
                 </Button>
-                <div className="text-center">
-                  <div className="text-sm font-bold text-red-400 animate-pulse mb-1">🔥 APENAS HOJE, OFERTA ESPECIAL R$ 79,99 em 8x de R$ 11,63* no cartão Ou à vista no Boleto e Pix 🔥</div>
-                </div>
               </div>
             </div>
             <div className="flex-1">
@@ -359,6 +356,11 @@ const PowerBILanding = () => {
                   allowFullScreen
                   className="w-full aspect-video"
                 ></iframe>
+              </div>
+              
+              {/* Price Text Below Video - Centered */}
+              <div className="text-center mt-6">
+                <div className="text-sm font-bold text-red-400 animate-pulse">🔥 APENAS HOJE, OFERTA ESPECIAL R$ 79,99 em 8x de R$ 11,63* no cartão Ou à vista no Boleto e Pix 🔥</div>
               </div>
             </div>
           </div>
