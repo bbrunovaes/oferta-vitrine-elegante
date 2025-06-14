@@ -302,7 +302,7 @@ const PowerBILanding = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Conteúdo do Curso
+              O que você vai aprender
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               11 módulos completos com mais de 80 aulas práticas para dominar o Power BI
