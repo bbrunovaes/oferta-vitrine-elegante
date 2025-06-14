@@ -1,5 +1,3 @@
-
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -192,6 +190,69 @@ const PowerBILanding = () => {
         "Matriz Etapas e Indicadores",
         "Gráfico de Gantt"
       ]
+    }
+  ];
+
+  const testimonials = [
+    {
+      date: "28/03/2025",
+      text: "Nota 10! ampliei minha capacidade de análise de dados, criação de dashboards interativos e extração de insights estratégicos para a tomada de decisões! Recomendo mil vezes!",
+      name: "Yolanda",
+      rating: 5
+    },
+    {
+      date: "14/11/2024", 
+      text: "Gostei demais dos cursos de análise de dados! Terminei o Excel e Power BI e agora vou fazer o de Power Apps! Eternamente agradecida por esses conhecimentos repassados.",
+      name: "Ana",
+      rating: 5
+    },
+    {
+      date: "31/10/2024",
+      text: "Excelente! Meus colegas de trabalho aqui da Ambev que recomendaram. Nota 10!",
+      name: "Samuel", 
+      rating: 5
+    },
+    {
+      date: "17/09/2024",
+      text: "Esta foi a melhor metodologia utilizado de todos cursos de Power BI que fiz! Muito obrigado!",
+      name: "Bruno",
+      rating: 5
+    },
+    {
+      date: "30/07/2024",
+      text: "Amei!",
+      name: "Paula",
+      rating: 5
+    },
+    {
+      date: "23/07/2024",
+      text: "Finalizado! Muito feliz com o certificado de conclusão e obrigado aos professores da Viscari pelo curso e material. Sucesso a todos!",
+      name: "Victor",
+      rating: 5
+    },
+    {
+      date: "17/06/2024",
+      text: "Sou analista de RH e este curso foi recomendado pelos meus colegas de trabalho. Estou muito satisfeita, foi o melhor curso de Power BI que já fiz. Excelente didática e metodologia!!",
+      name: "Rubia",
+      rating: 5
+    },
+    {
+      date: "07/05/2024",
+      text: "11/10",
+      name: "Marcelo",
+      rating: 5
+    },
+    {
+      date: "30/03/2024",
+      text: "Fiquei muito satisfeita com o curso, pois me ajudou muito na área em que estou trabalhando e enriqueceu meus conhecimentos. Gostei muito do curso e acredito q ele vai me ajudar bastante na minha vida...",
+      name: "Vanessa",
+      rating: 5
+    },
+    {
+      date: "25/03/2024",
+      text: "Sou analista de pesquisa e desenvolvimento e esse curso com certeza está fazendo toda diferença no meu dia-a-dia!! Muito obrigada! Recomendo demais!",
+      name: "Luana",
+      rating: 5
     }
   ];
 
@@ -395,12 +456,31 @@ const PowerBILanding = () => {
             </p>
           </div>
           
-          <div className="flex justify-center">
-            <img 
-              src="https://imgur.com/undefined"
-              alt="Depoimentos de Sucesso"
-              className="max-w-full h-auto rounded-lg shadow-lg"
-            />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className="bg-white border border-yellow-200 hover:border-yellow-400 transition-colors shadow-lg">
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                      ))}
+                    </div>
+                    <span className="text-sm text-gray-500">{testimonial.date}</span>
+                  </div>
+                  <p className="text-gray-700 mb-4 leading-relaxed">"{testimonial.text}"</p>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center">
+                      <span className="text-white font-bold text-sm">{testimonial.name.charAt(0)}</span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800">{testimonial.name}</p>
+                      <p className="text-sm text-gray-500">Aluno Certificado</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -542,4 +622,3 @@ const PowerBILanding = () => {
 };
 
 export default PowerBILanding;
-
