@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -281,8 +280,8 @@ const PowerBILanding = () => {
                   Quero me Tornar Expert Agora
                 </Button>
                 <div className="text-center">
-                  <div className="text-7xl font-black text-yellow-400 animate-pulse mb-2 drop-shadow-lg">R$ 297</div>
-                  <div className="text-xl font-bold text-yellow-300 animate-pulse mb-1">em até 12x de R$29,03 no cartão</div>
+                  <div className="text-7xl font-black text-yellow-400 animate-pulse mb-2 drop-shadow-lg">R$ 79,99</div>
+                  <div className="text-xl font-bold text-yellow-300 animate-pulse mb-1">em 8x de R$ 11,63* no cartão</div>
                   <div className="text-xl font-bold text-yellow-300 animate-pulse">Ou à vista no Boleto e Pix</div>
                 </div>
               </div>
@@ -391,42 +390,12 @@ const PowerBILanding = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Carlos Silva",
-                role: "Analista de Dados",
-                content: "Consegui uma promoção após dominar o Power BI. O curso é muito prático e direto ao ponto!",
-                rating: 5
-              },
-              {
-                name: "Ana Santos",
-                role: "Consultora BI",
-                content: "Excelente conteúdo! Agora consigo criar dashboards profissionais para meus clientes.",
-                rating: 5
-              },
-              {
-                name: "Roberto Lima",
-                role: "Gerente Comercial",
-                content: "Transformei a forma como analiso vendas na empresa. Recomendo para todos!",
-                rating: 5
-              }
-            ].map((testimonial, index) => (
-              <Card key={index} className="border-yellow-200 hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <div className="flex mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <p className="text-gray-600 mb-4 italic">"{testimonial.content}"</p>
-                  <div>
-                    <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-500">{testimonial.role}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="flex justify-center">
+            <img 
+              src="https://imgur.com/undefined"
+              alt="Depoimentos de Sucesso"
+              className="max-w-full h-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </section>
@@ -441,8 +410,8 @@ const PowerBILanding = () => {
           <Card className="max-w-md mx-auto bg-white text-gray-800 border-0 shadow-2xl">
             <CardContent className="p-8">
               <div className="text-center">
-                <div className="text-8xl font-black text-yellow-500 animate-bounce mb-3 drop-shadow-xl">R$ 297</div>
-                <div className="text-2xl font-bold text-yellow-600 animate-pulse mb-2">em até 12x de R$29,03 no cartão</div>
+                <div className="text-8xl font-black text-yellow-500 animate-bounce mb-3 drop-shadow-xl">R$ 79,99</div>
+                <div className="text-2xl font-bold text-yellow-600 animate-pulse mb-2">em 8x de R$ 11,63* no cartão</div>
                 <div className="text-2xl font-bold text-yellow-600 animate-pulse mb-6">Ou à vista no Boleto e Pix</div>
                 <div className="text-green-600 font-semibold mb-6">Economize 80%</div>
                 
