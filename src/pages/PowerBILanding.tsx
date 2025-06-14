@@ -424,25 +424,24 @@ const PowerBILanding = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               Benefícios do Curso
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Aproveite as aulas práticas e obtenha um certificado de conclusão
-            </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { number: '50+', label: 'Horas de Conteúdo' },
-              { number: '200+', label: 'Exercícios Práticos' },
-              { number: '15+', label: 'Projetos Reais' },
-              { number: '1 Ano', label: 'Acesso Completo' }
-            ].map((stat, index) => (
-              <Card key={index} className="text-center p-6 border-2 border-yellow-200 hover:border-yellow-400 transition-colors">
-                <CardContent className="p-0">
-                  <div className="text-3xl font-bold text-yellow-600 mb-2">{stat.number}</div>
-                  <div className="text-gray-600 font-medium">{stat.label}</div>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="max-w-4xl mx-auto space-y-8">
+            <Card className="p-8 border-2 border-yellow-200 hover:border-yellow-400 transition-colors">
+              <CardContent className="p-0">
+                <p className="text-lg text-gray-700 leading-relaxed text-center">
+                  Aprenda todos os recursos do Power BI transformando base de dados em relatórios dinâmicos e Dashboards profissionais na prática. Ganhe reconhecimento e qualificação para o mundo corporativo.
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="p-8 border-2 border-yellow-200 hover:border-yellow-400 transition-colors">
+              <CardContent className="p-0">
+                <p className="text-lg text-gray-700 leading-relaxed text-center">
+                  Ao final do curso você obtêm um certificado de conclusão com maestria, tendo a possibilidade de compartilhar no LinkedIn, aumentando suas conexões e network.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
