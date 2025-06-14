@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -313,7 +314,7 @@ const PowerBILanding = () => {
                   <Timer className="w-5 h-5 text-yellow-400" />
                   <span className="text-yellow-400 font-semibold">Oferta Especial Termina em:</span>
                 </div>
-                <div className="flex justify-center gap-4">
+                <div className="flex justify-center gap-4 mb-6">
                   <div className="text-center">
                     <div className="text-2xl font-bold bg-white/20 rounded-lg px-3 py-2">
                       {timeLeft.hours.toString().padStart(2, '0')}
@@ -333,16 +334,17 @@ const PowerBILanding = () => {
                     <div className="text-sm text-yellow-200 mt-1">Seg</div>
                   </div>
                 </div>
-              </div>
-
-              <div className="flex justify-center lg:justify-start">
-                <Button 
-                  onClick={handleCTAClick}
-                  size="lg" 
-                  className="bg-yellow-400 text-black hover:bg-yellow-500 text-lg px-8 py-6 font-bold"
-                >
-                  Quero me Tornar Expert Agora
-                </Button>
+                
+                {/* Button aligned with timer */}
+                <div className="flex justify-center">
+                  <Button 
+                    onClick={handleCTAClick}
+                    size="lg" 
+                    className="bg-yellow-400 text-black hover:bg-yellow-500 text-lg px-8 py-6 font-bold"
+                  >
+                    Quero me Tornar Expert Agora
+                  </Button>
+                </div>
               </div>
             </div>
             <div className="flex-1">
@@ -625,3 +627,4 @@ const PowerBILanding = () => {
 };
 
 export default PowerBILanding;
+
