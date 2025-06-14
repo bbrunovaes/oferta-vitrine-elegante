@@ -34,8 +34,8 @@ const PowerBILogo = ({ className = "w-16 h-16" }: { className?: string }) => {
       
       {/* Text */}
       <div className="flex flex-col text-center">
-        <span className="text-xl font-bold text-white leading-tight">PowerBI</span>
-        <span className="text-sm text-yellow-200 leading-tight">na prática</span>
+        <span className="text-xl font-bold text-white leading-tight">POWERBI</span>
+        <span className="text-sm text-yellow-200 leading-tight">NA PRÁTICA</span>
       </div>
     </div>
   );
