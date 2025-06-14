@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -339,7 +340,7 @@ const PowerBILanding = () => {
                   <Button 
                     onClick={handleCTAClick}
                     size="lg" 
-                    className="bg-yellow-400 text-black hover:bg-yellow-500 text-lg px-8 py-6 font-bold"
+                    className="bg-yellow-400 text-black hover:bg-yellow-500 text-xl px-12 py-8 font-bold text-center min-h-16"
                   >
                     Quero me Tornar Expert Agora
                   </Button>
@@ -527,7 +528,7 @@ const PowerBILanding = () => {
                 <Button 
                   onClick={handleCTAClick}
                   size="lg" 
-                  className="w-full bg-yellow-500 hover:bg-yellow-600 text-black text-lg py-6 font-bold"
+                  className="w-full bg-yellow-500 hover:bg-yellow-600 text-black text-xl py-8 font-bold min-h-16"
                 >
                   Quero me Tornar Expert Agora
                 </Button>
