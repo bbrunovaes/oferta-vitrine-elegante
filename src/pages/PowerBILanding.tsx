@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -367,10 +366,10 @@ const PowerBILanding = () => {
                     APENAS HOJE, OFERTA ESPECIAL
                   </div>
                 </div>
-                <div className="text-3xl font-bold text-white">
+                <div className="text-6xl font-bold text-white">
                   R$ 79,99<br />
-                  em 8x de R$ 11,63* no cartão<br />
-                  Ou à vista no Boleto e Pix
+                  <span className="text-4xl">em 8x de R$ 11,63* no cartão<br />
+                  Ou à vista no Boleto e Pix</span>
                 </div>
               </div>
             </div>
