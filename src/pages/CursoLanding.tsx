@@ -131,7 +131,7 @@ const CursoLanding = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="flex flex-col sm:flex-row gap-6 items-center justify-center lg:justify-start">
                 <Button 
                   onClick={handleCTAClick}
                   size="lg" 
@@ -139,11 +139,9 @@ const CursoLanding = () => {
                 >
                   Quero me Especializar Agora
                 </Button>
-                <div className="text-center sm:text-left">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2">
-                    <div className="text-5xl font-bold text-yellow-400 animate-pulse">R$ 59</div>
-                    <div className="text-lg text-yellow-300 animate-pulse">em até 6x de R$11,07 no cartão de crédito</div>
-                  </div>
+                <div className="text-center">
+                  <div className="text-5xl font-bold text-yellow-400 animate-pulse mb-2">R$ 59</div>
+                  <div className="text-lg text-yellow-300 animate-pulse mb-1">em até 6x de R$11,07 no cartão</div>
                   <div className="text-lg text-yellow-300 animate-pulse">Ou à vista no Boleto e Pix</div>
                 </div>
               </div>
@@ -242,7 +240,7 @@ const CursoLanding = () => {
             <CardContent className="p-8">
               <div className="text-center">
                 <div className="text-6xl font-bold text-yellow-500 animate-bounce mb-2">R$ 59</div>
-                <div className="text-xl text-yellow-600 animate-pulse mb-2">em até 6x de R$11,07 no cartão de crédito</div>
+                <div className="text-xl text-yellow-600 animate-pulse mb-2">em até 6x de R$11,07 no cartão</div>
                 <div className="text-xl text-yellow-600 animate-pulse mb-6">Ou à vista no Boleto e Pix</div>
                 <div className="text-green-600 font-semibold mb-6">Economize 70%</div>
                 
