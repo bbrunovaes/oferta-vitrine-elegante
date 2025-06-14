@@ -294,7 +294,7 @@ const PowerBILanding = () => {
                       <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
-                  <span className="text-xl font-bold">5.0</span>
+                  <span className="text-xl font-bold">4.7</span>
                 </div>
                 <p className="text-yellow-200">+10.000 alunos transformados</p>
               </div>
