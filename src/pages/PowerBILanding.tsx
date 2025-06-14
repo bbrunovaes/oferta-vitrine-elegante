@@ -42,7 +42,7 @@ const PowerBILanding = () => {
   }, []);
 
   const handleCTAClick = () => {
-    window.open('https://pay.hotmart.com/E45853768C?checkoutMode=10&ref=V100100631Q&bid=1749602698106', '_blank', 'noopener,noreferrer');
+    window.open('https://go.hotmart.com/H100100655T?ap=98ba', '_blank', 'noopener,noreferrer');
   };
 
   const handleEmailClick = () => {
