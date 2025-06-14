@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -359,17 +360,17 @@ const PowerBILanding = () => {
                 ></iframe>
               </div>
               
-              {/* Price Text Below Video - Centered with Box */}
+              {/* Price Text Below Video */}
               <div className="text-center mt-6">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-yellow-400/30">
-                  <div className="text-lg font-bold text-red-400 animate-pulse mb-2">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-yellow-400/30 mb-4">
+                  <div className="text-lg font-bold text-red-400 animate-pulse">
                     APENAS HOJE, OFERTA ESPECIAL
                   </div>
-                  <div className="text-2xl font-bold text-white">
-                    R$ 79,99<br />
-                    em 8x de R$ 11,63* no cartão<br />
-                    Ou à vista no Boleto e Pix
-                  </div>
+                </div>
+                <div className="text-3xl font-bold text-white">
+                  R$ 79,99<br />
+                  em 8x de R$ 11,63* no cartão<br />
+                  Ou à vista no Boleto e Pix
                 </div>
               </div>
             </div>
