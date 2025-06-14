@@ -440,13 +440,12 @@ const PowerBILanding = () => {
                 
                 <div className="space-y-3 mb-8">
                   {[
-                    "Acesso vitalício ao curso",
-                    "+80 aulas práticas",
+                    "Garantia de 7 dias",
                     "Certificado de conclusão",
-                    "Bases de dados para prática",
-                    "Suporte exclusivo",
-                    "Atualizações gratuitas",
-                    "Grupo VIP de alunos"
+                    "Estude do seu jeito e em qualquer dispositivo",
+                    "60 aulas e 30 horas de conteúdo original",
+                    "+52600 estudantes",
+                    "94% de avaliações positivas"
                   ].map((benefit, index) => (
                     <div key={index} className="flex items-center gap-3">
                       <Check className="w-5 h-5 text-yellow-500" />
