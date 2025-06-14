@@ -1,8 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Star, Users, Clock, Award, Phone, Mail, MapPin, Home, Timer, PlayCircle, BookOpen, TrendingUp, Database, BarChart3, Globe, Gift } from "lucide-react";
+import { Check, Star, Users, Clock, Award, Mail, MapPin, Home, Timer, PlayCircle, BookOpen, TrendingUp, Database, BarChart3, Globe, Gift } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -44,6 +43,10 @@ const PowerBILanding = () => {
 
   const handleCTAClick = () => {
     window.open('https://pay.hotmart.com/E45853768C?checkoutMode=10&ref=V100100631Q&bid=1749602698106', '_blank', 'noopener,noreferrer');
+  };
+
+  const handleEmailClick = () => {
+    window.open('mailto:relacionamento@viscari.com.br', '_blank');
   };
 
   const handleWhatsAppClick = () => {
@@ -612,11 +615,11 @@ const PowerBILanding = () => {
             
             <div className="mb-8">
               <Button 
-                onClick={handleWhatsAppClick}
-                className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 mx-auto"
+                onClick={handleEmailClick}
+                className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 mx-auto"
               >
-                <Phone className="w-5 h-5" />
-                Contato pelo WhatsApp
+                <Mail className="w-5 h-5" />
+                Contato por Email
               </Button>
             </div>
           </div>
