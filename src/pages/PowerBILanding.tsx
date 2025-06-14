@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -282,7 +283,9 @@ const PowerBILanding = () => {
                 </Button>
                 <div className="text-center">
                   <div className="text-sm font-bold text-red-400 animate-pulse mb-1">🔥 APENAS HOJE, OFERTA ESPECIAL 🔥</div>
-                  <div className="text-7xl font-black text-yellow-400 animate-pulse mb-2 drop-shadow-lg">R$ 79,99</div>
+                  <div className="flex items-baseline justify-center gap-2">
+                    <div className="text-7xl font-black text-yellow-400 animate-pulse drop-shadow-lg">R$ 79,99</div>
+                  </div>
                   <div className="text-xl font-bold text-yellow-300 animate-pulse mb-1">em 8x de R$ 11,63* no cartão</div>
                   <div className="text-xl font-bold text-yellow-300 animate-pulse">Ou à vista no Boleto e Pix</div>
                 </div>
@@ -409,14 +412,14 @@ const PowerBILanding = () => {
             Investimento que Transforma sua Carreira
           </h2>
           
-          <Card className="max-w-md mx-auto bg-white text-gray-800 border-0 shadow-2xl">
-            <CardContent className="p-8">
+          <Card className="max-w-lg mx-auto bg-white text-gray-800 border-0 shadow-2xl">
+            <CardContent className="p-10">
               <div className="text-center">
-                <div className="text-lg font-bold text-red-600 animate-pulse mb-3">🔥 APENAS HOJE, OFERTA ESPECIAL 🔥</div>
+                <div className="text-xl font-bold text-red-600 animate-pulse mb-6">🔥 APENAS HOJE, OFERTA ESPECIAL 🔥</div>
                 <div className="text-8xl font-black text-yellow-500 animate-bounce mb-3 drop-shadow-xl">R$ 79,99</div>
                 <div className="text-2xl font-bold text-yellow-600 animate-pulse mb-2">em 8x de R$ 11,63* no cartão</div>
                 <div className="text-2xl font-bold text-yellow-600 animate-pulse mb-6">Ou à vista no Boleto e Pix</div>
-                <div className="text-green-600 font-semibold mb-6">Economize 80%</div>
+                <div className="text-green-600 font-semibold mb-8">Economize 80%</div>
                 
                 <div className="space-y-3 mb-8">
                   {[
@@ -539,3 +542,4 @@ const PowerBILanding = () => {
 };
 
 export default PowerBILanding;
+
