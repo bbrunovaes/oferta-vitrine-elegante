@@ -24,6 +24,15 @@ const products: Product[] = [
     affiliateLink: '/curso-cutilagem',
     price: 'R$ 59,00',
     category: 'digitais'
+  },
+  {
+    id: '2',
+    title: 'POWER BI Expert na Prática | 2025',
+    description: 'Transforme dados em insights poderosos e torne-se um especialista em Business Intelligence mais requisitado do mercado.',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop',
+    affiliateLink: '/power-bi-curso',
+    price: 'R$ 297,00',
+    category: 'digitais'
   }
 ];
 
