@@ -4,6 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Check, Star, Users, Clock, Award, Mail, MapPin, Home, Timer, PlayCircle, BookOpen, TrendingUp, Database, BarChart3, Globe, Gift } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+import PowerBILogo from "@/components/PowerBILogo";
 
 const PowerBILanding = () => {
   const navigate = useNavigate();
@@ -280,13 +281,9 @@ const PowerBILanding = () => {
         <div className="relative container mx-auto px-4 py-20">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 text-center lg:text-left">
-              {/* Dynamic Gradient Logo */}
+              {/* New Logo */}
               <div className="mb-8">
-                <div className="inline-block p-4 rounded-full bg-gradient-to-r from-yellow-400/20 to-white/10 backdrop-blur-sm border border-yellow-400/30">
-                  <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600 rounded-full flex items-center justify-center shadow-lg">
-                    <span className="text-2xl font-bold text-black">PBI</span>
-                  </div>
-                </div>
+                <PowerBILogo />
               </div>
 
               {/* Rating Section */}
@@ -603,11 +600,8 @@ const PowerBILanding = () => {
       <footer className="bg-black text-white py-12">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center">
-                <span className="text-xl font-bold text-black">PBI</span>
-              </div>
-              <span className="text-xl font-bold">Power BI Expert na Prática</span>
+            <div className="flex items-center justify-center mb-4">
+              <PowerBILogo className="w-auto h-12" />
             </div>
             <p className="text-gray-400 mb-8">
               Transformando profissionais em especialistas em Business Intelligence desde 2020.
