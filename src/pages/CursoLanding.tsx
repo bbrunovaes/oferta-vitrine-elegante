@@ -242,77 +242,48 @@ const CursoLanding = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {[
-              {
-                name: "Maria Silva",
-                location: "São Paulo, SP",
-                rating: 5,
-                text: "O curso da Faby mudou minha vida! Aprendi técnicas que nunca imaginei e hoje tenho uma clientela fiel. Recomendo para todas as manicures!",
-                image: "https://images.unsplash.com/photo-1494790108755-2616b612b1c0?w=80&h=80&fit=crop&crop=face"
-              },
-              {
-                name: "Ana Santos",
-                location: "Rio de Janeiro, RJ",
-                rating: 5,
-                text: "Estava começando do zero e com o curso consegui dominar a cutilagem perfeita. Meus clientes sempre elogiam o acabamento!",
-                image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face"
-              },
-              {
-                name: "Carla Oliveira",
-                location: "Belo Horizonte, MG",
-                rating: 5,
-                text: "Já era manicure há anos, mas o curso me ensinou técnicas avançadas que fizeram toda a diferença. Aumentei meus preços e a qualidade!",
-                image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop&crop=face"
-              },
-              {
-                name: "Juliana Costa",
-                location: "Salvador, BA",
-                rating: 5,
-                text: "O conteúdo é muito completo e as explicações são claras. Consegui aprender no meu ritmo e já estou aplicando com minhas clientes!",
-                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face"
-              },
-              {
-                name: "Fernanda Lima",
-                location: "Brasília, DF",
-                rating: 5,
-                text: "Investimento que valeu cada centavo! A Faby ensina com tanto carinho e paciência. Me sinto mais confiante no meu trabalho.",
-                image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=80&h=80&fit=crop&crop=face"
-              },
-              {
-                name: "Patricia Rocha",
-                location: "Fortaleza, CE",
-                rating: 5,
-                text: "Curso incrível! Aprendi técnicas que me ajudaram a me destacar no mercado. Hoje tenho agenda lotada graças ao conhecimento adquirido!",
-                image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=80&h=80&fit=crop&crop=face"
-              }
-            ].map((testimonial, index) => (
-              <Card key={index} className="border-pink-200 hover:shadow-lg transition-shadow bg-white">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    <img 
-                      src={testimonial.image} 
-                      alt={testimonial.name}
-                      className="w-12 h-12 rounded-full object-cover mr-4"
-                    />
-                    <div>
-                      <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
-                      <p className="text-sm text-gray-500">{testimonial.location}</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex mb-3">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  
-                  <div className="relative">
-                    <Quote className="w-6 h-6 text-pink-300 absolute -top-2 -left-1" />
-                    <p className="text-gray-600 italic pl-6">{testimonial.text}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            <div className="flex justify-center">
+              <img 
+                src="https://i.imgur.com/wKwZGL5.png" 
+                alt="Depoimento de cliente 1"
+                className="rounded-lg shadow-lg max-w-full h-auto"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src="https://i.imgur.com/HBiGvRr.png" 
+                alt="Depoimento de cliente 2"
+                className="rounded-lg shadow-lg max-w-full h-auto"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src="https://i.imgur.com/D5Uq0Dc.png" 
+                alt="Depoimento de cliente 3"
+                className="rounded-lg shadow-lg max-w-full h-auto"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src="https://i.imgur.com/JgCgajg.png" 
+                alt="Depoimento de cliente 4"
+                className="rounded-lg shadow-lg max-w-full h-auto"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src="https://i.imgur.com/D4YnskX.png" 
+                alt="Depoimento de cliente 5"
+                className="rounded-lg shadow-lg max-w-full h-auto"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img 
+                src="https://i.imgur.com/R1xbrib.png" 
+                alt="Depoimento de cliente 6"
+                className="rounded-lg shadow-lg max-w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </section>
