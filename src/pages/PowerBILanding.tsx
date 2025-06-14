@@ -359,13 +359,17 @@ const PowerBILanding = () => {
                 ></iframe>
               </div>
               
-              {/* Price Text Below Video - Centered */}
+              {/* Price Text Below Video - Centered with Box */}
               <div className="text-center mt-6">
-                <div className="text-lg font-bold text-red-400 animate-pulse">
-                  APENAS HOJE, OFERTA ESPECIAL<br />
-                  R$ 79,99<br />
-                  em 8x de R$ 11,63* no cartão<br />
-                  Ou à vista no Boleto e Pix
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-yellow-400/30">
+                  <div className="text-lg font-bold text-red-400 animate-pulse mb-2">
+                    APENAS HOJE, OFERTA ESPECIAL
+                  </div>
+                  <div className="text-2xl font-bold text-white">
+                    R$ 79,99<br />
+                    em 8x de R$ 11,63* no cartão<br />
+                    Ou à vista no Boleto e Pix
+                  </div>
                 </div>
               </div>
             </div>
@@ -497,7 +501,7 @@ const PowerBILanding = () => {
           <Card className="max-w-lg mx-auto bg-white text-gray-800 border-0 shadow-2xl">
             <CardContent className="p-10">
               <div className="text-center">
-                <div className="text-xl font-bold text-red-600 animate-pulse mb-6">🔥 APENAS HOJE, OFERTA ESPECIAL 🔥</div>
+                <div className="text-xl font-bold text-red-600 animate-pulse mb-6">APENAS HOJE, OFERTA ESPECIAL</div>
                 <div className="text-8xl font-black text-yellow-500 animate-bounce mb-3 drop-shadow-xl">R$ 79,99</div>
                 <div className="text-2xl font-bold text-yellow-600 animate-pulse mb-2">em 8x de R$ 11,63* no cartão</div>
                 <div className="text-2xl font-bold text-yellow-600 animate-pulse mb-6">Ou à vista no Boleto e Pix</div>
