@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -151,7 +150,7 @@ const CursoLanding = () => {
             </div>
             <div className="flex-1">
               <img 
-                src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=600&h=400&fit=crop" 
+                src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=400&fit=crop" 
                 alt="Curso de Cutilagem - Manicure Profissional" 
                 className="rounded-2xl shadow-2xl"
               />
