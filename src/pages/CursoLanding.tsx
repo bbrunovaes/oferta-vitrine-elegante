@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Check, Star, Users, Clock, Award, Phone, Mail, MapPin, Home, Timer, Quote } from "lucide-react";
+import { Check, Star, Users, Clock, Award, Phone, Mail, MapPin, Home, Timer, Quote, Hand, Palette } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -74,11 +74,12 @@ const CursoLanding = () => {
         <div className="relative container mx-auto px-4 py-20">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 text-center lg:text-left">
-              {/* Dynamic Gradient Logo */}
+              {/* Logo with Hand and Nail Polish */}
               <div className="mb-8">
                 <div className="inline-block p-4 rounded-full bg-gradient-to-r from-white/20 to-pink-200/30 backdrop-blur-sm border border-white/20">
-                  <div className="w-16 h-16 bg-gradient-to-br from-pink-100 to-white rounded-full flex items-center justify-center">
-                    <span className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-pink-700 bg-clip-text text-transparent">FC</span>
+                  <div className="w-16 h-16 bg-gradient-to-br from-pink-100 to-white rounded-full flex items-center justify-center relative">
+                    <Hand className="w-6 h-6 text-pink-600 absolute left-2" />
+                    <Palette className="w-6 h-6 text-pink-700 absolute right-2" />
                   </div>
                 </div>
               </div>
@@ -412,8 +413,9 @@ const CursoLanding = () => {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center">
-                <span className="text-xl font-bold">FC</span>
+              <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center relative">
+                <Hand className="w-5 h-5 text-white absolute left-1" />
+                <Palette className="w-5 h-5 text-white absolute right-1" />
               </div>
               <span className="text-xl font-bold">Faby Cardoso</span>
             </div>
