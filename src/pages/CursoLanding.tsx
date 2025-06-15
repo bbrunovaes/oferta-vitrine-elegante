@@ -150,10 +150,9 @@ const CursoLanding = () => {
               />
               {/* Price section moved below image */}
               <div className="text-center mt-6">
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-white">
-                  <div className="text-4xl font-black text-yellow-300 animate-pulse drop-shadow-lg">R$ 59</div>
-                  <div className="text-lg font-bold text-yellow-200 animate-pulse">em até 6x de R$11,07 no cartão</div>
-                  <div className="text-lg font-bold text-yellow-200 animate-pulse">Ou à vista no Boleto e Pix</div>
+                <div className="flex flex-col items-center justify-center text-white">
+                  <div className="text-2xl font-bold text-yellow-200 animate-pulse">R$ 59 em até 6x de R$11,07 no cartão</div>
+                  <div className="text-2xl font-bold text-yellow-200 animate-pulse">Ou à vista no Boleto e Pix</div>
                 </div>
               </div>
             </div>
