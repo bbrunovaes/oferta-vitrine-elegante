@@ -43,14 +43,53 @@ const CursoLanding = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const handleCTAClick = () => {
-    window.open('https://pay.hotmart.com/E45853768C?checkoutMode=10&ref=V100100631Q&bid=1749602698106', '_blank', 'noopener,noreferrer');
-  };
+const handleCTAClick = () => {
+  if (typeof window.gtag !== 'undefined') {
+    window.gtag('event', 'conversion', {
+      send_to: 'AW-17134704123/C85FCMSF3dsaEPuru-o_',
+      value: 59.0,
+      currency: 'BRL',
+      transaction_id: '',
+      event_callback: () => {
+        window.open(
+          'https://pay.hotmart.com/E45853768C?checkoutMode=10&ref=V100100631Q&bid=1749602698106',
+          '_blank',
+          'noopener,noreferrer'
+        );
+      }
+    });
+  } else {
+    window.open(
+      'https://pay.hotmart.com/E45853768C?checkoutMode=10&ref=V100100631Q&bid=1749602698106',
+      '_blank',
+      'noopener,noreferrer'
+    );
+  }
+};
 
-  const handleWhatsAppClick = () => {
-    window.open('https://go.hotmart.com/V100100631Q?ap=770a', '_blank', 'noopener,noreferrer');
-  };
-
+const handleWhatsAppClick = () => {
+  if (typeof window.gtag !== 'undefined') {
+    window.gtag('event', 'conversion', {
+      send_to: 'AW-17134704123/C85FCMSF3dsaEPuru-o_',
+      value: 59.0,
+      currency: 'BRL',
+      transaction_id: '',
+      event_callback: () => {
+        window.open(
+          'https://go.hotmart.com/V100100631Q?ap=770a',
+          '_blank',
+          'noopener,noreferrer'
+        );
+      }
+    });
+  } else {
+    window.open(
+      'https://go.hotmart.com/V100100631Q?ap=770a',
+      '_blank',
+      'noopener,noreferrer'
+    );
+  }
+};
   const handleHomeClick = () => {
     navigate('/');
   };
