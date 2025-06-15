@@ -31,7 +31,7 @@ const products: Product[] = [
     description: 'Transforme dados em insights poderosos e torne-se um especialista em Business Intelligence mais requisitado do mercado.',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop',
     affiliateLink: '/power-bi-curso',
-    price: 'R$ 297,00',
+    price: 'R$ 79,99',
     category: 'digitais'
   }
 ];
