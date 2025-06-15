@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -137,7 +138,7 @@ const CursoLanding = () => {
                 <Button 
                   onClick={handleCTAClick}
                   size="lg" 
-                  className="bg-white text-pink-600 hover:bg-pink-50 text-lg px-8 py-6 mb-6"
+                  className="bg-white text-pink-600 hover:bg-pink-50 text-2xl px-16 py-12 mb-6"
                 >
                   Quero me Especializar Agora
                 </Button>
@@ -325,7 +326,7 @@ const CursoLanding = () => {
                 <Button 
                   onClick={handleCTAClick}
                   size="lg" 
-                  className="w-full bg-pink-500 hover:bg-pink-600 text-white text-lg py-6"
+                  className="w-full bg-pink-500 hover:bg-pink-600 text-white text-2xl py-12"
                 >
                   Garantir Minha Vaga Agora
                 </Button>
@@ -448,3 +449,4 @@ const CursoLanding = () => {
 };
 
 export default CursoLanding;
+
