@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -133,19 +132,14 @@ const CursoLanding = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-6 items-center justify-center lg:justify-start">
+              <div className="flex flex-col items-center justify-center lg:justify-start">
                 <Button 
                   onClick={handleCTAClick}
                   size="lg" 
-                  className="bg-white text-pink-600 hover:bg-pink-50 text-lg px-8 py-6"
+                  className="bg-white text-pink-600 hover:bg-pink-50 text-lg px-8 py-6 mb-6"
                 >
                   Quero me Especializar Agora
                 </Button>
-                <div className="text-center">
-                  <div className="text-7xl font-black text-yellow-300 animate-pulse mb-2 drop-shadow-lg">R$ 59</div>
-                  <div className="text-xl font-bold text-yellow-200 animate-pulse mb-1">em até 6x de R$11,07 no cartão</div>
-                  <div className="text-xl font-bold text-yellow-200 animate-pulse">Ou à vista no Boleto e Pix</div>
-                </div>
               </div>
             </div>
             <div className="flex-1">
@@ -154,6 +148,14 @@ const CursoLanding = () => {
                 alt="Curso de Cutilagem - Manicure Profissional" 
                 className="rounded-2xl shadow-2xl"
               />
+              {/* Price section moved below image */}
+              <div className="text-center mt-6">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-white">
+                  <div className="text-4xl font-black text-yellow-300 animate-pulse drop-shadow-lg">R$ 59</div>
+                  <div className="text-lg font-bold text-yellow-200 animate-pulse">em até 6x de R$11,07 no cartão</div>
+                  <div className="text-lg font-bold text-yellow-200 animate-pulse">Ou à vista no Boleto e Pix</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
