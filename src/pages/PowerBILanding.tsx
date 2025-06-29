@@ -41,11 +41,29 @@ const PowerBILanding = () => {
 
     return () => clearInterval(timer);
   }, []);
-
-  const handleCTAClick = () => {
-    window.open('https://go.hotmart.com/H100100655T?ap=98ba', '_blank', 'noopener,noreferrer');
+const gtag_report_conversion = (url: string) => {
+  const callback = () => {
+    if (typeof url !== 'undefined') {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
   };
 
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'conversion', {
+      send_to: 'AW-17134704123/BR5ACL_N0-UaEPuru-o_',
+      transaction_id: '',
+      event_callback: callback,
+    });
+  } else {
+    // fallback caso o gtag não esteja carregado ainda
+    callback();
+  }
+
+  return false;
+};
+  const handleCTAClick = () => {
+  gtag_report_conversion('https://go.hotmart.com/H100100655T?ap=98ba');
+};
   const handleEmailClick = () => {
     window.open('mailto:relacionamento@viscari.com.br', '_blank');
   };
