@@ -33,6 +33,15 @@ const products: Product[] = [
     affiliateLink: '/power-bi-curso',
     price: 'R$ 79,99',
     category: 'digitais'
+  },
+  {
+    id: '3',
+    title: 'Método CAPS - Transformação Completa',
+    description: 'Sistema completo que já ajudou milhares de pessoas a conquistarem resultados extraordinários em apenas 30 dias.',
+    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop',
+    affiliateLink: '/monetizze-landing',
+    price: 'R$ 97,00',
+    category: 'digitais'
   }
 ];
 
