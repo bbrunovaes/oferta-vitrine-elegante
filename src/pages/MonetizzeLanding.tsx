@@ -2,12 +2,19 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Star, Users, Clock, Shield, Trophy, Heart, Zap, Droplets, Leaf } from "lucide-react";
+import { CheckCircle, Star, Users, Clock, Shield, Trophy, Heart, Zap, Droplets, Leaf, ArrowLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const MonetizzeLanding = () => {
+  const navigate = useNavigate();
+
   const handleCTAClick = () => {
     // Aqui você pode adicionar o link de afiliado real do SB2 Turbo
     console.log("CTA clicked - redirect to SB2 Turbo affiliate link");
+  };
+
+  const handleBackClick = () => {
+    navigate('/');
   };
 
   return (
@@ -16,7 +23,18 @@ const MonetizzeLanding = () => {
       <header className="bg-white shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-2xl font-bold text-red-600">SB2 Turbo</div>
+            <div className="flex items-center gap-4">
+              <Button
+                onClick={handleBackClick}
+                variant="outline"
+                size="sm"
+                className="flex items-center gap-2"
+              >
+                <ArrowLeft className="w-4 h-4" />
+                Voltar ao Início
+              </Button>
+              <div className="text-2xl font-bold text-red-600">SB2 Turbo</div>
+            </div>
             <Badge variant="destructive" className="animate-pulse text-lg px-4 py-2">
               OFERTA LIMITADA
             </Badge>
