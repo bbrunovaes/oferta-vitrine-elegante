@@ -74,6 +74,119 @@ const MonetizzeLanding = () => {
         </div>
       </section>
 
+      {/* New Section - Imagine viver com mais energia */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+              Imagine viver com mais energia, confiança e leveza
+            </h2>
+            <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-8">
+              O SB2 Turbo é o aliado perfeito para quem deseja emagrecer com saúde e segurança. 
+              Nossa fórmula exclusiva, baseada em ingredientes naturais de alta performance, 
+              foi desenvolvida para ajudar você a:
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-8">
+              <div className="flex items-center gap-3 text-left">
+                <CheckCircle className="w-6 h-6 text-red-500 flex-shrink-0" />
+                <span className="text-lg text-gray-700">Reduzir medidas de forma acelerada e eficaz</span>
+              </div>
+              <div className="flex items-center gap-3 text-left">
+                <CheckCircle className="w-6 h-6 text-red-500 flex-shrink-0" />
+                <span className="text-lg text-gray-700">Controlar a fome e evitar compulsões</span>
+              </div>
+              <div className="flex items-center gap-3 text-left">
+                <CheckCircle className="w-6 h-6 text-red-500 flex-shrink-0" />
+                <span className="text-lg text-gray-700">Aumentar sua energia e disposição diária</span>
+              </div>
+              <div className="flex items-center gap-3 text-left">
+                <CheckCircle className="w-6 h-6 text-red-500 flex-shrink-0" />
+                <span className="text-lg text-gray-700">Resgatar sua autoestima e bem-estar</span>
+              </div>
+            </div>
+            
+            <p className="text-xl font-semibold text-red-600 mb-6">
+              Não espere mais! O SB2 Turbo é a chave para transformar seu corpo e sua vida.
+            </p>
+            
+            <Button 
+              onClick={handleCTAClick}
+              size="lg"
+              className="bg-red-600 hover:bg-red-500 text-white font-bold text-xl px-12 py-6 rounded-full"
+            >
+              🔥 Transforme-se hoje mesmo com SB2 Turbo!
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Ingredients Section */}
+      <section className="py-16 bg-red-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              O que faz o SB2 Turbo tão especial?
+            </h2>
+            <p className="text-xl text-gray-600">
+              Ingredientes naturais cientificamente comprovados
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {[
+              {
+                name: "Picolinato de Cromo",
+                description: "Auxilia na regulação do apetite e no controle dos níveis de açúcar, favorecendo a perda de peso"
+              },
+              {
+                name: "Psyllium", 
+                description: "Aumenta a saciedade e melhora o trânsito intestinal, contribuindo para o controle do peso"
+              },
+              {
+                name: "Chia",
+                description: "Rica em fibras, ajuda a controlar o apetite e regula o intestino, auxiliando na perda de peso"
+              },
+              {
+                name: "Colágeno",
+                description: "Proteína essencial que dá firmeza e elasticidade à pele, cabelos, unhas e articulações"
+              },
+              {
+                name: "Espirulina",
+                description: "Rica em nutrientes, promove saciedade e auxilia no controle do apetite, ajudando na perda de peso"
+              },
+              {
+                name: "Laranja Moro",
+                description: "Sua alta concentração de antioxidantes e fibra pode ajudar a reduzir a gordura abdominal e melhorar o metabolismo"
+              }
+            ].map((ingredient, index) => (
+              <Card key={index} className="border-red-200 hover:border-red-400 transition-colors">
+                <CardContent className="p-6">
+                  <h3 className="font-bold text-lg mb-3 text-red-700">{ingredient.name}</h3>
+                  <p className="text-gray-600">{ingredient.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="bg-white rounded-2xl p-8 mb-8 border-2 border-red-200">
+            <h3 className="text-xl font-bold text-red-700 mb-4 text-center">
+              Além de conter também:
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold text-gray-800 mb-2">L-tirosina, L-carnitina e L-arginina</h4>
+                <p className="text-gray-600">Compostos especiais que melhoram o metabolismo, aumentam a energia e promovem a queima de gordura, auxiliando na perda de peso</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-800 mb-2">Zinco + Pectina + Inulina + Cálcio</h4>
+                <p className="text-gray-600">Ajudam a melhorar a digestão, aumentar a saciedade e fortalecer os ossos, colaborando para o controle de peso</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Trust Indicators */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
