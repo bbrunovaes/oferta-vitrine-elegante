@@ -17,7 +17,7 @@ const MonetizzeLanding = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-bold text-red-600">SB2 Turbo</div>
-            <Badge variant="destructive" className="animate-pulse">
+            <Badge variant="destructive" className="animate-pulse text-lg px-4 py-2">
               OFERTA LIMITADA
             </Badge>
           </div>
@@ -27,7 +27,7 @@ const MonetizzeLanding = () => {
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-r from-red-500 to-red-600 text-white">
         <div className="container mx-auto px-4 text-center">
-          <Badge className="mb-6 bg-red-100 text-red-800 hover:bg-red-200">
+          <Badge className="mb-6 bg-red-100 text-red-800 hover:bg-red-200 text-lg px-6 py-3">
             💖 MAIS DE 50.000 MULHERES TRANSFORMADAS
           </Badge>
           
@@ -49,26 +49,36 @@ const MonetizzeLanding = () => {
               <Star className="w-5 h-5 text-yellow-300 fill-current" />
               <Star className="w-5 h-5 text-yellow-300 fill-current" />
               <Star className="w-5 h-5 text-yellow-300 fill-current" />
-              <span className="ml-2">4.9/5 (8.547 avaliações)</span>
+              <span className="ml-2 text-lg">4.9/5 (8.547 avaliações)</span>
             </div>
           </div>
 
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-md mx-auto mb-8">
-            <div className="text-sm opacity-90 mb-2">De R$ 197,00 por apenas</div>
-            <div className="text-5xl font-bold text-red-200 mb-2">R$ 67</div>
-            <div className="text-lg">ou 12x de R$ 6,70</div>
-            <div className="text-sm mt-2 opacity-90">💳 Cartão | 💰 PIX | 🎫 Boleto</div>
+            <div className="text-lg opacity-90 mb-2">De R$ 197,00 por apenas</div>
+            <div className="text-7xl font-bold text-red-200 mb-2">R$ 67</div>
+            <div className="text-2xl">ou 12x de R$ 6,70</div>
+            <div className="text-lg mt-2 opacity-90">💳 Cartão | 💰 PIX | 🎫 Boleto</div>
           </div>
 
           <Button 
             onClick={handleCTAClick}
             size="lg"
-            className="bg-red-100 hover:bg-white text-red-600 font-bold text-xl px-12 py-6 rounded-full transform hover:scale-105 transition-all duration-200 shadow-lg"
+            className="bg-red-100 hover:bg-white text-red-600 font-bold text-2xl px-16 py-8 rounded-full transform hover:scale-105 transition-all duration-200 shadow-lg mb-6"
           >
             💖 QUERO EMAGRECER COM SAÚDE
           </Button>
 
-          <p className="text-sm mt-4 opacity-90">
+          <div className="mb-6">
+            <Button 
+              onClick={handleCTAClick}
+              size="lg"
+              className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold text-2xl px-16 py-8 rounded-full transform hover:scale-105 transition-all duration-200 shadow-lg"
+            >
+              🔥 GARANTIR MINHA TRANSFORMAÇÃO
+            </Button>
+          </div>
+
+          <p className="text-lg mt-4 opacity-90">
             ⏰ Oferta válida por tempo limitado
           </p>
         </div>
@@ -113,10 +123,20 @@ const MonetizzeLanding = () => {
             <Button 
               onClick={handleCTAClick}
               size="lg"
-              className="bg-red-600 hover:bg-red-500 text-white font-bold text-xl px-12 py-6 rounded-full"
+              className="bg-red-600 hover:bg-red-500 text-white font-bold text-2xl px-16 py-8 rounded-full mb-4"
             >
               🔥 Transforme-se hoje mesmo com SB2 Turbo!
             </Button>
+
+            <div className="mt-4">
+              <Button 
+                onClick={handleCTAClick}
+                size="lg"
+                className="bg-green-600 hover:bg-green-500 text-white font-bold text-2xl px-16 py-8 rounded-full"
+              >
+                ✅ COMEÇAR MINHA JORNADA AGORA
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -184,6 +204,16 @@ const MonetizzeLanding = () => {
               </div>
             </div>
           </div>
+
+          <div className="text-center">
+            <Button 
+              onClick={handleCTAClick}
+              size="lg"
+              className="bg-red-600 hover:bg-red-500 text-white font-bold text-2xl px-16 py-8 rounded-full"
+            >
+              💊 QUERO ESTES INGREDIENTES AGORA
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -212,6 +242,16 @@ const MonetizzeLanding = () => {
               <div className="text-gray-600">Garantia</div>
             </div>
           </div>
+
+          <div className="text-center mt-12">
+            <Button 
+              onClick={handleCTAClick}
+              size="lg"
+              className="bg-purple-600 hover:bg-purple-500 text-white font-bold text-2xl px-16 py-8 rounded-full"
+            >
+              🏆 FAZER PARTE DO SUCESSO
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -227,7 +267,7 @@ const MonetizzeLanding = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {[
               {
                 icon: <Zap className="w-12 h-12 text-red-500" />,
@@ -259,6 +299,16 @@ const MonetizzeLanding = () => {
               </Card>
             ))}
           </div>
+
+          <div className="text-center">
+            <Button 
+              onClick={handleCTAClick}
+              size="lg"
+              className="bg-orange-600 hover:bg-orange-500 text-white font-bold text-2xl px-16 py-8 rounded-full"
+            >
+              ⚡ QUERO ESTES BENEFÍCIOS
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -274,7 +324,7 @@ const MonetizzeLanding = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {[
               {
                 name: "Carla Mendes",
@@ -315,6 +365,16 @@ const MonetizzeLanding = () => {
               </Card>
             ))}
           </div>
+
+          <div className="text-center">
+            <Button 
+              onClick={handleCTAClick}
+              size="lg"
+              className="bg-pink-600 hover:bg-pink-500 text-white font-bold text-2xl px-16 py-8 rounded-full"
+            >
+              💖 QUERO MEU DEPOIMENTO AQUI
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -327,7 +387,7 @@ const MonetizzeLanding = () => {
             </h2>
           </div>
 
-          <div className="max-w-3xl mx-auto space-y-6">
+          <div className="max-w-3xl mx-auto space-y-6 mb-12">
             {[
               {
                 question: "Em quanto tempo vou ver resultados?",
@@ -354,6 +414,16 @@ const MonetizzeLanding = () => {
               </Card>
             ))}
           </div>
+
+          <div className="text-center">
+            <Button 
+              onClick={handleCTAClick}
+              size="lg"
+              className="bg-blue-600 hover:bg-blue-500 text-white font-bold text-2xl px-16 py-8 rounded-full"
+            >
+              ❓ TIRAR MINHAS DÚVIDAS AGORA
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -369,20 +439,30 @@ const MonetizzeLanding = () => {
           </p>
           
           <div className="bg-black/20 rounded-2xl p-8 max-w-md mx-auto mb-8">
-            <div className="text-6xl font-bold text-red-200 mb-2">R$ 67</div>
-            <div className="text-xl">12x de R$ 6,70 sem juros</div>
-            <div className="text-sm mt-2 opacity-90">Entrega rápida e discreta</div>
+            <div className="text-8xl font-bold text-red-200 mb-2">R$ 67</div>
+            <div className="text-2xl">12x de R$ 6,70 sem juros</div>
+            <div className="text-lg mt-2 opacity-90">Entrega rápida e discreta</div>
           </div>
 
           <Button 
             onClick={handleCTAClick}
             size="lg"
-            className="bg-red-100 hover:bg-white text-red-600 font-bold text-2xl px-16 py-8 rounded-full transform hover:scale-105 transition-all duration-200 shadow-2xl"
+            className="bg-red-100 hover:bg-white text-red-600 font-bold text-3xl px-20 py-10 rounded-full transform hover:scale-105 transition-all duration-200 shadow-2xl mb-6"
           >
             🔥 COMECE AGORA SUA TRANSFORMAÇÃO
           </Button>
 
-          <p className="text-sm mt-6 opacity-90">
+          <div className="mb-4">
+            <Button 
+              onClick={handleCTAClick}
+              size="lg"
+              className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold text-3xl px-20 py-10 rounded-full transform hover:scale-105 transition-all duration-200 shadow-2xl"
+            >
+              ⚡ ÚLTIMA CHANCE - COMPRAR AGORA
+            </Button>
+          </div>
+
+          <p className="text-lg mt-6 opacity-90">
             💡 Pagamento 100% seguro | 🛡️ Garantia de 7 dias
           </p>
         </div>
@@ -401,18 +481,28 @@ const MonetizzeLanding = () => {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <Badge className="bg-red-100 text-red-800">🔒 Site Protegido SSL</Badge>
-            <Badge className="bg-red-100 text-red-800">💳 Pagamento Seguro</Badge>
-            <Badge className="bg-red-100 text-red-800">📦 Entrega Garantida</Badge>
+            <Badge className="bg-red-100 text-red-800 text-lg px-4 py-2">🔒 Site Protegido SSL</Badge>
+            <Badge className="bg-red-100 text-red-800 text-lg px-4 py-2">💳 Pagamento Seguro</Badge>
+            <Badge className="bg-red-100 text-red-800 text-lg px-4 py-2">📦 Entrega Garantida</Badge>
           </div>
           
           <Button 
             onClick={handleCTAClick}
             size="lg"
-            className="bg-red-600 hover:bg-red-500 text-white font-bold text-xl px-12 py-6 rounded-full"
+            className="bg-red-600 hover:bg-red-500 text-white font-bold text-2xl px-16 py-8 rounded-full mb-4"
           >
             COMEÇAR AGORA SEM RISCOS
           </Button>
+
+          <div className="mt-4">
+            <Button 
+              onClick={handleCTAClick}
+              size="lg"
+              className="bg-green-600 hover:bg-green-500 text-white font-bold text-2xl px-16 py-8 rounded-full"
+            >
+              🛡️ GARANTIA TOTAL - COMPRAR
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -423,6 +513,17 @@ const MonetizzeLanding = () => {
           <p className="text-gray-400 mb-6">
             Transformando a vida das mulheres brasileiras
           </p>
+
+          <div className="mb-6">
+            <Button 
+              onClick={handleCTAClick}
+              size="lg"
+              className="bg-red-600 hover:bg-red-500 text-white font-bold text-xl px-12 py-6 rounded-full"
+            >
+              🚀 ÚLTIMA OPORTUNIDADE
+            </Button>
+          </div>
+
           <div className="text-sm text-gray-500">
             © 2024 SB2 Turbo. Todos os direitos reservados.
           </div>
