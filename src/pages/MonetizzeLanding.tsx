@@ -1,9 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CheckCircle, Star, Users, Clock, Shield, Trophy, Heart, Zap, Droplets, Leaf, ArrowLeft, Gift, Truck } from "lucide-react";
+import { CheckCircle, Star, Users, Clock, Shield, Trophy, Heart, Zap, Droplets, Leaf, ArrowLeft, Gift, Truck, Phone, Mail } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const MonetizzeLanding = () => {
@@ -72,13 +71,6 @@ const MonetizzeLanding = () => {
             </div>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-md mx-auto mb-8">
-            <div className="text-lg opacity-90 mb-2">De R$ 197,00 por apenas</div>
-            <div className="text-8xl font-bold text-red-200 mb-2">R$ 67</div>
-            <div className="text-3xl">ou 12x de R$ 6,70</div>
-            <div className="text-lg mt-2 opacity-90">💳 Cartão | 💰 PIX | 🎫 Boleto</div>
-          </div>
-
           <Button 
             onClick={handleCTAClick}
             size="lg"
@@ -100,6 +92,180 @@ const MonetizzeLanding = () => {
           <p className="text-xl mt-4 opacity-90">
             ⏰ Oferta válida por tempo limitado
           </p>
+        </div>
+      </section>
+
+      {/* Package Cards Section - Moved to top */}
+      <section className="py-16 bg-red-600">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              🔥 ESCOLHA SEU PACOTE
+            </h2>
+            <p className="text-xl text-red-100 max-w-2xl mx-auto">
+              Quanto mais você compra, mais você economiza!
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
+            {/* Pacote Premium */}
+            <Card className="bg-red-700 border-red-500 text-white hover:bg-red-600 transition-colors relative">
+              <CardContent className="p-6 text-center">
+                <h3 className="font-bold text-xl mb-2 text-yellow-300">Pacote Premium</h3>
+                <div className="text-lg mb-2">6 unidades</div>
+                <div className="mb-4">
+                  <div className="text-sm opacity-75 line-through">De R$ 1.014,00</div>
+                  <div className="text-lg font-semibold">12x de R$ 37,85</div>
+                  <div className="text-2xl font-bold text-yellow-300">R$ 377,00 à vista</div>
+                </div>
+                <Button 
+                  onClick={handleCTAClick}
+                  className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold mb-4"
+                >
+                  COMPRAR AGORA
+                </Button>
+                <div className="text-xs space-y-1">
+                  <div className="flex items-center justify-center gap-1">
+                    <Truck className="w-3 h-3" />
+                    <span>Frete grátis para todo o Brasil</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-1">
+                    <Gift className="w-3 h-3" />
+                    <span>+2 ebooks grátis</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Pacote Turbo */}
+            <Card className="bg-red-700 border-red-500 text-white hover:bg-red-600 transition-colors">
+              <CardContent className="p-6 text-center">
+                <h3 className="font-bold text-xl mb-2 text-yellow-300">Pacote Turbo</h3>
+                <div className="text-lg mb-2">4 unidades</div>
+                <div className="mb-4">
+                  <div className="text-sm opacity-75 line-through">De R$ 676,00</div>
+                  <div className="text-lg font-semibold">12x de R$ 25,80</div>
+                  <div className="text-2xl font-bold text-yellow-300">R$ 257,00 à vista</div>
+                </div>
+                <Button 
+                  onClick={handleCTAClick}
+                  className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold mb-4"
+                >
+                  COMPRAR AGORA
+                </Button>
+                <div className="text-xs space-y-1">
+                  <div className="flex items-center justify-center gap-1">
+                    <Truck className="w-3 h-3" />
+                    <span>Frete grátis para todo o Brasil</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-1">
+                    <Gift className="w-3 h-3" />
+                    <span>+2 ebooks grátis</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* O Mais Vendido */}
+            <Card className="bg-red-700 border-yellow-400 border-2 text-white hover:bg-red-600 transition-colors relative">
+              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-black font-bold">
+                MAIS VENDIDO
+              </Badge>
+              <CardContent className="p-6 text-center">
+                <h3 className="font-bold text-xl mb-2 text-yellow-300">O Mais Vendido</h3>
+                <div className="text-lg mb-2">3 unidades</div>
+                <div className="mb-4">
+                  <div className="text-sm opacity-75 line-through">De R$ 507,00</div>
+                  <div className="text-lg font-semibold">12x de R$ 19,78</div>
+                  <div className="text-2xl font-bold text-yellow-300">R$ 197,00 à vista</div>
+                </div>
+                <Button 
+                  onClick={handleCTAClick}
+                  className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold mb-4"
+                >
+                  COMPRAR AGORA
+                </Button>
+                <div className="text-xs space-y-1">
+                  <div className="flex items-center justify-center gap-1">
+                    <Truck className="w-3 h-3" />
+                    <span>Frete grátis para todo o Brasil</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-1">
+                    <Gift className="w-3 h-3" />
+                    <span>+2 ebooks grátis</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Pacote Econômico */}
+            <Card className="bg-red-700 border-red-500 text-white hover:bg-red-600 transition-colors">
+              <CardContent className="p-6 text-center">
+                <h3 className="font-bold text-xl mb-2 text-yellow-300">Pacote Econômico</h3>
+                <div className="text-lg mb-2">2 unidades</div>
+                <div className="mb-4">
+                  <div className="text-sm opacity-75 line-through">De R$ 338,00</div>
+                  <div className="text-lg font-semibold">12x de R$ 16,77</div>
+                  <div className="text-2xl font-bold text-yellow-300">R$ 167,00 à vista</div>
+                </div>
+                <Button 
+                  onClick={handleCTAClick}
+                  className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold mb-4"
+                >
+                  COMPRAR AGORA
+                </Button>
+                <div className="text-xs space-y-1">
+                  <div className="flex items-center justify-center gap-1">
+                    <Truck className="w-3 h-3" />
+                    <span>Frete grátis para todo o Brasil</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-1">
+                    <Gift className="w-3 h-3" />
+                    <span>+2 ebooks grátis</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Experimento */}
+            <Card className="bg-red-700 border-red-500 text-white hover:bg-red-600 transition-colors">
+              <CardContent className="p-6 text-center">
+                <h3 className="font-bold text-xl mb-2 text-yellow-300">Experimento</h3>
+                <div className="text-lg mb-2">1 unidade</div>
+                <div className="mb-4">
+                  <div className="text-sm opacity-75 line-through">De R$ 169,00</div>
+                  <div className="text-lg font-semibold">12x de R$ 13,76</div>
+                  <div className="text-2xl font-bold text-yellow-300">R$ 137,00 à vista</div>
+                </div>
+                <Button 
+                  onClick={handleCTAClick}
+                  className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold mb-4"
+                >
+                  COMPRAR AGORA
+                </Button>
+                <div className="text-xs space-y-1">
+                  <div className="flex items-center justify-center gap-1">
+                    <Truck className="w-3 h-3" />
+                    <span>Frete grátis para todo o Brasil</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-1">
+                    <Gift className="w-3 h-3" />
+                    <span>+2 ebooks grátis</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <Button 
+              onClick={handleCTAClick}
+              size="lg"
+              className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold text-3xl px-16 py-8 rounded-full"
+            >
+              🛒 ESCOLHER MEU PACOTE AGORA
+            </Button>
+          </div>
         </div>
       </section>
 
@@ -326,180 +492,6 @@ const MonetizzeLanding = () => {
               className="bg-orange-600 hover:bg-orange-500 text-white font-bold text-2xl px-16 py-8 rounded-full"
             >
               ⚡ QUERO ESTES BENEFÍCIOS
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* New Pricing Packages Section */}
-      <section className="py-16 bg-red-600">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              🔥 ESCOLHA SEU PACOTE
-            </h2>
-            <p className="text-xl text-red-100 max-w-2xl mx-auto">
-              Quanto mais você compra, mais você economiza!
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
-            {/* Pacote Premium */}
-            <Card className="bg-red-700 border-red-500 text-white hover:bg-red-600 transition-colors relative">
-              <CardContent className="p-6 text-center">
-                <h3 className="font-bold text-xl mb-2 text-yellow-300">Pacote Premium</h3>
-                <div className="text-lg mb-2">6 unidades</div>
-                <div className="mb-4">
-                  <div className="text-sm opacity-75 line-through">De R$ 1.014,00</div>
-                  <div className="text-lg font-semibold">12x de R$ 37,85</div>
-                  <div className="text-2xl font-bold text-yellow-300">R$ 377,00 à vista</div>
-                </div>
-                <Button 
-                  onClick={handleCTAClick}
-                  className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold mb-4"
-                >
-                  COMPRAR AGORA
-                </Button>
-                <div className="text-xs space-y-1">
-                  <div className="flex items-center justify-center gap-1">
-                    <Truck className="w-3 h-3" />
-                    <span>Frete grátis para todo o Brasil</span>
-                  </div>
-                  <div className="flex items-center justify-center gap-1">
-                    <Gift className="w-3 h-3" />
-                    <span>+2 ebooks grátis</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Pacote Turbo */}
-            <Card className="bg-red-700 border-red-500 text-white hover:bg-red-600 transition-colors">
-              <CardContent className="p-6 text-center">
-                <h3 className="font-bold text-xl mb-2 text-yellow-300">Pacote Turbo</h3>
-                <div className="text-lg mb-2">4 unidades</div>
-                <div className="mb-4">
-                  <div className="text-sm opacity-75 line-through">De R$ 676,00</div>
-                  <div className="text-lg font-semibold">12x de R$ 25,80</div>
-                  <div className="text-2xl font-bold text-yellow-300">R$ 257,00 à vista</div>
-                </div>
-                <Button 
-                  onClick={handleCTAClick}
-                  className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold mb-4"
-                >
-                  COMPRAR AGORA
-                </Button>
-                <div className="text-xs space-y-1">
-                  <div className="flex items-center justify-center gap-1">
-                    <Truck className="w-3 h-3" />
-                    <span>Frete grátis para todo o Brasil</span>
-                  </div>
-                  <div className="flex items-center justify-center gap-1">
-                    <Gift className="w-3 h-3" />
-                    <span>+2 ebooks grátis</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* O Mais Vendido */}
-            <Card className="bg-red-700 border-yellow-400 border-2 text-white hover:bg-red-600 transition-colors relative">
-              <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-black font-bold">
-                MAIS VENDIDO
-              </Badge>
-              <CardContent className="p-6 text-center">
-                <h3 className="font-bold text-xl mb-2 text-yellow-300">O Mais Vendido</h3>
-                <div className="text-lg mb-2">3 unidades</div>
-                <div className="mb-4">
-                  <div className="text-sm opacity-75 line-through">De R$ 507,00</div>
-                  <div className="text-lg font-semibold">12x de R$ 19,78</div>
-                  <div className="text-2xl font-bold text-yellow-300">R$ 197,00 à vista</div>
-                </div>
-                <Button 
-                  onClick={handleCTAClick}
-                  className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold mb-4"
-                >
-                  COMPRAR AGORA
-                </Button>
-                <div className="text-xs space-y-1">
-                  <div className="flex items-center justify-center gap-1">
-                    <Truck className="w-3 h-3" />
-                    <span>Frete grátis para todo o Brasil</span>
-                  </div>
-                  <div className="flex items-center justify-center gap-1">
-                    <Gift className="w-3 h-3" />
-                    <span>+2 ebooks grátis</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Pacote Econômico */}
-            <Card className="bg-red-700 border-red-500 text-white hover:bg-red-600 transition-colors">
-              <CardContent className="p-6 text-center">
-                <h3 className="font-bold text-xl mb-2 text-yellow-300">Pacote Econômico</h3>
-                <div className="text-lg mb-2">2 unidades</div>
-                <div className="mb-4">
-                  <div className="text-sm opacity-75 line-through">De R$ 338,00</div>
-                  <div className="text-lg font-semibold">12x de R$ 16,77</div>
-                  <div className="text-2xl font-bold text-yellow-300">R$ 167,00 à vista</div>
-                </div>
-                <Button 
-                  onClick={handleCTAClick}
-                  className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold mb-4"
-                >
-                  COMPRAR AGORA
-                </Button>
-                <div className="text-xs space-y-1">
-                  <div className="flex items-center justify-center gap-1">
-                    <Truck className="w-3 h-3" />
-                    <span>Frete grátis para todo o Brasil</span>
-                  </div>
-                  <div className="flex items-center justify-center gap-1">
-                    <Gift className="w-3 h-3" />
-                    <span>+2 ebooks grátis</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Experimento */}
-            <Card className="bg-red-700 border-red-500 text-white hover:bg-red-600 transition-colors">
-              <CardContent className="p-6 text-center">
-                <h3 className="font-bold text-xl mb-2 text-yellow-300">Experimento</h3>
-                <div className="text-lg mb-2">1 unidade</div>
-                <div className="mb-4">
-                  <div className="text-sm opacity-75 line-through">De R$ 169,00</div>
-                  <div className="text-lg font-semibold">12x de R$ 13,76</div>
-                  <div className="text-2xl font-bold text-yellow-300">R$ 137,00 à vista</div>
-                </div>
-                <Button 
-                  onClick={handleCTAClick}
-                  className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold mb-4"
-                >
-                  COMPRAR AGORA
-                </Button>
-                <div className="text-xs space-y-1">
-                  <div className="flex items-center justify-center gap-1">
-                    <Truck className="w-3 h-3" />
-                    <span>Frete grátis para todo o Brasil</span>
-                  </div>
-                  <div className="flex items-center justify-center gap-1">
-                    <Gift className="w-3 h-3" />
-                    <span>+2 ebooks grátis</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="text-center">
-            <Button 
-              onClick={handleCTAClick}
-              size="lg"
-              className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold text-3xl px-16 py-8 rounded-full"
-            >
-              🛒 ESCOLHER MEU PACOTE AGORA
             </Button>
           </div>
         </div>
@@ -761,6 +753,34 @@ const MonetizzeLanding = () => {
             >
               🛡️ GARANTIA TOTAL - COMPRAR
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Customer Service Contact Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            DÚVIDAS?
+          </h2>
+          <p className="text-xl text-gray-700 mb-12 max-w-3xl mx-auto">
+            Caso tenha qualquer dúvida, nossa equipe está pronta para te ajudar! Entre em contato através dos nossos canais:
+          </p>
+          
+          <div className="bg-red-50 rounded-2xl p-8 max-w-2xl mx-auto border border-red-200">
+            <h3 className="text-2xl font-bold text-red-700 mb-8">Centro de atendimento</h3>
+            
+            <div className="space-y-6">
+              <div className="flex items-center justify-center gap-4 text-lg">
+                <Phone className="w-6 h-6 text-red-600" />
+                <span className="text-gray-800 font-semibold">(11) 5286-4601</span>
+              </div>
+              
+              <div className="flex items-center justify-center gap-4 text-lg">
+                <Mail className="w-6 h-6 text-red-600" />
+                <span className="text-gray-800 font-semibold">sac@paulonutra.com</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
