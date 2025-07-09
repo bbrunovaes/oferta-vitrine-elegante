@@ -1,6 +1,8 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CheckCircle, Star, Users, Clock, Shield, Trophy, Heart, Zap, Droplets, Leaf, ArrowLeft, Gift, Truck } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -578,56 +580,98 @@ const MonetizzeLanding = () => {
             </h2>
           </div>
 
-          <div className="max-w-3xl mx-auto space-y-6 mb-12">
-            {[
-              {
-                question: "QUAIS SÃO OS EFEITOS DO SB2 TURBO NO MEU ORGANISMO?",
-                answer: "O SB2 TURBO é um emagrecedor de alta concentração com uma composição de ingredientes 100% naturais. SB2 tem como função criar uma \"gelatina imã\" que através de suas fibras, permite sugar impurezas e camadas de gordura para dentro, expulsando do corpo a gordura através da respiração, fezes e urina."
-              },
-              {
-                question: "COMO DEVO USAR O SB2 TURBO?",
-                answer: "Cada frasco/pote contém 60 cápsulas, é recomendado tomar 2 cápsulas ao dia, sendo 1 antes das principais refeições. Especialistas em nutrição e emagrecimento recomendam o uso de SB2 Turbo por no mínimo 3 meses para um resultado definitivo no seu corpo."
-              },
-              {
-                question: "ESTE SITE É SEGURO?",
-                answer: "Sim, garantimos a segurança total do nosso site. No SB2, priorizamos a proteção dos dados dos nossos clientes. Utilizamos tecnologias avançadas de segurança, como criptografia SSL, para garantir que todas as informações fornecidas em nosso site sejam protegidas contra acesso não autorizado. Além disso, estamos em conformidade com todas as regulamentações de privacidade de dados para proporcionar uma experiência online segura e tranquila para todos os nossos visitantes."
-              },
-              {
-                question: "QUANTAS CÁPSULAS VEM NO POTE?",
-                answer: "Cada frasco/pote contém 60 cápsulas equivalente a um mês de tratamento"
-              },
-              {
-                question: "QUAL É A COMPOSIÇÃO 100% NATURAL DO SB2 TURBO?",
-                answer: "SB2 TURBO é composto pelos seguintes Ingredientes: Carbonato de cálcio, Psyllium, Espirulina, Chia moída, Inulina, Colágeno, L-carnitina, L-tirosina, L-arginina, Pectina, Extrato de Laranja moro, Bisglicinato de zinco, Picolinato de cromo."
-              },
-              {
-                question: "EXISTEM EFEITOS COLATERAIS?",
-                answer: "Não existe nenhum efeito colateral com o consumo do produto SB2 TURBO, e qualquer pessoa pode tomar e aproveitar seus benefícios. Porém, gestantes que devem consultar um médico antes de iniciar o consumo. ESTE PRODUTO NÃO CONTÉM GLÚTEN."
-              },
-              {
-                question: "QUAIS AS FORMAS DE PAGAMENTO?",
-                answer: "Aceitamos PIX, cartões de crédito das principais bandeiras como Mastercard, Visa, Elo e boleto bancário com total segurança através das plataformas. Você pode parcelar sua compra em até 12x no cartão de crédito com possibilidade de dividir o valor em dois cartões diferentes. Não é possível parcelar no boleto bancário, pois ele é válido apenas para pagamento à vista."
-              },
-              {
-                question: "TEM GARANTIA?",
-                answer: "Você pode adquirir o SB2 Turbo por até 30 dias e experimentar com RISCO ZERO, caso não tiver o seu resultado nas primeiras semanas, o seu dinheiro será 100% devolvido, basta enviar um e-mail."
-              },
-              {
-                question: "QUANDO SERÁ ENVIADO?",
-                answer: "O prazo de envio é de até 5 dias úteis após a confirmação do pagamento."
-              },
-              {
-                question: "QUAL O KIT MAIS VENDIDO?",
-                answer: "O kit mais vendido e recomendado é o KIT com 6 potes, com mais de 50% de desconto! Isso porque indicamos o uso contínuo por, no mínimo, 3 meses para obter excelentes resultados — e com 6 meses de uso, você alcança o máximo potencial do tratamento."
-              }
-            ].map((faq, index) => (
-              <Card key={index} className="border-red-100">
-                <CardContent className="p-6">
-                  <h3 className="font-bold text-lg mb-2 text-red-700">{faq.question}</h3>
-                  <p className="text-gray-700">{faq.answer}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="max-w-3xl mx-auto mb-12">
+            <Accordion type="single" collapsible className="space-y-4">
+              <AccordionItem value="item-1" className="border border-red-100 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 text-left font-bold text-lg text-red-700 hover:no-underline">
+                  QUAIS SÃO OS EFEITOS DO SB2 TURBO NO MEU ORGANISMO?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-700">
+                  O SB2 TURBO é um emagrecedor de alta concentração com uma composição de ingredientes 100% naturais. SB2 tem como função criar uma "gelatina imã" que através de suas fibras, permite sugar impurezas e camadas de gordura para dentro, expulsando do corpo a gordura através da respiração, fezes e urina.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2" className="border border-red-100 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 text-left font-bold text-lg text-red-700 hover:no-underline">
+                  COMO DEVO USAR O SB2 TURBO?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-700">
+                  Cada frasco/pote contém 60 cápsulas, é recomendado tomar 2 cápsulas ao dia, sendo 1 antes das principais refeições. Especialistas em nutrição e emagrecimento recomendam o uso de SB2 Turbo por no mínimo 3 meses para um resultado definitivo no seu corpo.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3" className="border border-red-100 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 text-left font-bold text-lg text-red-700 hover:no-underline">
+                  ESTE SITE É SEGURO?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-700">
+                  Sim, garantimos a segurança total do nosso site. No SB2, priorizamos a proteção dos dados dos nossos clientes. Utilizamos tecnologias avançadas de segurança, como criptografia SSL, para garantir que todas as informações fornecidas em nosso site sejam protegidas contra acesso não autorizado. Além disso, estamos em conformidade com todas as regulamentações de privacidade de dados para proporcionar uma experiência online segura e tranquila para todos os nossos visitantes.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-4" className="border border-red-100 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 text-left font-bold text-lg text-red-700 hover:no-underline">
+                  QUANTAS CÁPSULAS VEM NO POTE?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-700">
+                  Cada frasco/pote contém 60 cápsulas equivalente a um mês de tratamento
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-5" className="border border-red-100 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 text-left font-bold text-lg text-red-700 hover:no-underline">
+                  QUAL É A COMPOSIÇÃO 100% NATURAL DO SB2 TURBO?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-700">
+                  SB2 TURBO é composto pelos seguintes Ingredientes: Carbonato de cálcio, Psyllium, Espirulina, Chia moída, Inulina, Colágeno, L-carnitina, L-tirosina, L-arginina, Pectina, Extrato de Laranja moro, Bisglicinato de zinco, Picolinato de cromo.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-6" className="border border-red-100 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 text-left font-bold text-lg text-red-700 hover:no-underline">
+                  EXISTEM EFEITOS COLATERAIS?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-700">
+                  Não existe nenhum efeito colateral com o consumo do produto SB2 TURBO, e qualquer pessoa pode tomar e aproveitar seus benefícios. Porém, gestantes que devem consultar um médico antes de iniciar o consumo. ESTE PRODUTO NÃO CONTÉM GLÚTEN.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-7" className="border border-red-100 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 text-left font-bold text-lg text-red-700 hover:no-underline">
+                  QUAIS AS FORMAS DE PAGAMENTO?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-700">
+                  Aceitamos PIX, cartões de crédito das principais bandeiras como Mastercard, Visa, Elo e boleto bancário com total segurança através das plataformas. Você pode parcelar sua compra em até 12x no cartão de crédito com possibilidade de dividir o valor em dois cartões diferentes. Não é possível parcelar no boleto bancário, pois ele é válido apenas para pagamento à vista.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-8" className="border border-red-100 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 text-left font-bold text-lg text-red-700 hover:no-underline">
+                  TEM GARANTIA?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-700">
+                  Você pode adquirir o SB2 Turbo por até 30 dias e experimentar com RISCO ZERO, caso não tiver o seu resultado nas primeiras semanas, o seu dinheiro será 100% devolvido, basta enviar um e-mail.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-9" className="border border-red-100 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 text-left font-bold text-lg text-red-700 hover:no-underline">
+                  QUANDO SERÁ ENVIADO?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-700">
+                  O prazo de envio é de até 5 dias úteis após a confirmação do pagamento.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-10" className="border border-red-100 rounded-lg">
+                <AccordionTrigger className="px-6 py-4 text-left font-bold text-lg text-red-700 hover:no-underline">
+                  QUAL O KIT MAIS VENDIDO?
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-4 text-gray-700">
+                  O kit mais vendido e recomendado é o KIT com 6 potes, com mais de 50% de desconto! Isso porque indicamos o uso contínuo por, no mínimo, 3 meses para obter excelentes resultados — e com 6 meses de uso, você alcança o máximo potencial do tratamento.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
 
           <div className="text-center">
