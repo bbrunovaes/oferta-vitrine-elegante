@@ -408,20 +408,44 @@ const MonetizzeLanding = () => {
           <div className="max-w-3xl mx-auto space-y-6 mb-12">
             {[
               {
-                question: "Em quanto tempo vou ver resultados?",
-                answer: "A maioria das mulheres começam a notar diferença já na primeira semana, com redução do inchaço. Resultados mais visíveis aparecem a partir de 30 dias de uso contínuo."
+                question: "QUAIS SÃO OS EFEITOS DO SB2 TURBO NO MEU ORGANISMO?",
+                answer: "O SB2 TURBO é um emagrecedor de alta concentração com uma composição de ingredientes 100% naturais. SB2 tem como função criar uma \"gelatina imã\" que através de suas fibras, permite sugar impurezas e camadas de gordura para dentro, expulsando do corpo a gordura através da respiração, fezes e urina."
               },
               {
-                question: "O SB2 Turbo é seguro?",
-                answer: "Sim! O SB2 Turbo é feito com ingredientes 100% naturais e não possui efeitos colaterais. É recomendado para mulheres adultas saudáveis."
+                question: "COMO DEVO USAR O SB2 TURBO?",
+                answer: "Cada frasco/pote contém 60 cápsulas, é recomendado tomar 2 cápsulas ao dia, sendo 1 antes das principais refeições. Especialistas em nutrição e emagrecimento recomendam o uso de SB2 Turbo por no mínimo 3 meses para um resultado definitivo no seu corpo."
               },
               {
-                question: "Por quanto tempo devo usar?",
-                answer: "Recomendamos o uso por pelo menos 90 dias para resultados duradouros. Cada organismo responde de forma diferente, mas a maioria das mulheres atinge seus objetivos neste período."
+                question: "ESTE SITE É SEGURO?",
+                answer: "Sim, garantimos a segurança total do nosso site. No SB2, priorizamos a proteção dos dados dos nossos clientes. Utilizamos tecnologias avançadas de segurança, como criptografia SSL, para garantir que todas as informações fornecidas em nosso site sejam protegidas contra acesso não autorizado. Além disso, estamos em conformidade com todas as regulamentações de privacidade de dados para proporcionar uma experiência online segura e tranquila para todos os nossos visitantes."
               },
               {
-                question: "Preciso fazer dieta restritiva?",
-                answer: "Não! O SB2 Turbo funciona sem necessidade de dietas malucas. Uma alimentação equilibrada potencializa os resultados, mas não é obrigatório cortar grupos alimentares."
+                question: "QUANTAS CÁPSULAS VEM NO POTE?",
+                answer: "Cada frasco/pote contém 60 cápsulas equivalente a um mês de tratamento"
+              },
+              {
+                question: "QUAL É A COMPOSIÇÃO 100% NATURAL DO SB2 TURBO?",
+                answer: "SB2 TURBO é composto pelos seguintes Ingredientes: Carbonato de cálcio, Psyllium, Espirulina, Chia moída, Inulina, Colágeno, L-carnitina, L-tirosina, L-arginina, Pectina, Extrato de Laranja moro, Bisglicinato de zinco, Picolinato de cromo."
+              },
+              {
+                question: "EXISTEM EFEITOS COLATERAIS?",
+                answer: "Não existe nenhum efeito colateral com o consumo do produto SB2 TURBO, e qualquer pessoa pode tomar e aproveitar seus benefícios. Porém, gestantes que devem consultar um médico antes de iniciar o consumo. ESTE PRODUTO NÃO CONTÉM GLÚTEN."
+              },
+              {
+                question: "QUAIS AS FORMAS DE PAGAMENTO?",
+                answer: "Aceitamos PIX, cartões de crédito das principais bandeiras como Mastercard, Visa, Elo e boleto bancário com total segurança através das plataformas. Você pode parcelar sua compra em até 12x no cartão de crédito com possibilidade de dividir o valor em dois cartões diferentes. Não é possível parcelar no boleto bancário, pois ele é válido apenas para pagamento à vista."
+              },
+              {
+                question: "TEM GARANTIA?",
+                answer: "Você pode adquirir o SB2 Turbo por até 30 dias e experimentar com RISCO ZERO, caso não tiver o seu resultado nas primeiras semanas, o seu dinheiro será 100% devolvido, basta enviar um e-mail."
+              },
+              {
+                question: "QUANDO SERÁ ENVIADO?",
+                answer: "O prazo de envio é de até 5 dias úteis após a confirmação do pagamento."
+              },
+              {
+                question: "QUAL O KIT MAIS VENDIDO?",
+                answer: "O kit mais vendido e recomendado é o KIT com 6 potes, com mais de 50% de desconto! Isso porque indicamos o uso contínuo por, no mínimo, 3 meses para obter excelentes resultados — e com 6 meses de uso, você alcança o máximo potencial do tratamento."
               }
             ].map((faq, index) => (
               <Card key={index} className="border-red-100">
