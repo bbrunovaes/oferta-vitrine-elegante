@@ -11,10 +11,6 @@ interface Product {
   category: 'fisicos' | 'digitais';
 }
 
-interface ProductGridProps {
-  category: 'fisicos' | 'digitais';
-}
-
 const products: Product[] = [
   {
     id: '1',
@@ -40,27 +36,53 @@ const products: Product[] = [
     description: 'Suplemento natural que ajuda mulheres a emagrecerem de forma saudável, sem dietas restritivas ou efeitos colaterais.',
     image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop',
     affiliateLink: '/monetizze-landing',
-    price: 'R$ 67,00',
+    price: 'A partir de R$ 137,00',
     category: 'fisicos'
   }
 ];
 
-const ProductGrid = ({ category }: ProductGridProps) => {
-  const filteredProducts = products.filter(product => product.category === category);
+const ProductGrid = () => {
+  const digitalProducts = products.filter(product => product.category === 'digitais');
+  const physicalProducts = products.filter(product => product.category === 'fisicos');
 
   return (
     <section className="container mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {filteredProducts.map((product) => (
-          <ProductCard
-            key={product.id}
-            title={product.title}
-            description={product.description}
-            image={product.image}
-            affiliateLink={product.affiliateLink}
-            price={product.price}
-          />
-        ))}
+      {/* Produtos Digitais Section */}
+      <div className="mb-12">
+        <h2 className="text-2xl font-bold text-foreground mb-6 text-center">
+          Produtos Digitais
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {digitalProducts.map((product) => (
+            <ProductCard
+              key={product.id}
+              title={product.title}
+              description={product.description}
+              image={product.image}
+              affiliateLink={product.affiliateLink}
+              price={product.price}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Produtos Físicos Section */}
+      <div>
+        <h2 className="text-2xl font-bold text-foreground mb-6 text-center">
+          Produtos Físicos
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {physicalProducts.map((product) => (
+            <ProductCard
+              key={product.id}
+              title={product.title}
+              description={product.description}
+              image={product.image}
+              affiliateLink={product.affiliateLink}
+              price={product.price}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
