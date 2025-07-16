@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -10,8 +9,11 @@ const MonetizzeLanding = () => {
   const navigate = useNavigate();
 
   const handleCTAClick = () => {
-    // Aqui você pode adicionar o link de afiliado real do SB2 Turbo
-    console.log("CTA clicked - redirect to SB2 Turbo affiliate link");
+    // Scroll to the package section
+    const packageSection = document.getElementById('package-section');
+    if (packageSection) {
+      packageSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   const handleBackClick = () => {
@@ -101,7 +103,7 @@ const MonetizzeLanding = () => {
       </section>
 
       {/* Package Cards Section - Moved to top */}
-      <section className="py-16 bg-red-600">
+      <section id="package-section" className="py-16 bg-red-600">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
