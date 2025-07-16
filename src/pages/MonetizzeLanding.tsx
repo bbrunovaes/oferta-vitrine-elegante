@@ -702,9 +702,8 @@ const MonetizzeLanding = () => {
           </p>
           
           <div className="bg-black/20 rounded-2xl p-8 max-w-md mx-auto mb-8">
-            <div className="text-8xl font-bold text-red-200 mb-2">R$ 67</div>
-            <div className="text-2xl">12x de R$ 6,70 sem juros</div>
-            <div className="text-lg mt-2 opacity-90">Entrega rápida e discreta</div>
+            <div className="text-4xl font-bold text-yellow-300 mb-2">A partir de R$ 137,00</div>
+            <div className="text-lg opacity-90">Entrega rápida e discreta</div>
           </div>
 
           <Button 
