@@ -129,9 +129,16 @@ const MonetizzeLanding = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
-            {/* Pacote Premium */}
+            {/* Pacote Premium - 6 unidades */}
             <Card className="bg-red-700 border-red-500 text-white hover:bg-red-600 transition-colors relative">
               <CardContent className="p-6 text-center">
+                <div className="mb-4 flex justify-center">
+                  <img 
+                    src="https://i.imgur.com/DFq6xkU.png" 
+                    alt="6 unidades SB2 Turbo"
+                    className="w-20 h-20 object-contain"
+                  />
+                </div>
                 <h3 className="font-bold text-xl mb-2 text-yellow-300">Pacote Premium</h3>
                 <div className="text-lg mb-2">6 unidades</div>
                 <div className="mb-4">
@@ -158,9 +165,16 @@ const MonetizzeLanding = () => {
               </CardContent>
             </Card>
 
-            {/* Pacote Turbo */}
+            {/* Pacote Turbo - 4 unidades */}
             <Card className="bg-red-700 border-red-500 text-white hover:bg-red-600 transition-colors">
               <CardContent className="p-6 text-center">
+                <div className="mb-4 flex justify-center">
+                  <img 
+                    src="https://i.imgur.com/fq8CWnB.png" 
+                    alt="4 unidades SB2 Turbo"
+                    className="w-20 h-20 object-contain"
+                  />
+                </div>
                 <h3 className="font-bold text-xl mb-2 text-yellow-300">Pacote Turbo</h3>
                 <div className="text-lg mb-2">4 unidades</div>
                 <div className="mb-4">
@@ -187,12 +201,19 @@ const MonetizzeLanding = () => {
               </CardContent>
             </Card>
 
-            {/* O Mais Vendido */}
+            {/* O Mais Vendido - 3 unidades */}
             <Card className="bg-red-700 border-yellow-400 border-2 text-white hover:bg-red-600 transition-colors relative">
               <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-black font-bold">
                 MAIS VENDIDO
               </Badge>
               <CardContent className="p-6 text-center">
+                <div className="mb-4 flex justify-center">
+                  <img 
+                    src="https://i.imgur.com/esKuyog.png" 
+                    alt="3 unidades SB2 Turbo"
+                    className="w-20 h-20 object-contain"
+                  />
+                </div>
                 <h3 className="font-bold text-xl mb-2 text-yellow-300">O Mais Vendido</h3>
                 <div className="text-lg mb-2">3 unidades</div>
                 <div className="mb-4">
@@ -219,9 +240,16 @@ const MonetizzeLanding = () => {
               </CardContent>
             </Card>
 
-            {/* Pacote Econômico */}
+            {/* Pacote Econômico - 2 unidades */}
             <Card className="bg-red-700 border-red-500 text-white hover:bg-red-600 transition-colors">
               <CardContent className="p-6 text-center">
+                <div className="mb-4 flex justify-center">
+                  <img 
+                    src="https://i.imgur.com/LZud8Gy.png" 
+                    alt="2 unidades SB2 Turbo"
+                    className="w-20 h-20 object-contain"
+                  />
+                </div>
                 <h3 className="font-bold text-xl mb-2 text-yellow-300">Pacote Econômico</h3>
                 <div className="text-lg mb-2">2 unidades</div>
                 <div className="mb-4">
@@ -248,9 +276,16 @@ const MonetizzeLanding = () => {
               </CardContent>
             </Card>
 
-            {/* Experimento */}
+            {/* Experimento - 1 unidade */}
             <Card className="bg-red-700 border-red-500 text-white hover:bg-red-600 transition-colors">
               <CardContent className="p-6 text-center">
+                <div className="mb-4 flex justify-center">
+                  <img 
+                    src="https://i.imgur.com/XFsceci.png" 
+                    alt="1 unidade SB2 Turbo"
+                    className="w-20 h-20 object-contain"
+                  />
+                </div>
                 <h3 className="font-bold text-xl mb-2 text-yellow-300">Experimento</h3>
                 <div className="text-lg mb-2">1 unidade</div>
                 <div className="mb-4">
