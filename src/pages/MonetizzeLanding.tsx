@@ -136,7 +136,7 @@ const MonetizzeLanding = () => {
                   <img 
                     src="https://i.imgur.com/DFq6xkU.png" 
                     alt="6 unidades SB2 Turbo"
-                    className="w-20 h-20 object-contain"
+                    className="w-28 h-28 object-contain"
                   />
                 </div>
                 <h3 className="font-bold text-xl mb-2 text-yellow-300">Pacote Premium</h3>
@@ -172,7 +172,7 @@ const MonetizzeLanding = () => {
                   <img 
                     src="https://i.imgur.com/fq8CWnB.png" 
                     alt="4 unidades SB2 Turbo"
-                    className="w-20 h-20 object-contain"
+                    className="w-28 h-28 object-contain"
                   />
                 </div>
                 <h3 className="font-bold text-xl mb-2 text-yellow-300">Pacote Turbo</h3>
@@ -211,7 +211,7 @@ const MonetizzeLanding = () => {
                   <img 
                     src="https://i.imgur.com/esKuyog.png" 
                     alt="3 unidades SB2 Turbo"
-                    className="w-20 h-20 object-contain"
+                    className="w-28 h-28 object-contain"
                   />
                 </div>
                 <h3 className="font-bold text-xl mb-2 text-yellow-300">O Mais Vendido</h3>
@@ -247,7 +247,7 @@ const MonetizzeLanding = () => {
                   <img 
                     src="https://i.imgur.com/LZud8Gy.png" 
                     alt="2 unidades SB2 Turbo"
-                    className="w-20 h-20 object-contain"
+                    className="w-28 h-28 object-contain"
                   />
                 </div>
                 <h3 className="font-bold text-xl mb-2 text-yellow-300">Pacote Econômico</h3>
@@ -283,7 +283,7 @@ const MonetizzeLanding = () => {
                   <img 
                     src="https://i.imgur.com/XFsceci.png" 
                     alt="1 unidade SB2 Turbo"
-                    className="w-20 h-20 object-contain"
+                    className="w-28 h-28 object-contain"
                   />
                 </div>
                 <h3 className="font-bold text-xl mb-2 text-yellow-300">Experimento</h3>
