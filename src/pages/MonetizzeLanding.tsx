@@ -56,6 +56,15 @@ const MonetizzeLanding = () => {
             💖 MAIS DE 50.000 MULHERES TRANSFORMADAS
           </Badge>
           
+          {/* Product Image */}
+          <div className="mb-8 flex justify-center">
+            <img 
+              src="https://i.imgur.com/80Mf74Z.png" 
+              alt="SB2 Turbo - Suplemento Natural para Emagrecimento"
+              className="max-w-sm w-full h-auto rounded-lg shadow-2xl"
+            />
+          </div>
+          
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Recupere a sua
             <span className="text-red-200 block">melhor versão</span>
