@@ -34,7 +34,7 @@ const products: Product[] = [
     id: '3',
     title: 'SB2 Turbo - Emagrecimento Feminino Natural',
     description: 'Suplemento natural que ajuda mulheres a emagrecerem de forma saudável, sem dietas restritivas ou efeitos colaterais.',
-    image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop',
+    image: 'https://i.imgur.com/80Mf74Z.png',
     affiliateLink: '/monetizze-landing',
     price: 'A partir de R$ 137,00',
     category: 'fisicos'
