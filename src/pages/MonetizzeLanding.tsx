@@ -5,6 +5,14 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle, Star, Users, Clock, Shield, Trophy, Heart, Zap, Droplets, Leaf, ArrowLeft, Gift, Truck, Phone, Mail } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
+// Import exercise images
+import yogaImage from "../assets/sb2-woman-yoga-top1.jpg";
+import cardioImage from "../assets/sb2-woman-cardio-top2.jpg";
+import weightsImage from "../assets/sb2-woman-weights-mid1.jpg";
+import stretchImage from "../assets/sb2-woman-stretch-mid2.jpg";
+import runningImage from "../assets/sb2-woman-running-end1.jpg";
+import victoryImage from "../assets/sb2-woman-victory-end2.jpg";
+
 const MonetizzeLanding = () => {
   const navigate = useNavigate();
 
@@ -50,8 +58,24 @@ const MonetizzeLanding = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-r from-red-500 to-red-600 text-white">
-        <div className="container mx-auto px-4 text-center">
+      <section className="py-16 bg-gradient-to-r from-red-500 to-red-600 text-white relative overflow-hidden">
+        {/* Background Exercise Images - Topo */}
+        <div className="absolute left-4 top-16 hidden lg:block">
+          <img 
+            src={yogaImage} 
+            alt="Mulher feliz fazendo yoga"
+            className="w-32 h-32 rounded-full object-cover shadow-lg opacity-20"
+          />
+        </div>
+        <div className="absolute right-4 top-16 hidden lg:block">
+          <img 
+            src={cardioImage} 
+            alt="Mulher fazendo exercício aeróbico"
+            className="w-32 h-32 rounded-full object-cover shadow-lg opacity-20"
+          />
+        </div>
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
           <Badge className="mb-6 bg-red-100 text-red-800 hover:bg-red-200 text-lg px-6 py-3">
             💖 MAIS DE 50.000 MULHERES TRANSFORMADAS
           </Badge>
@@ -497,8 +521,24 @@ const MonetizzeLanding = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
+      <section className="py-16 bg-gray-50 relative overflow-hidden">
+        {/* Background Exercise Images - Meio */}
+        <div className="absolute left-4 top-1/2 transform -translate-y-1/2 hidden lg:block">
+          <img 
+            src={weightsImage} 
+            alt="Mulher feliz levantando peso"
+            className="w-40 h-40 rounded-full object-cover shadow-lg opacity-30"
+          />
+        </div>
+        <div className="absolute right-4 top-1/2 transform -translate-y-1/2 hidden lg:block">
+          <img 
+            src={stretchImage} 
+            alt="Mulher se alongando após exercício"
+            className="w-40 h-40 rounded-full object-cover shadow-lg opacity-30"
+          />
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
               Por que SB2 Turbo é diferente?
@@ -841,8 +881,24 @@ const MonetizzeLanding = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white py-12">
-        <div className="container mx-auto px-4 text-center">
+      <footer className="bg-gray-800 text-white py-12 relative overflow-hidden">
+        {/* Background Exercise Images - Final */}
+        <div className="absolute left-4 top-1/2 transform -translate-y-1/2 hidden lg:block">
+          <img 
+            src={runningImage} 
+            alt="Mulher correndo feliz"
+            className="w-36 h-36 rounded-full object-cover shadow-lg opacity-20"
+          />
+        </div>
+        <div className="absolute right-4 top-1/2 transform -translate-y-1/2 hidden lg:block">
+          <img 
+            src={victoryImage} 
+            alt="Mulher celebrando conquista fitness"
+            className="w-36 h-36 rounded-full object-cover shadow-lg opacity-20"
+          />
+        </div>
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
           <div className="text-2xl font-bold text-red-400 mb-4">SB2 Turbo</div>
           <p className="text-gray-400 mb-6">
             Transformando a vida das mulheres brasileiras
