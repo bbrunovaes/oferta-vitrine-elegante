@@ -6,12 +6,10 @@ import { CheckCircle, Star, Users, Clock, Shield, Trophy, Heart, Zap, Droplets, 
 import { useNavigate } from "react-router-dom";
 
 // Import exercise images
-import yogaImage from "../assets/sb2-woman-yoga-top1.jpg";
-import cardioImage from "../assets/sb2-woman-cardio-top2.jpg";
-import weightsImage from "../assets/sb2-woman-weights-mid1.jpg";
-import stretchImage from "../assets/sb2-woman-stretch-mid2.jpg";
-import runningImage from "../assets/sb2-woman-running-end1.jpg";
-import victoryImage from "../assets/sb2-woman-victory-end2.jpg";
+import heroFitnessImage from "../assets/sb2-hero-fitness.jpg";
+import yogaPeacefulImage from "../assets/sb2-yoga-peaceful.jpg";
+import beachRunningImage from "../assets/sb2-beach-running.jpg";
+import victoryCelebrationImage from "../assets/sb2-victory-celebration.jpg";
 
 const MonetizzeLanding = () => {
   const navigate = useNavigate();
@@ -59,19 +57,12 @@ const MonetizzeLanding = () => {
 
       {/* Hero Section */}
       <section className="py-16 bg-gradient-to-r from-red-500 to-red-600 text-white relative overflow-hidden">
-        {/* Background Exercise Images - Topo */}
-        <div className="absolute left-4 top-16 hidden lg:block">
+        {/* Large Hero Fitness Image */}
+        <div className="absolute inset-0 z-0">
           <img 
-            src={yogaImage} 
-            alt="Mulher feliz fazendo yoga"
-            className="w-32 h-32 rounded-full object-cover shadow-lg opacity-20"
-          />
-        </div>
-        <div className="absolute right-4 top-16 hidden lg:block">
-          <img 
-            src={cardioImage} 
-            alt="Mulher fazendo exercício aeróbico"
-            className="w-32 h-32 rounded-full object-cover shadow-lg opacity-20"
+            src={heroFitnessImage} 
+            alt="Mulher feliz se exercitando com peso"
+            className="w-full h-full object-cover opacity-30 mix-blend-overlay"
           />
         </div>
         
@@ -522,19 +513,12 @@ const MonetizzeLanding = () => {
 
       {/* Benefits Section */}
       <section className="py-16 bg-gray-50 relative overflow-hidden">
-        {/* Background Exercise Images - Meio */}
-        <div className="absolute left-4 top-1/2 transform -translate-y-1/2 hidden lg:block">
+        {/* Large Yoga Image */}
+        <div className="absolute left-8 top-1/2 transform -translate-y-1/2 hidden xl:block">
           <img 
-            src={weightsImage} 
-            alt="Mulher feliz levantando peso"
-            className="w-40 h-40 rounded-full object-cover shadow-lg opacity-30"
-          />
-        </div>
-        <div className="absolute right-4 top-1/2 transform -translate-y-1/2 hidden lg:block">
-          <img 
-            src={stretchImage} 
-            alt="Mulher se alongando após exercício"
-            className="w-40 h-40 rounded-full object-cover shadow-lg opacity-30"
+            src={yogaPeacefulImage} 
+            alt="Mulher fazendo yoga em paz"
+            className="w-80 h-48 rounded-2xl object-cover shadow-2xl opacity-60 border-4 border-white"
           />
         </div>
         
@@ -882,19 +866,19 @@ const MonetizzeLanding = () => {
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-12 relative overflow-hidden">
-        {/* Background Exercise Images - Final */}
-        <div className="absolute left-4 top-1/2 transform -translate-y-1/2 hidden lg:block">
+        {/* Large Beach Running and Victory Images */}
+        <div className="absolute left-8 top-4 hidden xl:block">
           <img 
-            src={runningImage} 
-            alt="Mulher correndo feliz"
-            className="w-36 h-36 rounded-full object-cover shadow-lg opacity-20"
+            src={beachRunningImage} 
+            alt="Mulher correndo na praia"
+            className="w-72 h-44 rounded-2xl object-cover shadow-2xl opacity-40 border-4 border-gray-700"
           />
         </div>
-        <div className="absolute right-4 top-1/2 transform -translate-y-1/2 hidden lg:block">
+        <div className="absolute right-8 top-4 hidden xl:block">
           <img 
-            src={victoryImage} 
+            src={victoryCelebrationImage} 
             alt="Mulher celebrando conquista fitness"
-            className="w-36 h-36 rounded-full object-cover shadow-lg opacity-20"
+            className="w-72 h-44 rounded-2xl object-cover shadow-2xl opacity-40 border-4 border-gray-700"
           />
         </div>
         
