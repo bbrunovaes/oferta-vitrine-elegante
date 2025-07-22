@@ -10,6 +10,13 @@ import heroFitnessImage from "../assets/sb2-hero-fitness.jpg";
 import yogaPeacefulImage from "../assets/sb2-yoga-peaceful.jpg";
 import beachRunningImage from "../assets/sb2-beach-running.jpg";
 import victoryCelebrationImage from "../assets/sb2-victory-celebration.jpg";
+import productMockupImage from "../assets/sb2-product-mockup.jpg";
+import testimonial1Image from "../assets/sb2-testimonial-1.jpg";
+import testimonial2Image from "../assets/sb2-testimonial-2.jpg";
+import testimonial3Image from "../assets/sb2-testimonial-3.jpg";
+import testimonial4Image from "../assets/sb2-testimonial-4.jpg";
+import testimonial5Image from "../assets/sb2-testimonial-5.jpg";
+import testimonial6Image from "../assets/sb2-testimonial-6.jpg";
 
 const MonetizzeLanding = () => {
   const navigate = useNavigate();
@@ -71,10 +78,10 @@ const MonetizzeLanding = () => {
             💖 MAIS DE 50.000 MULHERES TRANSFORMADAS
           </Badge>
           
-          {/* Product Image */}
+          {/* Product Image - Using generated mockup */}
           <div className="mb-8 flex justify-center">
             <img 
-              src="https://i.imgur.com/80Mf74Z.png" 
+              src={productMockupImage} 
               alt="SB2 Turbo - Suplemento Natural para Emagrecimento"
               className="max-w-sm w-full h-auto rounded-lg shadow-2xl"
             />
@@ -522,6 +529,23 @@ const MonetizzeLanding = () => {
           />
         </div>
         
+        {/* Testimonial Images - Similar to reference site */}
+        <div className="absolute right-8 top-16 hidden xl:block">
+          <img 
+            src={testimonial1Image} 
+            alt="Mulher feliz após transformação"
+            className="w-40 h-40 rounded-full object-cover shadow-xl border-4 border-red-200"
+          />
+        </div>
+        
+        <div className="absolute left-16 bottom-16 hidden xl:block">
+          <img 
+            src={testimonial2Image} 
+            alt="Mulher celebrando sucesso fitness"
+            className="w-32 h-32 rounded-full object-cover shadow-xl border-4 border-red-200"
+          />
+        </div>
+        
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
@@ -572,6 +596,77 @@ const MonetizzeLanding = () => {
               className="bg-orange-600 hover:bg-orange-500 text-white font-bold text-2xl px-16 py-8 rounded-full"
             >
               ⚡ QUERO ESTES BENEFÍCIOS
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Visual Testimonials - Similar to reference site */}
+      <section className="py-16 bg-gray-900 text-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Milhares de Clientes Transformados!
+            </h2>
+            <p className="text-xl text-gray-300">
+              Veja as transformações reais de quem já usa SB2 Turbo
+            </p>
+          </div>
+
+          {/* Grid of testimonial images - Similar to reference */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
+            <div className="overflow-hidden rounded-lg">
+              <img 
+                src={testimonial1Image} 
+                alt="Transformação cliente SB2"
+                className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div className="overflow-hidden rounded-lg">
+              <img 
+                src={testimonial2Image} 
+                alt="Transformação cliente SB2"
+                className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div className="overflow-hidden rounded-lg">
+              <img 
+                src={testimonial3Image} 
+                alt="Transformação cliente SB2"
+                className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div className="overflow-hidden rounded-lg">
+              <img 
+                src={testimonial4Image} 
+                alt="Transformação cliente SB2"
+                className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div className="overflow-hidden rounded-lg">
+              <img 
+                src={testimonial5Image} 
+                alt="Transformação cliente SB2"
+                className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div className="overflow-hidden rounded-lg">
+              <img 
+                src={testimonial6Image} 
+                alt="Transformação cliente SB2"
+                className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+          </div>
+
+          <div className="text-center mb-12">
+            <h3 className="text-2xl font-bold mb-4">Você pode ser o próximo caso de sucesso!</h3>
+            <Button 
+              onClick={handleCTAClick}
+              size="lg"
+              className="bg-red-600 hover:bg-red-500 text-white font-bold text-2xl px-16 py-8 rounded-full"
+            >
+              QUERO SECAR EM 2025
             </Button>
           </div>
         </div>
