@@ -43,6 +43,23 @@ const MonetizzeLanding = () => {
     window.open(url, '_blank');
   };
 
+  const gtag_report_conversion = (url: string) => {
+  const callback = () => {
+    if (typeof url !== 'undefined') {
+      window.location.href = url;
+    }
+  };
+
+  // Chamada do evento de conversão
+  // Substitua pelo ID correto da conversão
+  (window as any).gtag?.('event', 'conversion', {
+    send_to: 'AW-17134704123/hmzzCMyn-vkaEPuru-o_',
+    transaction_id: '', // <- preencha se tiver um ID dinâmico
+    event_callback: callback,
+  });
+
+  return false;
+};
   return (
     <div className="min-h-screen bg-gradient-to-b from-red-50 to-white">
       {/* Header */}
