@@ -20,18 +20,24 @@
     
     <!-- Google tag (gtag.js) -->
   <script>
+ <script>
   function gtag_report_conversion(url) {
     const callback = function () {
       if (typeof(url) !== 'undefined') {
         window.location = url;
       }
     };
+    // ID de transação gerado dinamicamente (opcional)
+    const transactionId = 'tx-' + Date.now();
 
     gtag('event', 'conversion', {
       'send_to': 'AW-17134704123/hmzzCMyn-vkaEPuru-o_',
+      'transaction_id': transactionId,
       'event_callback': callback
     });
     return false;
+  }
+</script>
   }
 </script>
     <!-- Event snippet for Compra conversion page -->
