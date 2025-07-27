@@ -19,14 +19,21 @@
     <meta name="twitter:card" content="summary_large_image" />
     
     <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17134704123"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  function gtag_report_conversion(url) {
+    const callback = function () {
+      if (typeof(url) !== 'undefined') {
+        window.location = url;
+      }
+    };
 
-    gtag('config', 'AW-17134704123');
-  </script>
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17134704123/hmzzCMyn-vkaEPuru-o_',
+      'event_callback': callback
+    });
+    return false;
+  }
+</script>
     <!-- Event snippet for Compra conversion page -->
  <!--<<script> 
   gtag('event', 'conversion', {
