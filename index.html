@@ -29,18 +29,34 @@
     gtag('config', 'AW-17134704123');
   </script>
     <!-- Event snippet for Compra conversion page -->
-<script>
+<!--<script> 
   gtag('event', 'conversion', {
       'send_to': 'AW-17134704123/kYHOCIzyptoaEPuru-o_',
       'value': 1.0,
       'currency': 'BRL',
       'transaction_id': ''
   });
-</script>
+</script> -->
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+
+      function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) !== 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17134704123/hmzzCMyn-vkaEPuru-o_',
+      'transaction_id': '',
+      'event_callback': callback
+    });
+    return false;
+  }
+</script>
   </body>
 </html>
