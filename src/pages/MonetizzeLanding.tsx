@@ -175,7 +175,7 @@ const MonetizzeLanding = () => {
                   <div className="text-2xl font-bold text-yellow-300">R$ 377,00 à vista</div>
                 </div>
                 <Button 
-                  onClick={() => handlePackageClick('https://app.monetizze.com.br/r/AST25426525?u=c&pl=UP224394')}
+                  onClick={() =>  gtag_report_conversion('https://app.monetizze.com.br/r/AST25426525?u=c&pl=UP224394')}
                   className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold mb-4"
                 >
                   COMPRAR AGORA
@@ -211,7 +211,7 @@ const MonetizzeLanding = () => {
                   <div className="text-2xl font-bold text-yellow-300">R$ 257,00 à vista</div>
                 </div>
                 <Button 
-                  onClick={() => handlePackageClick('https://app.monetizze.com.br/r/AST25426525?u=c&pl=GJ224393')}
+                  onClick={() =>  gtag_report_conversion('https://app.monetizze.com.br/r/AST25426525?u=c&pl=GJ224393')}
                   className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold mb-4"
                 >
                   COMPRAR AGORA
@@ -250,7 +250,7 @@ const MonetizzeLanding = () => {
                   <div className="text-2xl font-bold text-yellow-300">R$ 197,00 à vista</div>
                 </div>
                 <Button 
-                  onClick={() => handlePackageClick('https://app.monetizze.com.br/r/AST25426525?u=c&pl=MF184214')}
+                  onClick={() =>  gtag_report_conversion('https://app.monetizze.com.br/r/AST25426525?u=c&pl=MF184214')}
                   className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold mb-4"
                 >
                   COMPRAR AGORA
@@ -286,7 +286,7 @@ const MonetizzeLanding = () => {
                   <div className="text-2xl font-bold text-yellow-300">R$ 167,00 à vista</div>
                 </div>
                 <Button 
-                  onClick={() => handlePackageClick('https://app.monetizze.com.br/r/AST25426525?u=c&pl=AF184212')}
+                  onClick={() =>  gtag_report_conversion('https://app.monetizze.com.br/r/AST25426525?u=c&pl=AF184212')}
                   className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold mb-4"
                 >
                   COMPRAR AGORA
@@ -322,7 +322,7 @@ const MonetizzeLanding = () => {
                   <div className="text-2xl font-bold text-yellow-300">R$ 137,00 à vista</div>
                 </div>
                 <Button 
-                  onClick={() => handlePackageClick('https://app.monetizze.com.br/r/AST25426525?u=c&pl=SN184211')}
+                  onClick={() =>  gtag_report_conversion('https://app.monetizze.com.br/r/AST25426525?u=c&pl=SN184211')}
                   className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold mb-4"
                 >
                   COMPRAR AGORA
