@@ -19,26 +19,22 @@
     <meta name="twitter:card" content="summary_large_image" />
     
     <!-- Google tag (gtag.js) -->
-  <script>
- <script>
-  function gtag_report_conversion(url) {
-    const callback = function () {
-      if (typeof(url) !== 'undefined') {
-        window.location = url;
-      }
-    };
-    // ID de transação gerado dinamicamente (opcional)
-    const transactionId = 'tx-' + Date.now();
-
-    gtag('event', 'conversion', {
+<!-- Event snippet for Compra (1) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
       'send_to': 'AW-17134704123/hmzzCMyn-vkaEPuru-o_',
-      'transaction_id': transactionId,
+      'transaction_id': '',
       'event_callback': callback
-    });
-    return false;
-  }
-</script>
-  }
+  });
+  return false;
+}
 </script>
     <!-- Event snippet for Compra conversion page -->
  <!--<<script> 
