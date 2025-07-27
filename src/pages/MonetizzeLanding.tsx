@@ -17,6 +17,12 @@ import testimonial3Image from "../assets/sb2-testimonial-3.jpg";
 import testimonial4Image from "../assets/sb2-testimonial-4.jpg";
 import testimonial5Image from "../assets/sb2-testimonial-5.jpg";
 import testimonial6Image from "../assets/sb2-testimonial-6.jpg";
+// Real transformation images
+import transformation1Image from "../assets/sb2-transformation-1.jpg";
+import transformation2Image from "../assets/sb2-transformation-2.jpg";
+import transformation3Image from "../assets/sb2-transformation-3.jpg";
+import transformation4Image from "../assets/sb2-transformation-4.jpg";
+import transformation5Image from "../assets/sb2-transformation-5.jpg";
 
 const MonetizzeLanding = () => {
   const navigate = useNavigate();
@@ -613,49 +619,51 @@ const MonetizzeLanding = () => {
             </p>
           </div>
 
-          {/* Grid of testimonial images - Similar to reference */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
-            <div className="overflow-hidden rounded-lg">
+          {/* Grid of transformation images - Real before/after photos */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <div className="overflow-hidden rounded-lg shadow-lg">
               <img 
-                src={testimonial1Image} 
-                alt="Transformação cliente SB2"
-                className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
+                src={transformation1Image} 
+                alt="Transformação real antes e depois SB2 Turbo"
+                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <div className="overflow-hidden rounded-lg">
+            <div className="overflow-hidden rounded-lg shadow-lg">
               <img 
-                src={testimonial2Image} 
-                alt="Transformação cliente SB2"
-                className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
+                src={transformation2Image} 
+                alt="Transformação real antes e depois SB2 Turbo"
+                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <div className="overflow-hidden rounded-lg">
+            <div className="overflow-hidden rounded-lg shadow-lg">
               <img 
-                src={testimonial3Image} 
-                alt="Transformação cliente SB2"
-                className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
+                src={transformation3Image} 
+                alt="Transformação real antes e depois SB2 Turbo"
+                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <div className="overflow-hidden rounded-lg">
+            <div className="overflow-hidden rounded-lg shadow-lg">
               <img 
-                src={testimonial4Image} 
-                alt="Transformação cliente SB2"
-                className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
+                src={transformation4Image} 
+                alt="Transformação real antes e depois SB2 Turbo"
+                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <div className="overflow-hidden rounded-lg">
+            <div className="overflow-hidden rounded-lg shadow-lg">
               <img 
-                src={testimonial5Image} 
-                alt="Transformação cliente SB2"
-                className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
+                src={transformation5Image} 
+                alt="Transformação real antes e depois SB2 Turbo"
+                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <div className="overflow-hidden rounded-lg">
-              <img 
-                src={testimonial6Image} 
-                alt="Transformação cliente SB2"
-                className="w-full h-40 object-cover hover:scale-110 transition-transform duration-300"
-              />
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <div className="bg-gradient-to-br from-red-500 to-red-700 h-64 flex items-center justify-center text-white text-center p-6">
+                <div>
+                  <h4 className="text-2xl font-bold mb-2">E muitas mais!</h4>
+                  <p className="text-lg">Milhares de transformações reais</p>
+                  <div className="mt-4 text-4xl">🎉</div>
+                </div>
+              </div>
             </div>
           </div>
 
