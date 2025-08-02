@@ -11,7 +11,17 @@ interface Product {
   category: 'fisicos' | 'digitais';
 }
 
-const products: Product[] = [];
+const products: Product[] = [
+  {
+    id: '1',
+    title: 'The Hidden Reason You Can\'t Lose Weight — And Why It\'s Not Your Fault',
+    description: 'Discover why your body is working against you, even when you\'re eating right and exercising correctly.',
+    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop',
+    affiliateLink: '/metabolism',
+    price: 'Free Guide',
+    category: 'digitais'
+  }
+];
 
 const ProductGrid = () => {
   const digitalProducts = products.filter(product => product.category === 'digitais');
