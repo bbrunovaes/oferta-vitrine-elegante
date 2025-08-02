@@ -3,8 +3,7 @@ import { Card } from "@/components/ui/card";
 
 const MetabolismLanding = () => {
   const handleWatchNow = () => {
-    // Add your video or action link here
-    console.log("Watch Now clicked");
+    window.open('https://mitolyn.com/science/?hopId=92b62861-4864-4117-ae94-1fdd8cc838c7&affiliate=blackk1', '_blank');
   };
 
   return (
@@ -103,7 +102,7 @@ const MetabolismLanding = () => {
             <Button 
               onClick={handleWatchNow}
               size="lg"
-              className="bg-white text-green-600 hover:bg-gray-100 font-bold text-xl px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-white text-green-600 hover:bg-gray-100 font-bold text-3xl px-12 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 h-20"
             >
               👉 WATCH NOW
             </Button>
