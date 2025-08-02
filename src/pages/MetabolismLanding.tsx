@@ -11,10 +11,10 @@ const MetabolismLanding = () => {
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         {/* Header Warning */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4 transition-colors duration-300 hover:text-green-600 cursor-pointer">
             ⚠️ The Hidden Reason You Can't Lose Weight — And Why It's Not Your Fault
           </h1>
-          <h2 className="text-xl md:text-2xl text-gray-700 mb-2">
+          <h2 className="text-2xl md:text-4xl text-gray-700 mb-2 transition-colors duration-300 hover:text-green-600 cursor-pointer">
             Discover Why Your Body is Working Against You…
           </h2>
           <p className="text-lg text-gray-600">
@@ -39,7 +39,7 @@ const MetabolismLanding = () => {
             </div>
 
             <div className="bg-red-50 p-6 rounded-lg border-l-4 border-red-400">
-              <h3 className="text-xl font-bold text-red-800 mb-4">
+              <h3 className="text-2xl md:text-3xl font-bold text-red-800 mb-4 transition-colors duration-300 hover:text-red-600 cursor-pointer">
                 🚨 Here's What a Slow Metabolism Does to You:
               </h3>
               <ul className="space-y-2 text-gray-700">
@@ -54,7 +54,7 @@ const MetabolismLanding = () => {
             </div>
 
             <div className="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400">
-              <h3 className="text-xl font-bold text-yellow-800 mb-4">
+              <h3 className="text-2xl md:text-3xl font-bold text-yellow-800 mb-4 transition-colors duration-300 hover:text-yellow-600 cursor-pointer">
                 🤯 And the worst part?
               </h3>
               <p className="text-gray-700 mb-4">
@@ -84,7 +84,7 @@ const MetabolismLanding = () => {
         {/* Call to Action */}
         <Card className="p-8 bg-gradient-to-r from-green-500 to-green-600 text-white">
           <div className="text-center">
-            <h3 className="text-2xl font-bold mb-4">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4 transition-colors duration-300 hover:text-green-300 cursor-pointer">
               🎥 Want to know why your metabolism is slow—and what you can do about it?
             </h3>
             <p className="text-lg mb-6">
