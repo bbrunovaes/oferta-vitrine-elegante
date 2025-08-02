@@ -49,9 +49,6 @@ const ProductGrid = () => {
     <section className="container mx-auto px-4 py-8">
       {/* Produtos Digitais Section */}
       <div className="mb-12">
-        <h2 className="text-2xl font-bold text-foreground mb-6 text-center">
-          Produtos Digitais
-        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {digitalProducts.map((product) => (
             <ProductCard
@@ -68,9 +65,6 @@ const ProductGrid = () => {
 
       {/* Produtos Físicos Section */}
       <div>
-        <h2 className="text-2xl font-bold text-foreground mb-6 text-center">
-          Produtos Físicos
-        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {physicalProducts.map((product) => (
             <ProductCard
