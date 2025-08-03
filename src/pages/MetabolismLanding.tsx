@@ -28,30 +28,28 @@ const MetabolismLanding = () => {
         </Button>
       </div>
 
-      <div className="container mx-auto px-4 py-8 max-w-4xl">
-        {/* Images */}
-        <div className="space-y-8">
-          <div className="text-center">
-            <img 
-              src="https://i.imgur.com/WKzsQuq.jpg" 
-              alt="Metabolism Image 1" 
-              className="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
-              onError={(e) => {
-                e.currentTarget.src = "https://i.imgur.com/WKzsQuq.png";
-              }}
-            />
-          </div>
-          
-          <div className="text-center">
-            <img 
-              src="https://i.imgur.com/tUoHp9a.jpg" 
-              alt="Metabolism Image 2" 
-              className="w-full max-w-3xl mx-auto rounded-lg shadow-lg"
-              onError={(e) => {
-                e.currentTarget.src = "https://i.imgur.com/tUoHp9a.png";
-              }}
-            />
-          </div>
+      {/* Images */}
+      <div className="w-full">
+        <div className="w-full">
+          <img 
+            src="https://i.imgur.com/WKzsQuq.jpg" 
+            alt="Metabolism Image 1" 
+            className="w-full h-screen object-cover"
+            onError={(e) => {
+              e.currentTarget.src = "https://i.imgur.com/WKzsQuq.png";
+            }}
+          />
+        </div>
+        
+        <div className="w-full">
+          <img 
+            src="https://i.imgur.com/tUoHp9a.jpg" 
+            alt="Metabolism Image 2" 
+            className="w-full h-screen object-cover"
+            onError={(e) => {
+              e.currentTarget.src = "https://i.imgur.com/tUoHp9a.png";
+            }}
+          />
         </div>
       </div>
     </div>
