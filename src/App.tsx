@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,7 +7,8 @@ import Index from "./pages/Index";
 import CursoLanding from "./pages/CursoLanding";
 import PowerBILanding from "./pages/PowerBILanding";
 import MonetizzeLanding from "./pages/MonetizzeLanding";
-import MetabolismLanding from "./pages/MetabolismLanding";
+// Importa o MetabolismPage em vez do MetabolismLanding
+import MetabolismPage from "./components/MetabolismPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,7 +21,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/metabolism" element={<MetabolismLanding />} />
+          <Route path="/metabolism" element={<MetabolismPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
