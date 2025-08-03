@@ -11,6 +11,9 @@ const MetabolismPage = () => {
       <div className="container mx-auto px-4 py-16 max-w-4xl">
         {/* Hero Section */}
         <div className="text-center mb-16">
+          <p className="text-lg md:text-xl text-primary font-semibold mb-4">
+            US Scientist: This Purple Peel Exploit Vaporizes Fat Cells
+          </p>
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
             ⚖️ Discover How Metabolism Affects Your Weight and Energy
           </h1>
