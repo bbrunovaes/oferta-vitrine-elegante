@@ -51,23 +51,13 @@ const MetabolismLanding = () => {
             }}
           />
           
-          {/* Link and Watch Now Button */}
-          <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 text-center">
-            <div className="mb-4">
-              <a 
-                href="https://mitolyn.com/science/?affiliate=blackk1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white text-lg font-semibold hover:underline"
-              >
-                https://mitolyn.com/science/?affiliate=blackk1
-              </a>
-            </div>
+          {/* WATCH NOW Button positioned over the white button in the image */}
+          <div className="absolute bottom-32 left-1/2 transform -translate-x-1/2">
             <Button
               onClick={handleWatchNow}
-              className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg font-bold"
+              className="bg-green-600 hover:bg-green-700 text-white px-12 py-4 text-xl font-bold rounded-lg shadow-lg"
             >
-              Watch Now
+              WATCH NOW!
             </Button>
           </div>
         </div>
