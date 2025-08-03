@@ -55,7 +55,7 @@ const MetabolismLanding = () => {
           <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2">
             <Button
               onClick={handleWatchNow}
-              className="bg-green-600 hover:bg-green-700 text-white px-24 py-8 text-4xl font-bold rounded-lg shadow-lg"
+              className="bg-red-600 hover:bg-red-700 text-white px-24 py-12 text-4xl font-bold rounded-lg shadow-lg"
             >
               WATCH NOW!
             </Button>
