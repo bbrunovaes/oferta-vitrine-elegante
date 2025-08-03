@@ -52,10 +52,10 @@ const MetabolismLanding = () => {
           />
           
           {/* WATCH NOW Button positioned over the white button in the image */}
-          <div className="absolute bottom-32 left-1/2 transform -translate-x-1/2">
+          <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2">
             <Button
               onClick={handleWatchNow}
-              className="bg-green-600 hover:bg-green-700 text-white px-12 py-4 text-xl font-bold rounded-lg shadow-lg"
+              className="bg-green-600 hover:bg-green-700 text-white px-16 py-6 text-2xl font-bold rounded-lg shadow-lg"
             >
               WATCH NOW!
             </Button>
