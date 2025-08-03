@@ -1,69 +1,99 @@
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { ArrowLeft } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metabolism & Energy Support</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #e6fff2, #ccffcc);
+      color: #003300;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+    h1, h2, h3 {
+      color: #004d26;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #008000;
+    }
+    .video-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .video-section img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #008000;
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    .cta-button:hover {
+      background-color: #006600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>⚖️ Discover How Metabolism Affects Your Weight and Energy</h1>
+    <p>Many people struggle with weight and fatigue—without knowing why. Learn how your metabolism may be involved and what you can do to support it.</p>
 
-const MetabolismLanding = () => {
-  const navigate = useNavigate();
+    <h2>🚫 Frustrated by Weight That Won’t Budge?</h2>
+    <p>If you’ve been eating well, exercising, and still not seeing results, you’re not alone—and it may not be your fault.</p>
+    <p><span class="highlight">One possible factor?</span> Your metabolic function.</p>
+    <p>A slower metabolism can influence how your body uses energy and stores fat. Understanding how it works is the first step toward regaining control.</p>
 
-  const handleWatchNow = () => {
-    window.open('https://mitolyn.com/science/?hopId=92b62861-4864-4117-ae94-1fdd8cc838c7&affiliate=blackk1', '_blank');
-  };
+    <h2>🧠 How Metabolic Changes Can Affect You:</h2>
+    <ul>
+      <li>You feel low on energy—even after a good night’s sleep</li>
+      <li>You find it harder to maintain or lose weight</li>
+      <li>You experience strong cravings, especially for sweets or carbs</li>
+      <li>You notice mental fatigue or reduced focus</li>
+      <li>You feel like your body isn’t responding like it used to</li>
+    </ul>
+    <p>These may be signs that your metabolism isn’t working as efficiently as it once did. The good news? There are ways to support your body naturally.</p>
 
-  const handleBackToHome = () => {
-    navigate('/');
-  };
+    <h2>🎯 Weight gain and fatigue are complex issues.</h2>
+    <p>Learning what may be behind them can help you take smart, safe action.</p>
 
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-green-100">
-      {/* Back to Home Button */}
-      <div className="container mx-auto px-4 pt-4">
-        <Button
-          onClick={handleBackToHome}
-          variant="outline"
-          className="mb-4 hover:bg-green-50 transition-colors duration-300"
-        >
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Voltar ao Home
-        </Button>
-      </div>
-
-      {/* Images */}
-      <div className="w-full">
-        <div className="w-full">
-          <img 
-            src="https://i.imgur.com/WKzsQuq.jpg" 
-            alt="Metabolism Image 1" 
-            className="w-full h-screen object-cover"
-            onError={(e) => {
-              e.currentTarget.src = "https://i.imgur.com/WKzsQuq.png";
-            }}
-          />
-        </div>
-        
-        <div className="w-full relative">
-          <img 
-            src="https://i.imgur.com/tUoHp9a.jpg" 
-            alt="Metabolism Image 2" 
-            className="w-full h-screen object-cover object-top"
-            onError={(e) => {
-              e.currentTarget.src = "https://i.imgur.com/tUoHp9a.png";
-            }}
-          />
-          
-          {/* WATCH NOW Button positioned over the white button in the image */}
-          <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2">
-            <Button
-              onClick={handleWatchNow}
-              className="bg-red-600 hover:bg-red-700 text-white px-24 py-12 text-4xl font-bold rounded-lg shadow-lg"
-            >
-              WATCH NOW!
-            </Button>
-          </div>
-        </div>
-      </div>
+    <div class="video-section">
+      <h2>🎥 Want to Understand More?</h2>
+      <p>Watch a short educational video that explains:</p>
+      <ul>
+        <li>✅ What metabolism really is (and isn’t)</li>
+        <li>✅ How it affects weight, energy, and cravings</li>
+        <li>✅ Simple steps to help support your body’s natural balance</li>
+      </ul>
+      <a href="https://mitolyn.com/science/?hopId=92b62861-4864-4117-ae94-1fdd8cc838c7&affiliate=blackk1" target="_blank">
+        <img src="/mnt/data/Screenshot 2025-08-03 181446.png" alt="Video Preview">
+      </a>
+      <br>
+      <a class="cta-button" href="https://mitolyn.com/science/?hopId=92b62861-4864-4117-ae94-1fdd8cc838c7&affiliate=blackk1" target="_blank">👉 Watch the Video Now</a>
     </div>
-  );
-};
 
-export default MetabolismLanding;
+    <p><strong>Knowledge is the first step to change.</strong></p>
+  </div>
+</body>
+</html>
+
