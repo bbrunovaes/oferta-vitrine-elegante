@@ -41,15 +41,35 @@ const MetabolismLanding = () => {
           />
         </div>
         
-        <div className="w-full">
+        <div className="w-full relative">
           <img 
             src="https://i.imgur.com/tUoHp9a.jpg" 
             alt="Metabolism Image 2" 
-            className="w-full h-screen object-cover"
+            className="w-full h-screen object-cover object-top"
             onError={(e) => {
               e.currentTarget.src = "https://i.imgur.com/tUoHp9a.png";
             }}
           />
+          
+          {/* Link and Watch Now Button */}
+          <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 text-center">
+            <div className="mb-4">
+              <a 
+                href="https://mitolyn.com/science/?affiliate=blackk1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white text-lg font-semibold hover:underline"
+              >
+                https://mitolyn.com/science/?affiliate=blackk1
+              </a>
+            </div>
+            <Button
+              onClick={handleWatchNow}
+              className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 text-lg font-bold"
+            >
+              Watch Now
+            </Button>
+          </div>
         </div>
       </div>
     </div>
