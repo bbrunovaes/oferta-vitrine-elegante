@@ -12,112 +12,109 @@ const MetabolismPage = () => {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <p className="text-4xl md:text-6xl text-primary font-semibold mb-4">
-            US Scientist: This Purple Peel Exploit Vaporizes Fat Cells
+            US Scientist Reveals a Natural Purple Peel That Supports Fat Cell Health
           </p>
-          <h1 className="text-lg md:text-xl font-bold text-foreground mb-6 leading-tight">
-            ⚖️ Discover How Metabolism Affects Your Weight and Energy
-          </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
-            Many people struggle with weight and fatigue—without knowing why.
+            Are you tired of putting in effort with diet and exercise but still struggling to see real results? You're not alone.
           </p>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-            Learn how your metabolism may be involved and what you can do to support it.
+            Your metabolism could be the missing piece in your weight and energy puzzle.
           </p>
         </div>
 
         {/* Problem Section */}
         <Card className="mb-12 border-2 border-primary/20 shadow-lg">
           <CardContent className="p-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-destructive mb-6 flex items-center gap-3">
-              🚫 Frustrated by Weight That Won't Budge?
-            </h2>
             <p className="text-lg text-muted-foreground mb-4">
-              If you've been eating well, exercising, and still not seeing results,
-              you're not alone—and it may not be your fault.
+              When metabolism slows down, it can make losing weight harder and leave you feeling drained—even after plenty of rest.
             </p>
-            <p className="text-lg text-muted-foreground mb-4">
-              <span className="font-bold text-primary">One possible factor?</span> Your metabolic function.
+            <p className="text-lg text-muted-foreground mb-6">
+              Look out for signs like:
             </p>
+            <div className="space-y-3 mb-6">
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-lg text-muted-foreground">Persistent fatigue</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-lg text-muted-foreground">Difficulty shedding or maintaining weight</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-lg text-muted-foreground">Strong cravings for sweets and carbs</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-lg text-muted-foreground">Trouble focusing or mental fog</p>
+              </div>
+            </div>
             <p className="text-lg text-muted-foreground">
-              A slower metabolism can influence how your body uses energy and stores fat.
-              Understanding how it works is the first step toward regaining control.
+              Understanding how your metabolism works is the first step to taking back control.
             </p>
           </CardContent>
         </Card>
 
-        {/* Symptoms Section */}
+        {/* Natural Solutions Section */}
         <Card className="mb-12 bg-accent/50 border-2 border-accent shadow-lg">
           <CardContent className="p-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-accent-foreground mb-6 flex items-center gap-3">
-              🧠 How Metabolic Changes Can Affect You:
-            </h2>
-            <div className="grid md:grid-cols-2 gap-4 mb-6">
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                  <p className="text-lg text-accent-foreground">You feel low on energy—even after a good night's sleep</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                  <p className="text-lg text-accent-foreground">You find it harder to maintain or lose weight</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                  <p className="text-lg text-accent-foreground">You experience strong cravings, especially for sweets or carbs</p>
-                </div>
+            <p className="text-lg text-accent-foreground mb-6">
+              There are natural, proven ways to help support your body's metabolism — and you can start today with simple habits such as:
+            </p>
+            <div className="space-y-4 mb-6">
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-lg text-accent-foreground">Staying hydrated throughout the day</p>
               </div>
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                  <p className="text-lg text-accent-foreground">You notice mental fatigue or reduced focus</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                  <p className="text-lg text-accent-foreground">You feel like your body isn't responding like it used to</p>
-                </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-lg text-accent-foreground">Eating balanced meals rich in whole foods and fiber</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-lg text-accent-foreground">Incorporating regular physical activity, including strength training</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-lg text-accent-foreground">Getting enough restful sleep each night</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
+                <p className="text-lg text-accent-foreground">Managing stress through mindfulness or relaxation techniques</p>
               </div>
             </div>
-            <p className="text-lg text-accent-foreground">
-              These may be signs that your metabolism isn't working as efficiently as it once did.
-              <span className="font-bold text-primary"> The good news? There are ways to support your body naturally.</span>
-            </p>
           </CardContent>
         </Card>
 
         {/* Authority Section */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 flex items-center justify-center gap-3">
-            🎯 Weight gain and fatigue are complex issues.
-          </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Learning what may be behind them can help you take smart, safe action.
+            Watch our quick, informative video to discover:
           </p>
         </div>
 
         {/* Video CTA Section */}
         <Card className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground border-0 shadow-2xl">
           <CardContent className="p-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 flex items-center justify-center gap-3">
-              🎥 Want to Understand More?
-            </h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Watch a short educational video that explains:
-            </p>
             
             <div className="grid md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
               <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                 <div className="text-2xl mb-3">✅</div>
-                <p className="text-lg font-medium">What metabolism really is (and isn't)</p>
+                <p className="text-lg font-medium">What metabolism really means for your health</p>
               </div>
               <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                 <div className="text-2xl mb-3">✅</div>
-                <p className="text-lg font-medium">How it affects weight, energy, and cravings</p>
+                <p className="text-lg font-medium">How it influences your weight and energy levels</p>
               </div>
               <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                 <div className="text-2xl mb-3">✅</div>
-                <p className="text-lg font-medium">Simple steps to help support your body's natural balance</p>
+                <p className="text-lg font-medium">Simple, practical steps to encourage your body's natural balance</p>
               </div>
             </div>
+
+            <p className="text-xl mb-8 max-w-2xl mx-auto">
+              Take control of your health journey with knowledge and confidence. Click to watch now.
+            </p>
 
             <Button
               asChild
@@ -141,6 +138,38 @@ const MetabolismPage = () => {
                   className="max-w-full w-full max-w-2xl mx-auto rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300 cursor-pointer transform hover:scale-105 transition-transform"
                 />
               </a>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* References Section */}
+        <Card className="mt-12 bg-background border border-border">
+          <CardContent className="p-8">
+            <h3 className="text-2xl font-bold text-foreground mb-6">Scientific References</h3>
+            <div className="grid md:grid-cols-2 gap-x-8 gap-y-3 text-sm text-muted-foreground">
+              <p>1. Cremonini E, Da Silva LME, Lanzi CR, Marino M, Iglesias DE, Oteiza Pl. Anthocyanins and their metabolites promote white adipose tissue beiging by regulating mitochondria thermogenesis and dynamics. Biochem Pharmacol. 2024;222:116069. doi:10.1016/j.bcp.2024.116069</p>
+              
+              <p>2. Solverson P. Anthocyanin Bioactivity in Obesity and Diabetes: The Essential Role of Glucose Transporters in the Gut and Periphery. Cells. 2020;9(11):2515. Published 2020 Nov 20. doi:10.3390/cells9112515</p>
+              
+              <p>3. Mao GX, Xu XG, Wang SY, et al. Salidroside Delays Cellular Senescence by Stimulating Mitochondrial Biogenesis Partly through a miR-22/SIRT-1 Pathway. Oxid Med Cell Longev. 2019;2019:5276096. Published 2019 Sep 12. doi:10.1155/2019/5276096</p>
+              
+              <p>4. Abidov M, Crendal F, Grachev S, Seifulla R, Ziegenfuss T. Effect of extracts from Rhodiola rosea and Rhodiola crenulata (Crassulaceae) roots on ATP content in mitochondria of skeletal muscles. Bull Exp Biol Med. 2003;136(6):585-587. doi:10.1023/b:bebm.0000020211.24779.15</p>
+              
+              <p>5. Nishida Y, Nawaz A, Kado T, et al. Astaxanthin stimulates mitochondrial biogenesis in insulin resistant muscle via activation of AMPK pathway. J Cachexia Sarcopenia Muscle. 2020;11(1):241- 258. doi:10.1002/jcsm.12530</p>
+              
+              <p>6. Nishida Y, Nawaz A, Hecht K, Tobe K. Astaxanthin as a Novel Mitochondrial Regulator: A New Aspect of Carotenoids, beyond Antioxidants. Nutrients. 2021;14(1):107. Published 2021 Dec 27. doi:10.3390/nu14010107</p>
+              
+              <p>7. Yamamoto H, Morino K, Mengistu L, et al. Amla Enhances Mitochondrial Spare Respiratory Capacity by Increasing Mitochondrial Biogenesis and Antioxidant Systems in a Murine Skeletal Muscle Cell Line. Oxid Med Cell Longev. 2016;2016:1735841. doi:10.1155/2016/1735841</p>
+              
+              <p>8. Nazish I, Ansari SH. Emblica officinalis - Anti-obesity activity. J Complement Integr Med. 2017;15(2):/j/jcim.2018.15.issue-2/jcim-2016-0051/jcim-2016-0051.xml. Published 2017 Dec 5. doi:10.1515/jcim-2016-0051</p>
+              
+              <p>9. Taub PR, Ramirez-Sanchez I, Ciaraldi TP, et al. Alterations in skeletal muscle indicators of mitochondrial structure and biogenesis in patients with type 2 diabetes and heart failure: effects of epicatechin rich cocoa. Clin Transl Sci. 2012;5(1):43-47. doi:10.1111/j.1752-8062.2011.00357.x</p>
+              
+              <p>10. Daussin FN, Heyman E, Burelle Y. Effects of (-)-epicatechin on mitochondria. Nutr Rev. 2021;79(1):25-41. doi:10.1093/nutrit/nuaa094</p>
+              
+              <p>11. Kim JS, Yi HK. Schisandrin C enhances mitochondrial biogenesis and autophagy in C2C12 skeletal muscle cells: potential involvement of anti-oxidative mechanisms. Naunyn Schmiedebergs Arch Pharmacol. 2018;391(2):197-206. doi:10.1007/s00210-017-1449-1</p>
+              
+              <p>12. Kopustinskiene DM, Bernatoniene J. Antioxidant Effects of Schisandra chinensis Fruits and Their Active Constituents. Antioxidants (Basel). 2021;10(4):620. Published 2021 Apr 18. doi:10.3390/antiox10040620</p>
             </div>
           </CardContent>
         </Card>
