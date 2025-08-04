@@ -119,7 +119,7 @@ const MetabolismPage = () => {
             <Button
               asChild
               size="lg"
-              className="bg-white text-primary hover:bg-white/90 font-bold text-2xl px-16 py-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 min-h-[80px] mb-8"
+              className="bg-green-600 text-white hover:bg-green-700 font-bold text-2xl px-16 py-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 min-h-[80px] mb-8"
             >
               <a
                 href={videoUrl}
