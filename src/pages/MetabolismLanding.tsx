@@ -12,46 +12,40 @@ const MetabolismPage = () => {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <p className="text-4xl md:text-6xl text-primary font-semibold mb-4">
-            US Scientist Reveals a Natural Purple Peel That Supports Fat Cell Health
+            Understand the Role of Metabolism in Your Health
           </p>
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
-            Are you tired of putting in effort with diet and exercise but still struggling to see real results? You're not alone.
+            Have you ever wondered why some people seem to have more energy and an easier time maintaining a healthy weight? The key might be your metabolism.
           </p>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-            Your metabolism could be the missing piece in your weight and energy puzzle.
+            Often underestimated, your metabolism is essential for your overall energy and well-being. Understanding how it works is the first step to taking control of your health journey.
           </p>
         </div>
 
         {/* Problem Section */}
         <Card className="mb-12 border-2 border-primary/20 shadow-lg">
           <CardContent className="p-8">
-            <p className="text-lg text-muted-foreground mb-4">
-              When metabolism slows down, it can make losing weight harder and leave you feeling drained—even after plenty of rest.
-            </p>
             <p className="text-lg text-muted-foreground mb-6">
-              Look out for signs like:
+              Signs your metabolism might need attention:
             </p>
             <div className="space-y-3 mb-6">
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-muted-foreground">Persistent fatigue</p>
+                <p className="text-lg text-muted-foreground">Feeling tired frequently.</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-muted-foreground">Difficulty shedding or maintaining weight</p>
+                <p className="text-lg text-muted-foreground">Difficulty maintaining weight, even with effort.</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-muted-foreground">Strong cravings for sweets and carbs</p>
+                <p className="text-lg text-muted-foreground">Intense cravings for sugary or high-carb foods.</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-muted-foreground">Trouble focusing or mental fog</p>
+                <p className="text-lg text-muted-foreground">Lack of mental clarity or trouble concentrating.</p>
               </div>
             </div>
-            <p className="text-lg text-muted-foreground">
-              Understanding how your metabolism works is the first step to taking back control.
-            </p>
           </CardContent>
         </Card>
 
@@ -59,28 +53,28 @@ const MetabolismPage = () => {
         <Card className="mb-12 bg-accent/50 border-2 border-accent shadow-lg">
           <CardContent className="p-8">
             <p className="text-lg text-accent-foreground mb-6">
-              There are natural, proven ways to help support your body's metabolism — and you can start today with simple habits such as:
+              Fortunately, you can support your metabolism with simple and consistent changes to your routine. Start today with habits like:
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-accent-foreground">Staying hydrated throughout the day</p>
+                <p className="text-lg text-accent-foreground">Staying well-hydrated throughout the day.</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-accent-foreground">Eating balanced meals rich in whole foods and fiber</p>
+                <p className="text-lg text-accent-foreground">Prioritizing nutritious meals rich in fiber and whole foods.</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-accent-foreground">Incorporating regular physical activity, including strength training</p>
+                <p className="text-lg text-accent-foreground">Exercising regularly, including strength training.</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-accent-foreground">Getting enough restful sleep each night</p>
+                <p className="text-lg text-accent-foreground">Ensuring you get restful sleep every night.</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-accent-foreground">Managing stress through mindfulness or relaxation techniques</p>
+                <p className="text-lg text-accent-foreground">Finding effective techniques to manage stress, such as meditation.</p>
               </div>
             </div>
           </CardContent>
@@ -89,7 +83,7 @@ const MetabolismPage = () => {
         {/* Authority Section */}
         <div className="text-center mb-16">
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Watch our quick, informative video to discover:
+            Watch our informative video to learn:
           </p>
         </div>
 
@@ -100,20 +94,20 @@ const MetabolismPage = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
               <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                 <div className="text-2xl mb-3">✅</div>
-                <p className="text-lg font-medium">What metabolism really means for your health</p>
+                <p className="text-lg font-medium">What metabolism really means for your body.</p>
               </div>
               <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                 <div className="text-2xl mb-3">✅</div>
-                <p className="text-lg font-medium">How it influences your weight and energy levels</p>
+                <p className="text-lg font-medium">How it influences your energy and weight.</p>
               </div>
               <div className="bg-white/10 rounded-lg p-6 backdrop-blur-sm">
                 <div className="text-2xl mb-3">✅</div>
-                <p className="text-lg font-medium">Simple, practical steps to encourage your body's natural balance</p>
+                <p className="text-lg font-medium">Practical steps to support your body's natural balance.</p>
               </div>
             </div>
 
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Take control of your health journey with knowledge and confidence. Click to watch now.
+              Take control of your health with knowledge and confidence. Click to watch now.
             </p>
 
             <Button
