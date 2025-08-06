@@ -11,10 +11,10 @@ const MetabolismPage = () => {
       <div className="container mx-auto px-4 py-16 max-w-4xl">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <p className="text-xl md:text-2xl text-primary font-medium mb-4 max-w-4xl mx-auto">
+          <p className="text-3xl md:text-5xl text-primary font-medium mb-4 max-w-4xl mx-auto">
             Study Suggests Purple Fruit Extract Might Help Support the Body's Natural Fat-Burning Process
           </p>
-          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-8 max-w-4xl mx-auto leading-tight">
+          <h1 className="text-xl md:text-2xl font-bold text-foreground mb-8 max-w-4xl mx-auto leading-tight">
             Understand the Role of Metabolism in Your Health
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
