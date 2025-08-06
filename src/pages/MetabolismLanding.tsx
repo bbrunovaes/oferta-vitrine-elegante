@@ -11,14 +11,11 @@ const MetabolismPage = () => {
       <div className="container mx-auto px-4 py-16 max-w-4xl">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <p className="text-4xl md:text-6xl text-primary font-semibold mb-4">
-            Understand the Role of Metabolism in Your Health
-          </p>
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
-            Have you ever wondered why some people seem to have more energy and an easier time maintaining a healthy weight? The key might be your metabolism.
+            Ever wondered why some people seem to have more energy and manage their weight with ease? The secret may lie in your metabolism.
           </p>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-            Often underestimated, your metabolism is essential for your overall energy and well-being. Understanding how it works is the first step to taking control of your health journey.
+            Often overlooked, your metabolism plays a vital role in how your body creates and uses energy. Gaining clarity on how it works is a powerful first step toward improving your well-being.
           </p>
         </div>
 
@@ -26,24 +23,24 @@ const MetabolismPage = () => {
         <Card className="mb-12 border-2 border-primary/20 shadow-lg">
           <CardContent className="p-8">
             <p className="text-lg text-muted-foreground mb-6">
-              Signs your metabolism might need attention:
+              🚨 Signs Your Metabolism May Be Slowing Down:
             </p>
             <div className="space-y-3 mb-6">
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-muted-foreground">Feeling tired frequently.</p>
+                <p className="text-lg text-muted-foreground">You feel tired more often than usual</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-muted-foreground">Difficulty maintaining weight, even with effort.</p>
+                <p className="text-lg text-muted-foreground">Managing your weight feels like a constant battle</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-muted-foreground">Intense cravings for sugary or high-carb foods.</p>
+                <p className="text-lg text-muted-foreground">You crave sugary or carb-heavy snacks</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-muted-foreground">Lack of mental clarity or trouble concentrating.</p>
+                <p className="text-lg text-muted-foreground">Your focus and mental clarity aren't what they used to be</p>
               </div>
             </div>
           </CardContent>
@@ -53,30 +50,36 @@ const MetabolismPage = () => {
         <Card className="mb-12 bg-accent/50 border-2 border-accent shadow-lg">
           <CardContent className="p-8">
             <p className="text-lg text-accent-foreground mb-6">
-              Fortunately, you can support your metabolism with simple and consistent changes to your routine. Start today with habits like:
+              The good news? You don't need extreme diets or quick fixes. With small, consistent lifestyle changes, you can start supporting a more efficient metabolism today.
+            </p>
+            <p className="text-lg text-accent-foreground mb-6">
+              ✅ Try These Simple Daily Habits:
             </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-accent-foreground">Staying well-hydrated throughout the day.</p>
+                <p className="text-lg text-accent-foreground">Stay hydrated with water throughout the day</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-accent-foreground">Prioritizing nutritious meals rich in fiber and whole foods.</p>
+                <p className="text-lg text-accent-foreground">Focus on fiber-rich, nutrient-dense meals</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-accent-foreground">Exercising regularly, including strength training.</p>
+                <p className="text-lg text-accent-foreground">Move regularly — add strength training to your routine</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-accent-foreground">Ensuring you get restful sleep every night.</p>
+                <p className="text-lg text-accent-foreground">Prioritize quality sleep each night</p>
               </div>
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                <p className="text-lg text-accent-foreground">Finding effective techniques to manage stress, such as meditation.</p>
+                <p className="text-lg text-accent-foreground">Practice stress-reducing habits like mindfulness or meditation</p>
               </div>
             </div>
+            <p className="text-lg text-accent-foreground">
+              Taking care of your metabolism is a smart and sustainable way to support your energy, focus, and long-term health.
+            </p>
           </CardContent>
         </Card>
 
