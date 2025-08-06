@@ -11,6 +11,9 @@ const MetabolismPage = () => {
       <div className="container mx-auto px-4 py-16 max-w-4xl">
         {/* Hero Section */}
         <div className="text-center mb-16">
+          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-8 max-w-4xl mx-auto leading-tight">
+            Understand the Role of Metabolism in Your Health
+          </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
             Ever wondered why some people seem to have more energy and manage their weight with ease? The secret may lie in your metabolism.
           </p>
