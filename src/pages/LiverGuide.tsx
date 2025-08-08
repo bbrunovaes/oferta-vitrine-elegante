@@ -2,6 +2,9 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
+import healthyWomanJogging from "@/assets/healthy-woman-jogging.jpg";
+import healthyManCooking from "@/assets/healthy-man-cooking.jpg";
+import healthyPeopleYoga from "@/assets/healthy-people-yoga.jpg";
 
 const LiverGuidePage = () => {
   const videoUrl = "https://www.hepatoburn.com/welcome?hop=blackk1";
@@ -11,6 +14,13 @@ const LiverGuidePage = () => {
       <div className="container mx-auto px-4 py-16 max-w-4xl">
         {/* Hero Section */}
         <div className="text-center mb-16">
+          <div className="mb-8">
+            <img
+              src={healthyWomanJogging}
+              alt="Healthy woman jogging outdoors"
+              className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
+            />
+          </div>
           <h1 className="text-4xl md:text-6xl text-primary font-bold mb-6 leading-tight">
             Is Your Body Trying to Tell You Something?
           </h1>
@@ -22,13 +32,24 @@ const LiverGuidePage = () => {
         {/* Problem Statement */}
         <Card className="mb-12 border-2 border-primary/20 shadow-lg">
           <CardContent className="p-8">
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Your liver plays a critical role in digestion, hormone balance, fat breakdown, and detoxification. When it slows down, your metabolism may follow—making it harder to manage weight or energy levels.
-            </p>
-            <div className="bg-primary/5 p-6 rounded-lg">
-              <p className="text-lg font-semibold text-primary mb-4">
-                But here's the good news: you don't need drastic diets or extreme routines to support your body.
-              </p>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                  Your liver plays a critical role in digestion, hormone balance, fat breakdown, and detoxification. When it slows down, your metabolism may follow—making it harder to manage weight or energy levels.
+                </p>
+                <div className="bg-primary/5 p-6 rounded-lg">
+                  <p className="text-lg font-semibold text-primary mb-4">
+                    But here's the good news: you don't need drastic diets or extreme routines to support your body.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <img
+                  src={healthyManCooking}
+                  alt="Healthy man preparing nutritious vegetables"
+                  className="w-full rounded-lg shadow-lg"
+                />
+              </div>
             </div>
           </CardContent>
         </Card>
@@ -78,10 +99,21 @@ const LiverGuidePage = () => {
 
         {/* Results Statement */}
         <Card className="mb-12 bg-gradient-to-r from-secondary to-white border border-primary/20 shadow-lg">
-          <CardContent className="p-8 text-center">
-            <p className="text-xl md:text-2xl text-primary font-semibold max-w-3xl mx-auto leading-relaxed">
-              When you give your liver what it needs, your metabolism often responds in kind—leading to a lighter, more energized version of you.
-            </p>
+          <CardContent className="p-8">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <img
+                  src={healthyPeopleYoga}
+                  alt="Healthy people doing yoga together"
+                  className="w-full rounded-lg shadow-lg"
+                />
+              </div>
+              <div className="text-center md:text-left">
+                <p className="text-xl md:text-2xl text-primary font-semibold leading-relaxed">
+                  When you give your liver what it needs, your metabolism often responds in kind—leading to a lighter, more energized version of you.
+                </p>
+              </div>
+            </div>
           </CardContent>
         </Card>
 
