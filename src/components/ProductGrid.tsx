@@ -20,6 +20,15 @@ const products: Product[] = [
     affiliateLink: '/metabolism',
     price: 'Free Guide',
     category: 'digitais'
+  },
+  {
+    id: '2',
+    title: 'Is Your Body Trying to Tell You Something?',
+    description: 'Learn how to naturally support your liver and metabolism without extreme changes. Discover science-backed tips you can start today.',
+    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop',
+    affiliateLink: '/liver-guide',
+    price: 'Free Guide',
+    category: 'digitais'
   }
 ];
 
