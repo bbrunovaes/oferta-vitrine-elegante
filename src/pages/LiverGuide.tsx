@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
 
 const LiverGuidePage = () => {
-  const videoUrl = "#"; // Replace with actual video URL
+  const videoUrl = "https://www.hepatoburn.com/welcome?hop=blackk1";
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-secondary">
