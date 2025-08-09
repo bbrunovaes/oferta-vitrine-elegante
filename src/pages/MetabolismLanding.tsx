@@ -1,9 +1,9 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import healthyExercise from "@/assets/healthy-exercise.jpg";
-import healthyNutrition from "@/assets/healthy-nutrition.jpg";
-import healthyGroupFitness from "@/assets/healthy-group-fitness.jpg";
+import healthyWomanExercise from "@/assets/healthy-woman-exercise.jpg";
+import healthyWomanNutrition from "@/assets/healthy-woman-nutrition.jpg";
+import healthyWomenFitness from "@/assets/healthy-women-fitness.jpg";
 
 const MetabolismPage = () => {
   const videoUrl =
@@ -16,8 +16,8 @@ const MetabolismPage = () => {
         <div className="text-center mb-16">
           <div className="mb-8">
             <img
-              src={healthyExercise}
-              alt="Healthy person exercising outdoors"
+              src={healthyWomanExercise}
+              alt="Healthy woman exercising outdoors"
               className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
             />
           </div>
@@ -64,8 +64,8 @@ const MetabolismPage = () => {
               </div>
               <div>
                 <img
-                  src={healthyNutrition}
-                  alt="Healthy person preparing nutritious meal"
+                  src={healthyWomanNutrition}
+                  alt="Healthy woman preparing nutritious meal"
                   className="w-full rounded-lg shadow-lg"
                 />
               </div>
@@ -79,8 +79,8 @@ const MetabolismPage = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <img
-                  src={healthyGroupFitness}
-                  alt="Healthy group of people doing fitness activities"
+                  src={healthyWomenFitness}
+                  alt="Healthy women doing fitness activities together"
                   className="w-full rounded-lg shadow-lg"
                 />
               </div>
