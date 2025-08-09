@@ -1,6 +1,9 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import healthyExercise from "@/assets/healthy-exercise.jpg";
+import healthyNutrition from "@/assets/healthy-nutrition.jpg";
+import healthyGroupFitness from "@/assets/healthy-group-fitness.jpg";
 
 const MetabolismPage = () => {
   const videoUrl =
@@ -11,6 +14,13 @@ const MetabolismPage = () => {
       <div className="container mx-auto px-4 py-16 max-w-4xl">
         {/* Hero Section */}
         <div className="text-center mb-16">
+          <div className="mb-8">
+            <img
+              src={healthyExercise}
+              alt="Healthy person exercising outdoors"
+              className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
+            />
+          </div>
           <p className="text-3xl md:text-5xl text-primary font-medium mb-4 max-w-4xl mx-auto">
             Study Suggests Purple Fruit Extract Might Help Support the Body's Natural Fat-Burning Process
           </p>
@@ -28,9 +38,11 @@ const MetabolismPage = () => {
         {/* Problem Section */}
         <Card className="mb-12 border-2 border-primary/20 shadow-lg">
           <CardContent className="p-8">
-            <p className="text-lg text-muted-foreground mb-6">
-              Signs your metabolism might need attention:
-            </p>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <p className="text-lg text-muted-foreground mb-6">
+                  Signs your metabolism might need attention:
+                </p>
             <div className="space-y-3 mb-6">
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
@@ -49,15 +61,33 @@ const MetabolismPage = () => {
                 <p className="text-lg text-muted-foreground">Lack of mental clarity or trouble concentrating.</p>
               </div>
             </div>
+              </div>
+              <div>
+                <img
+                  src={healthyNutrition}
+                  alt="Healthy person preparing nutritious meal"
+                  className="w-full rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
           </CardContent>
         </Card>
 
         {/* Natural Solutions Section */}
         <Card className="mb-12 bg-accent/50 border-2 border-accent shadow-lg">
           <CardContent className="p-8">
-            <p className="text-lg text-accent-foreground mb-6">
-              Fortunately, you can support your metabolism with simple and consistent changes to your routine. Start today with habits like:
-            </p>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <img
+                  src={healthyGroupFitness}
+                  alt="Healthy group of people doing fitness activities"
+                  className="w-full rounded-lg shadow-lg"
+                />
+              </div>
+              <div>
+                <p className="text-lg text-accent-foreground mb-6">
+                  Fortunately, you can support your metabolism with simple and consistent changes to your routine. Start today with habits like:
+                </p>
             <div className="space-y-4 mb-6">
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
@@ -78,6 +108,8 @@ const MetabolismPage = () => {
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
                 <p className="text-lg text-accent-foreground">Finding effective techniques to manage stress, such as meditation.</p>
+              </div>
+            </div>
               </div>
             </div>
           </CardContent>
