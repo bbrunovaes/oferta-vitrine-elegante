@@ -10,6 +10,7 @@ import PowerBILanding from "./pages/PowerBILanding";
 import MonetizzeLanding from "./pages/MonetizzeLanding";
 import MetabolismLanding from "./pages/MetabolismLanding";
 import LiverGuide from "./pages/LiverGuide";
+import HearingLanding from "./pages/HearingLanding";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/metabolism" element={<MetabolismLanding />} />
           <Route path="/liver-guide" element={<LiverGuide />} />
+          <Route path="/hearing-guide" element={<HearingLanding />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
