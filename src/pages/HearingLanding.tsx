@@ -303,7 +303,6 @@ const HearingLanding = () => {
 
             <Button 
               onClick={handleWatchVideo}
-              variant="outline"
               size="lg"
               className="text-lg px-10 py-4 h-auto font-semibold"
             >
