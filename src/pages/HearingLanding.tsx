@@ -9,8 +9,7 @@ import { Check, AlertTriangle, Brain, Heart } from "lucide-react";
 
 const HearingLanding = () => {
   const handleWatchVideo = () => {
-    // Placeholder for video action
-    window.open("#", "_blank");
+    window.open("https://hop.clickbank.net/?custom=1&affiliate=blackk1&vendor=audifort&pid=new", "_blank");
   };
 
   return (
@@ -292,13 +291,27 @@ const HearingLanding = () => {
               </p>
             </div>
 
-            <Button 
-              onClick={handleWatchVideo}
-              size="lg"
-              className="text-xl px-12 py-6 h-auto font-bold"
-            >
-              Watch Free Video Now
-            </Button>
+            <div className="space-y-6">
+              <Button 
+                onClick={handleWatchVideo}
+                size="lg"
+                className="text-xl px-12 py-6 h-auto font-bold"
+              >
+                Watch Free Video Now
+              </Button>
+              
+              <div className="text-center">
+                <p className="text-muted-foreground mb-4">Don't miss this opportunity!</p>
+                <Button 
+                  onClick={handleWatchVideo}
+                  variant="outline"
+                  size="lg"
+                  className="text-lg px-10 py-4 h-auto font-semibold"
+                >
+                  Watch Free Video Now
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
