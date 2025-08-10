@@ -29,6 +29,15 @@ const products: Product[] = [
     affiliateLink: '/liver-guide',
     price: 'Free Guide',
     category: 'digitais'
+  },
+  {
+    id: '3',
+    title: 'Is Gradual Hearing Loss Sneaking Up on You?',
+    description: 'Discover the early signs, hidden causes, and science-backed ways to support healthy hearing naturally.',
+    image: 'https://images.unsplash.com/photo-1599045118108-bf9954418b76?w=400&h=300&fit=crop',
+    affiliateLink: '/hearing-guide',
+    price: 'Free Guide',
+    category: 'digitais'
   }
 ];
 
