@@ -205,7 +205,7 @@ const HearingLanding = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
             {[
               "Gentle sound stimulation techniques",
               "Habits that improve ear microcirculation",
@@ -217,6 +217,16 @@ const HearingLanding = () => {
                 <p className="text-foreground text-lg">{method}</p>
               </div>
             ))}
+          </div>
+
+          <div className="text-center">
+            <Button 
+              onClick={handleWatchVideo}
+              size="lg"
+              className="text-xl px-12 py-6 h-auto font-bold"
+            >
+              Watch Free Video Now
+            </Button>
           </div>
         </div>
       </section>
@@ -291,27 +301,14 @@ const HearingLanding = () => {
               </p>
             </div>
 
-            <div className="space-y-6">
-              <Button 
-                onClick={handleWatchVideo}
-                size="lg"
-                className="text-xl px-12 py-6 h-auto font-bold"
-              >
-                Watch Free Video Now
-              </Button>
-              
-              <div className="text-center">
-                <p className="text-muted-foreground mb-4">Don't miss this opportunity!</p>
-                <Button 
-                  onClick={handleWatchVideo}
-                  variant="outline"
-                  size="lg"
-                  className="text-lg px-10 py-4 h-auto font-semibold"
-                >
-                  Watch Free Video Now
-                </Button>
-              </div>
-            </div>
+            <Button 
+              onClick={handleWatchVideo}
+              variant="outline"
+              size="lg"
+              className="text-lg px-10 py-4 h-auto font-semibold"
+            >
+              Watch Free Video Now
+            </Button>
           </div>
         </div>
       </section>
