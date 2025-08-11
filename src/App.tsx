@@ -11,6 +11,7 @@ import MonetizzeLanding from "./pages/MonetizzeLanding";
 import MetabolismLanding from "./pages/MetabolismLanding";
 import LiverGuide from "./pages/LiverGuide";
 import HearingLanding from "./pages/HearingLanding";
+import GlucoExtendLanding from "./pages/GlucoExtendLanding";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/metabolism" element={<MetabolismLanding />} />
           <Route path="/liver-guide" element={<LiverGuide />} />
           <Route path="/hearing-guide" element={<HearingLanding />} />
+          <Route path="/gluco-extend" element={<GlucoExtendLanding />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
