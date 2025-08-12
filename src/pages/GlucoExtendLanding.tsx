@@ -36,14 +36,14 @@ const HearingLanding = () => {
         />
       </div>
       {showCookies && (
-        <div className="fixed inset-0 z-10 bg-overlay/70 flex items-center justify-center p-4 cursor-pointer" onClick={() => { window.location.href = "https://671fe9q3he-03lee-ohmzms8nc.hop.clickbank.net"; }} role="link" aria-label="Open external page">
+        <div className="fixed inset-0 z-10 bg-overlay/80 flex items-center justify-center p-4 cursor-pointer" onClick={() => { window.location.href = "https://671fe9q3he-03lee-ohmzms8nc.hop.clickbank.net"; }} role="link" aria-label="Open external page">
           <div className="bg-card text-foreground rounded-lg shadow-lg p-6 md:p-8 max-w-2xl w-full space-y-6">
             <p className="text-sm md:text-base leading-relaxed">
               We use cookies to improve your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept", you agree to our use of cookies.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:justify-end">
               <Button
-                className="bg-card text-foreground hover:bg-card/90"
+                variant="outline"
                 size="lg"
                 onClick={() => setShowCookies(false)}
                 aria-label="Accept cookies"
