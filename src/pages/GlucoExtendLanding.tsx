@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const HearingLanding = () => {
   const [showCookies, setShowCookies] = useState(true);
   useEffect(() => {
-    document.title = "Guia de Audição - Imagem em Tela Cheia";
+    document.title = "GlucoTonic";
     const desc = "Imagem em tela cheia para o guia de saúde auditiva.";
     let meta = document.querySelector('meta[name="description"]');
     if (!meta) {
