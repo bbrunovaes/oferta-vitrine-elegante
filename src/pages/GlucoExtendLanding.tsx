@@ -45,7 +45,7 @@ const HearingLanding = () => {
               <Button
                 variant="outline"
                 size="lg"
-                onClick={() => setShowCookies(false)}
+                
                 aria-label="Accept cookies"
               >
                 Accept
@@ -53,7 +53,7 @@ const HearingLanding = () => {
               <Button
                 variant="outline"
                 size="lg"
-                onClick={() => setShowCookies(false)}
+               
                 aria-label="Decline cookies"
               >
                 Decline
