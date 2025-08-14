@@ -12,6 +12,7 @@ import MetabolismLanding from "./pages/MetabolismLanding";
 import LiverGuide from "./pages/LiverGuide";
 import HearingLanding from "./pages/HearingLanding";
 import GlucoExtendLanding from "./pages/GlucoExtendLanding";
+import ProstadineLanding from "./pages/ProstadineLanding";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
