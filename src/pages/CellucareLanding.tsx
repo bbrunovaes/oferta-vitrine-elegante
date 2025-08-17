@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 
-const CelulearLanding = () => {
+const CellucareLanding = () => {
   const [showCookies, setShowCookies] = useState(true);
 
   useEffect(() => {
-    document.title = "Celulear";
-    const desc = "Imagem em tela cheia para Celulear.";
+    document.title = "Cellucare";
+    const desc = "Imagem em tela cheia para Cellucare.";
     let meta = document.querySelector('meta[name="description"]');
     if (!meta) {
       meta = document.createElement("meta");
@@ -29,7 +29,7 @@ const CelulearLanding = () => {
       <div className="fixed inset-0">
         <img
           src="https://i.imgur.com/D9gp8iH.png"
-          alt="Celulear - Imagem em tela cheia"
+          alt="Cellucare - Imagem em tela cheia"
           className="w-full h-full object-cover"
           loading="eager"
           fetchPriority="high"
@@ -66,4 +66,4 @@ const CelulearLanding = () => {
   );
 };
 
-export default CelulearLanding;
+export default CellucareLanding;
