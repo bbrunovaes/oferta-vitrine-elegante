@@ -28,7 +28,7 @@ const CellucareLanding = () => {
     <main className="min-h-screen">
       <div className="fixed inset-0">
         <img
-          src="https://i.imgur.com/D9gp8iH.png"
+          src="https://imgur.com/90Eefgp"
           alt="Cellucare - Imagem em tela cheia"
           className="w-full h-full object-cover"
           loading="eager"
