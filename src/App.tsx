@@ -14,6 +14,7 @@ import HearingLanding from "./pages/HearingLanding";
 import GlucoExtendLanding from "./pages/GlucoExtendLanding";
 import ProstadineLanding from "./pages/ProstadineLanding";
 import MaxBoostLanding from "./pages/MaxBoostLanding";
+import CellucareLanding from "./pages/CellucareLanding";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/gluco-extend" element={<GlucoExtendLanding />} />
           <Route path="/prostadine" element={<ProstadineLanding />} /> 
           <Route path="/maxboost" element={<MaxBoostLanding />} />
+          <Route path="/cellucare" element={< CellucareLanding />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
