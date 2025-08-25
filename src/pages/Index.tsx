@@ -1,25 +1,29 @@
+
 import Header from "@/components/Header";
 import ProductGrid from "@/components/ProductGrid";
+import { Button } from "@/components/ui/button";
+import { Shield } from "lucide-react";
+import { Link } from "react-router-dom";
+
 const Index = () => {
-const Header = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-red-50 to-red-100">
       <Header />
       <main>
         <ProductGrid />
       </main>
-    </div>
-    <header className="bg-white shadow-sm border-b border-border">
-      <div className="container mx-auto px-4 py-6">
-        <div className="text-center">
-          <h1 className="text-5xl md:text-6xl font-display font-bold text-foreground mb-2 tracking-tight">
-            Promos Pro
-          </h1>
+      <footer className="py-8 border-t bg-white/80 backdrop-blur-sm">
+        <div className="container mx-auto px-4 text-center">
+          <Link to="/privacy-policy">
+            <Button variant="outline" size="sm" className="flex items-center gap-2 mx-auto">
+              <Shield className="w-4 h-4" />
+              Política de Privacidade
+            </Button>
+          </Link>
         </div>
-      </div>
-    </header>
+      </footer>
+    </div>
   );
 };
 
 export default Index;
-export default Header;
